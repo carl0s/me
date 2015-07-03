@@ -9,12 +9,12 @@ get_header('home');
   <div class="row">
     <div class="large-12 column">
     <?php
-      $cat_include = array();
+      $id = $idObj->term_id;
       $args = array(
         'orderby' => 'name',
         'order' => 'ASC',
         'hide_empty' => 0,
-        'include' => '99,97,100,98,101,126'
+        'include' => '104,102,117,3,121,115'
       );
       $categories = get_categories($args);
       foreach($categories as $category):

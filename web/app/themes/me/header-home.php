@@ -31,10 +31,10 @@
             io sono Carlo
           </h1>
           <h3>
-            benvenuti nel mio blog.
+            benvenuti nel mio blog
           </h3>
           <div class="desc">
-              <?php the_field('home_copywriting','option'); ?>
+            <?php the_field('home_copywriting','option'); ?>
           </div>
           <div class="ctas">
             <?php wp_nav_menu( array( 'theme_location' => 'home-links', 'menu_class' => 'home-links' ) ); ?>
