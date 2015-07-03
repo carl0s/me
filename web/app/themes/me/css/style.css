@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: 'me';
   src: url('../fonts/me.eot?grhic0');
@@ -183,6 +182,7 @@ body {
 .internal-menu {
   margin-top: 25px; }
   .internal-menu .social {
+    margin-top: 0;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
@@ -424,7 +424,7 @@ body {
         color: #DF4B17;
         text-transform: uppercase; }
   #hero .cv_desc {
-    margin-top: 70px; }
+    margin-top: 50px; }
     #hero .cv_desc p {
       font-family: "Ubuntu";
       font-weight: 300;
@@ -470,7 +470,7 @@ body {
       position: absolute;
       width: 50px;
       height: 50px;
-      bottom: 0;
+      top: 0;
       -webkit-transition: all 0.2s ease-in-out;
       -moz-transition: all 0.2s ease-in-out;
       -ms-transition: all 0.2s ease-in-out;
@@ -541,17 +541,17 @@ body {
     padding-bottom: 40px; }
     #articles article:hover .image-wrapper .overlay {
       opacity: 1;
-      background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
+      background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
       /* FF3.6+ */
-      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparent), color-stop(86%, rgba(0, 0, 0, 0.79)), color-stop(87%, rgba(0, 0, 0, 0.8)));
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(86%, rgba(0, 0, 0, 0.79)), color-stop(87%, rgba(0, 0, 0, 0.8)));
       /* Chrome,Safari4+ */
-      background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
+      background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
       /* Chrome10+,Safari5.1+ */
-      background: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
+      background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
       /* Opera 11.10+ */
-      background: -ms-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
+      background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
       /* IE10+ */
-      background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
       /* W3C */
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc000000',GradientType=0 );
       /* IE6-9 */ }
@@ -813,17 +813,17 @@ body {
       height: auto;
       min-height: 740px;
       /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+86&amp;0+0,0.8+87 */
-      background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
+      background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
       /* FF3.6+ */
-      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparent), color-stop(86%, rgba(0, 0, 0, 0.79)), color-stop(87%, rgba(0, 0, 0, 0.8)));
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(86%, rgba(0, 0, 0, 0.79)), color-stop(87%, rgba(0, 0, 0, 0.8)));
       /* Chrome,Safari4+ */
-      background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
+      background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
       /* Chrome10+,Safari5.1+ */
-      background: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
+      background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
       /* Opera 11.10+ */
-      background: -ms-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
+      background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
       /* IE10+ */
-      background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
       /* W3C */
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc000000',GradientType=0 );
       /* IE6-9 */ }
@@ -1125,15 +1125,19 @@ button.alm-load-more-btn {
 @media only screen and (max-width: 1279px) {
   body {
     overflow-x: hidden; }
+
   #hero, .article-content, .excerpt, #small-hero, .job_item {
     padding-left: 10px;
-    padding-right: 10px; } }
+    padding-right: 10px; }
+ }
 
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
   #hero {
     background-size: 40%; }
+
   #small-hero {
     background-size: 12%; }
+
   #articles article .image-wrapper {
     min-height: 512px;
     height: auto; }
@@ -1143,6 +1147,7 @@ button.alm-load-more-btn {
     #articles article .image-wrapper .overlay {
       min-height: 512px;
       height: auto; }
+
   #article .image-wrapper {
     min-height: 512px;
     height: auto; }
@@ -1151,7 +1156,8 @@ button.alm-load-more-btn {
       height: auto; }
     #article .image-wrapper .overlay {
       min-height: 512px;
-      height: auto; } }
+      height: auto; }
+ }
 
 @media only screen and (min-width: 641px) and (max-width: 1023px) {
   #article .image-wrapper {
@@ -1163,6 +1169,7 @@ button.alm-load-more-btn {
     #article .image-wrapper .overlay {
       min-height: 384px;
       height: auto; }
+
   #articles article .image-wrapper {
     min-height: 384px;
     height: auto; }
@@ -1172,14 +1179,18 @@ button.alm-load-more-btn {
     #articles article .image-wrapper .overlay {
       min-height: 384px;
       height: auto; }
+
   #small-hero {
     background-size: 15%; }
+
   #hero {
-    background-size: 50%; } }
+    background-size: 50%; }
+ }
 
 @media only screen and (max-width: 640px) {
   body {
     overflow-x: hidden; }
+
   .off-canvas {
     position: fixed;
     overflow-x: hidden;
@@ -1312,6 +1323,7 @@ button.alm-load-more-btn {
                 width: 40px;
                 height: 40px;
                 line-height: 40px; }
+
   .hamburger {
     position: fixed;
     top: 10px;
@@ -1363,6 +1375,7 @@ button.alm-load-more-btn {
           top: 8px;
           left: -3px;
           transform: rotate(-45deg); }
+
   .sliding {
     left: 0;
     position: relative;
@@ -1378,6 +1391,7 @@ button.alm-load-more-btn {
       -moz-box-shadow: -3px 0px 2px 0px rgba(0, 0, 0, 0.5);
       box-shadow: -3px 0px 2px 0px rgba(0, 0, 0, 0.5);
       z-index: 400; }
+
   #hero {
     background: white;
     -webkit-transition: all 0.6s ease-in-out;
@@ -1443,8 +1457,10 @@ button.alm-load-more-btn {
         margin-left: -25px; }
         #hero .bottom-contact-down #further:hover {
           bottom: -110px; }
+
   #topics ul li {
     font-size: 14px; }
+
   #articles {
     left: 0;
     position: relative;
@@ -1497,6 +1513,7 @@ button.alm-load-more-btn {
           height: 180px; }
       #articles article .image-wrapper img {
         min-height: 180px; }
+
   .date {
     margin-top: 20px; }
     .date .day {
@@ -1517,6 +1534,7 @@ button.alm-load-more-btn {
         line-height: 24px;
         display: block;
         font-family: "me"; }
+
   .image-wrapper {
     height: 180px; }
     .image-wrapper .taxonomy ul li {
@@ -1529,6 +1547,7 @@ button.alm-load-more-btn {
         height: 180px; }
     .image-wrapper img {
       min-height: 180px; }
+
   #article {
     left: 0;
     position: relative;
@@ -1607,6 +1626,7 @@ button.alm-load-more-btn {
           #article .article-content blockquote p:first-child:first-letter {
             font-size: 28px;
             line-height: 32px; }
+
   #job_experience .intermediate {
     margin-bottom: 50px; }
   #job_experience .job_item {
@@ -1640,18 +1660,22 @@ button.alm-load-more-btn {
         line-height: 24px; }
       #job_experience .job_item .job_position .position_desc {
         width: 100%; }
+
   footer {
     font-size: 14px;
     text-align: left; }
+
   .archive #topics {
     margin-top: 0; }
     .archive #topics h1 ul li {
       font-size: 40px;
       text-align: center; }
+
   .page-template-page-cv #hero {
     padding-top: 40px;
     height: auto !important; }
     .page-template-page-cv #hero .cv_desc {
-      margin-top: 40px; } }
+      margin-top: 40px; }
+ }
 
 /*# sourceMappingURL=style.css.map */

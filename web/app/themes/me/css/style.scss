@@ -13,6 +13,7 @@ body {
 .internal-menu {
   margin-top:25px;
   .social {
+    margin-top:0;
     @include transition(.2s);
     &.fixed {
       position:fixed;
@@ -44,7 +45,7 @@ body {
         }
       }
     }
-  } 
+  }
 }
 
 .social {
@@ -81,7 +82,7 @@ body {
       }
     }
   }
-} 
+}
 
 #small-hero {
   opacity: 0.9;
@@ -303,7 +304,7 @@ body {
   }
 
   .cv_desc {
-    margin-top:70px;
+    margin-top:50px;
     p {
       font-family: $ubuntu;
       font-weight: 300;
@@ -355,7 +356,7 @@ body {
       position: absolute;
       width:50px;
       height: 50px;
-      bottom:0;
+      top:0;
       @include transition(.2s);
       &:after {
         font-family: 'me';
@@ -396,13 +397,13 @@ body {
     margin-right: 5px;
     float:left;
   }
-  
+
   ul {
     margin:0;
     padding:0;
     li {
       list-style:none;
-      
+
       ul {
         float:left;
         li {
