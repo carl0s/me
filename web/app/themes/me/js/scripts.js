@@ -43,3 +43,15 @@
         }
 
       });
+
+
+      // PRELOAD
+
+  var paceOptions = {
+    ajax: false, // disabled
+    document: false, // disabled
+    eventLag: false, // disabled
+    elements: {
+      selectors: ['body']
+    }
+  };
