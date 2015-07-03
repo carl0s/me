@@ -1,6 +1,7 @@
 # Application
 web/app/plugins/*
 !web/app/plugins/.gitkeep
+!web/app/plugins/disqus-comment-system
 web/app/mu-plugins/*
 !web/app/mu-plugins/.gitkeep
 web/app/upgrade
