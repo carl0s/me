@@ -30,6 +30,7 @@ body {
           font-size: 16px;
           text-transform: uppercase;
           color: $orange;
+          margin-top:5px;
         }
         list-style:none;
         display: block;
@@ -66,7 +67,6 @@ body {
         font-size: 16px;
         text-transform: uppercase;
         color: $orange;
-        margin-top:5px;
       }
       list-style:none;
       display: block;
@@ -294,7 +294,7 @@ body {
       font-weight: 300;
       font-size: 18px;
       color: $grey;
-      line-height: 40px;
+      line-height: 32px;
       &:last-child {
         font-weight: 500;
         color: $orange;
@@ -310,7 +310,7 @@ body {
       font-weight: 300;
       font-size: 18px;
       color: $grey;
-      line-height: 40px;
+      line-height: 32px;
     }
   }
 

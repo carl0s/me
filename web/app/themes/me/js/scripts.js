@@ -32,10 +32,8 @@
         var article_height_scroll = $('.image-wrapper').outerHeight();
         if ($(document).scrollTop() >= (height_scroll/2)) {
           $('#small-hero').addClass("fixed");
-          $('.social').addClass("fixed");
         } else {
           $('#small-hero').removeClass("fixed");
-          $('.social').removeClass("fixed");
         }
 
         if ($(document).scrollTop() >= (article_height_scroll)) {

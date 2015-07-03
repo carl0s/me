@@ -205,7 +205,8 @@ body {
           font-family: "Ubuntu";
           font-size: 16px;
           text-transform: uppercase;
-          color: #DF4B17; }
+          color: #DF4B17;
+          margin-top: 5px; }
         .internal-menu .social ul li a {
           color: #333;
           font-size: 20px;
@@ -241,8 +242,7 @@ body {
         font-family: "Ubuntu";
         font-size: 16px;
         text-transform: uppercase;
-        color: #DF4B17;
-        margin-top: 5px; }
+        color: #DF4B17; }
       .social ul li a {
         color: #333;
         font-size: 20px;
@@ -418,7 +418,7 @@ body {
       font-weight: 300;
       font-size: 18px;
       color: #333;
-      line-height: 40px; }
+      line-height: 32px; }
       #hero .desc p:last-child {
         font-weight: 500;
         color: #DF4B17;
@@ -430,7 +430,7 @@ body {
       font-weight: 300;
       font-size: 18px;
       color: #333;
-      line-height: 40px; }
+      line-height: 32px; }
   #hero .ctas {
     margin-top: 45px; }
     #hero .ctas .home-links {

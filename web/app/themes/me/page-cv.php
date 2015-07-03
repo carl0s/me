@@ -44,11 +44,14 @@ wp_reset_postdata();
 
 <header id="small-hero" class="hide-for-small">
   <div class="row">
-    <div class="large-12 column">
+    <div class="large-9 column">
       <h1>Ciao io sono Carlo, benvenuti nel mio Blog.</h1>
       <div class="ctas">
         <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'menu clearfix' ) ); ?>
       </div>
+    </div>
+    <div class="large-3 social hide-for-small column">
+      <?php get_template_part('partials/social', 'links'); ?>
     </div>
   </div>
 </header>
