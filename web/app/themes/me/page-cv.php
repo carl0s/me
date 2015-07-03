@@ -62,7 +62,7 @@ wp_reset_postdata();
           <div class="position_desc"><?php echo get_sub_field('job_position'); ?></div>
           <div class="image">
             <?php $image = get_sub_field('logo'); ?>
-            <img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php the_sub_field('company'); ?>">
+            <?php if($image != ''): ?><img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php the_sub_field('company'); ?>"><?php endif; ?>
           </div>
           <div class="fotorama">
             <?php
