@@ -8,10 +8,10 @@ get_header();
 
 <section id="fixed-article-header" class="hide-for-small">
   <div class="row">
-    <div class="large-2 column date">
+    <div class="large-2 small-4 column date">
       <span class="day"><?php the_time('d.m.Y'); ?></span>
     </div>
-    <div class="large-10 column post end">
+    <div class="large-10 small-8 column post end">
       <h2><a href="<?php echo get_the_permalink(); ?>" title="<?php echo get_the_title(); ?>"><?php echo get_the_title(); ?></a></h2>
     </div>
   </div>
