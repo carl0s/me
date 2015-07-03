@@ -35,9 +35,6 @@
           </h3>
           <div class="desc">
               <?php the_field('home_copywriting','option'); ?>
-
-              AND, BY THE WAY, THE ANSWER IS 42.
-            </p>
           </div>
           <div class="ctas">
             <?php wp_nav_menu( array( 'theme_location' => 'home-links', 'menu_class' => 'home-links' ) ); ?>

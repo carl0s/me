@@ -9,6 +9,7 @@ get_header('home');
   <div class="row">
     <div class="large-12 column">
     <?php
+      $cat_include = array();
       $args = array(
         'orderby' => 'name',
         'order' => 'ASC',
