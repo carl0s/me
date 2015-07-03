@@ -334,6 +334,28 @@ acf_add_local_field_group(array (
 					'disabled' => 0,
 				),
 				array (
+					'key' => 'field_7890592320e88',
+					'label' => 'Link società',
+					'name' => 'company_link',
+					'type' => 'text',
+					'instructions' => '',
+					'required' => 1,
+					'conditional_logic' => 0,
+					'wrapper' => array (
+						'width' => '',
+						'class' => '',
+						'id' => '',
+					),
+					'default_value' => '',
+					'placeholder' => '',
+					'prepend' => '',
+					'append' => '',
+					'maxlength' => '',
+					'readonly' => 0,
+					'disabled' => 0,
+				),
+
+				array (
 					'key' => 'field_59fa595020e89',
 					'label' => 'Titolo',
 					'name' => 'job_title',
