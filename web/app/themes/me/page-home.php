@@ -10,7 +10,6 @@ get_header('home');
     <div class="large-12 column">
     <h2>Nel blog parlo di:</h2>
     <?php
-      $id = $idObj->term_id;
       $args = array(
         'orderby' => 'name',
         'order' => 'ASC',
