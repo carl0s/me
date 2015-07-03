@@ -10,9 +10,9 @@ body {
   background:white;
   font-family: "Georgia", serif;
 }
-
-.social {
+.internal-menu {
   margin-top:25px;
+  .social {
   @include transition(.2s);
   &.fixed {
     position:fixed;
@@ -29,6 +29,7 @@ body {
         font-size: 16px;
         text-transform: uppercase;
         color: $orange;
+        margin-top:5px;
       }
       list-style:none;
       display: block;
@@ -44,7 +45,9 @@ body {
       }
     }
   }
+} 
 }
+
 
 #small-hero {
   opacity: 0.9;
@@ -147,6 +150,78 @@ body {
 }
 
 #hero {
+  .internal-menu {
+    ul {
+      margin:0;
+      padding:0;
+      li {
+        &:first-child {
+          &:before {
+            display: block;
+          }
+        }
+        &:before {
+          display: none;
+        }
+        &:hover {
+          a {
+            color: $orange;
+          }
+          &:before {
+            color: $orange;
+          }
+        }
+        padding:0;
+        margin-left:0;
+        list-style: none;
+        float: left;
+        margin-right:5px;
+        font-family: $ubuntu;
+        font-size: 16px;
+        line-height:24px;
+
+        @include uppercase;
+        a {
+          color: $orange;
+          @include transition(.2s);
+          display: block;
+          border-radius:5px;
+          padding:5px 10px;
+          border:2px solid white;
+
+          &:hover {
+            color: $grey;
+            border-radius:5px;
+            border:2px solid $grey;
+          }
+        }
+
+        &:first-child {
+          a {
+            display: block;
+            padding:5px 10px 5px 0;
+            border:2px solid white;
+            color: $grey;
+            float: left;
+            &:hover {
+              color: $orange;
+              &:before {
+                color: $orange;
+              }
+            }
+          }
+          &:before {
+            float: left;
+            text-indent: 0;
+            line-height: 37px;
+            font-family: "me";
+            margin-right: 10px;
+          }
+
+        }
+      }
+    }
+  }
   background: url(../img/me.png) bottom right no-repeat;
   .icon-mail {
     font-size: 24px;

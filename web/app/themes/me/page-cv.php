@@ -9,8 +9,11 @@ wp_reset_postdata();
 <header id="hero">
   <?php get_template_part('partials/hamburger', 'menu'); ?>
 
-  <div class="social hide-for-small row">
-    <div class="large-3 large-offset-9 column">
+  <div class="internal-menu hide-for-small row">
+    <div class="large-9 medium-9 column">
+      <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'menu clearfix' ) ); ?>
+    </div>
+    <div class="social large-3 large-3 column">
       <?php get_template_part('partials/social', 'links'); ?>
     </div>
   </div>
@@ -27,7 +30,18 @@ wp_reset_postdata();
       </div>
     </div>
   </div>
+  <div class="bottom-contact-down">
+    <div class="row collapse">
+      <div class="large-6 medium-6 hide-for-small column">
+        <a href="mailto:me@carlofrinolli.it" class="icon-mail left">contattami</a>
+      </div>
+      <div class="large-6 medium-6 small-12 column">
+        <a id="further" href="#job_experience"></a>
+      </div>
+    </div>
+  </div>
 </header>
+
 <header id="small-hero" class="hide-for-small">
   <div class="row">
     <div class="large-12 column">
