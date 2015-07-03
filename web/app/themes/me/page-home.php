@@ -23,6 +23,7 @@ get_header('home');
     <?php 
       endforeach; 
     ?>
+     e altro...
     <?php wp_reset_postdata(); ?>
     </div>
   </div>
