@@ -30,13 +30,67 @@
     {
       "type": "composer",
       "url": "http://wpackagist.org"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "nois3/advanced-custom-fields-pro",
+        "version": "5.2.4",
+        "type": "wordpress-plugin",
+        "source": {
+          "url": "git@gitlab.nois3.net:nois3/advanced-custom-field-pro.git",
+          "type": "git",
+          "reference": "release/5.2.4"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "nois3/ajax-load-more",
+        "version": "2.6.3.2",
+        "type": "wordpress-plugin",
+        "source": {
+          "url": "git@gitlab.nois3.net:nois3/ajax-load-more.git",
+          "type": "git",
+          "reference": "master"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "nois3/ajax-load-more-repeaters-v2",
+        "version": "2.0",
+        "type": "wordpress-plugin",
+        "source": {
+          "url": "git@gitlab.nois3.net:nois3/ajax-load-more.git",
+          "type": "git",
+          "reference": "repeaters"
+        }
+      }
     }
   ],
   "require": {
     "php": ">=5.4",
     "composer/installers": "~1.0.12",
     "vlucas/phpdotenv": "~1.0.9",
-    "johnpbloch/wordpress": "4.2.2"
+    "johnpbloch/wordpress": "4.2.2",
+    "roots/soil": "*",
+    "nois3/advanced-custom-fields-pro":"5.2.4",
+    "nois3/ajax-load-more":"2.6.3.2",
+    "nois3/ajax-load-more-repeaters-v2":"2.0",
+    "wpackagist-plugin/better-wp-security":"*",
+    "wpackagist-plugin/contact-form-7":"*",
+    "wpackagist-plugin/contact-form-7-to-database-extension":"*",
+    "wpackagist-plugin/custom-post-type-ui":"*",
+    "wpackagist-plugin/ewww-image-optimizer":"*",
+    "wpackagist-plugin/google-analyticator":"*",
+    "wpackagist-plugin/simple-301-redirects":"*",
+    "wpackagist-plugin/tumblr-importer":"*",
+    "wpackagist-plugin/wordpress-seo":"*",
+    "wpackagist-plugin/wordpress-importer":"*",
+    "wpackagist-plugin/wp-mail-smtp":"*"
   },
   "extra": {
     "installer-paths": {

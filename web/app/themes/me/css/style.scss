@@ -1,0 +1,1034 @@
+$orange: #DF4B17;
+$light-grey: #efefef;
+$grey: #333;
+$ubuntu: "Ubuntu";
+
+@import "font-icon.scss";
+@import "mixin.scss";
+
+body {
+  background:white;
+  font-family: "Georgia", serif;
+}
+
+.social {
+  margin-top:25px;
+  @include transition(.2s);
+  &.fixed {
+    position:fixed;
+    z-index: 100;
+    top:0;
+  }
+  ul {
+    margin:0;
+    padding:0;
+    float: right;
+    li {
+      &.text {
+        font-family: $ubuntu;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: $orange;
+      }
+      list-style:none;
+      display: block;
+      float: left;
+      margin-right:10px;
+      a {
+        color: $grey;
+        font-size: 20px;
+        @include transition(.2s);
+        &:hover {
+          color: $orange;
+        }
+      }
+    }
+  }
+}
+
+#small-hero {
+  opacity: 0.9;
+  position:fixed;
+  @include transition(.2s);
+  &.internal {
+    position: static;
+  }
+  &.fixed {
+    top:0;
+    z-index: 90;
+  }
+  top:-140px;
+  border-bottom:2px solid $orange;
+  width:100%;
+  height: 128px;
+  background: url(../img/small-me.png) white bottom right no-repeat;
+  h1 {
+    font-family: $ubuntu;
+    font-size: 24px;
+    color: $orange;
+    font-weight: 500;
+    line-height: 30px;
+    margin-top:20px;
+  }
+
+  .ctas {
+    margin-top:30px;
+    ul {
+      margin:0;
+      padding:0;
+      li {
+        &:first-child {
+          &:before {
+            display: block;
+          }
+        }
+        &:before {
+          display: none;
+        }
+        &:hover {
+          a {
+            color: $orange;
+          }
+          &:before {
+            color: $orange;
+          }
+        }
+        padding:0;
+        margin-left:0;
+        list-style: none;
+        float: left;
+        margin-right:5px;
+        font-family: $ubuntu;
+        font-size: 16px;
+        line-height:24px;
+
+        @include uppercase;
+        a {
+          color: $orange;
+          @include transition(.2s);
+          display: block;
+          border-radius:5px;
+          padding:5px 10px;
+          border:2px solid white;
+
+          &:hover {
+            color: $grey;
+            border-radius:5px;
+            border:2px solid $grey;
+          }
+        }
+
+        &:first-child {
+          a {
+            display: block;
+            padding:5px 10px 5px 0;
+            border:2px solid white;
+            color: $grey;
+            float: left;
+            &:hover {
+              color: $orange;
+              &:before {
+                color: $orange;
+              }
+            }
+          }
+          &:before {
+            float: left;
+            text-indent: 0;
+            line-height: 37px;
+            font-family: "me";
+            margin-right: 10px;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+#hero {
+  background: url(../img/me.png) bottom right no-repeat;
+  .icon-mail {
+    font-size: 24px;
+    font-family: $ubuntu;
+    text-transform: uppercase;
+    &:before {
+      font-family: "me";
+      margin-right:10px;
+    }
+  }
+
+  h1 {
+    /* Ciao,: */
+    font-family: $ubuntu;
+    font-size: 80px;
+    color: $orange;
+    font-weight: 500;
+    line-height: 80px;
+    margin-top:25px;
+  }
+  h3 {
+    /* BENVENUTI NEL MIO BL: */
+    font-family: Ubuntu;
+    font-size: 24px;
+    color: $orange;
+    font-weight: 300;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+
+  .desc {
+    margin-top:70px;
+    p {
+      font-family: $ubuntu;
+      font-weight: 300;
+      font-size: 18px;
+      color: $grey;
+      line-height: 40px;
+      &:last-child {
+        font-weight: 500;
+        color: $orange;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .cv_desc {
+    margin-top:70px;
+    p {
+      font-family: $ubuntu;
+      font-weight: 300;
+      font-size: 18px;
+      color: $grey;
+      line-height: 40px;
+    }
+  }
+
+  .ctas {
+    margin-top:45px;
+    .home-links {
+      margin:0;
+      padding:0;
+      li {
+        float:left;
+        list-style: none;
+        margin-left:0;
+        padding:0;
+        a {
+          padding:18px 55px;
+          border:2px solid $grey;
+          color: $grey;
+          text-transform: uppercase;
+          font-size:20px;
+          line-height: 24px;
+          background:none;
+          border-radius:10px;
+          font-family: $ubuntu;
+          margin-right:20px;
+          @include transition(.2s);
+          &:hover {
+            background:none;
+            border-color:$orange;
+            color: $orange;
+          }
+        }
+      }
+    }
+  }
+
+  .bottom-contact-down {
+    position:absolute;
+    width:100%;
+    bottom:50px;
+
+    #further {
+      display: block;
+      position: absolute;
+      width:50px;
+      height: 50px;
+      bottom:0;
+      @include transition(.2s);
+      &:after {
+        font-family: 'me';
+        font-size: 40px;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: "\e601";
+
+      }
+
+      &:hover {
+        bottom:-10px;
+      }
+    }
+  }
+
+
+}
+
+#topics {
+  border-top:2px solid $orange;
+  background: white;
+  padding:30px 0;
+
+  ul {
+    margin:0;
+    padding:0;
+    li {
+      list-style:none;
+      h2 {
+        font-family: $ubuntu;
+        font-size: 20px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: $orange;
+        margin-right: 5px;
+        float:left;
+      }
+      ul {
+        float:left;
+        li {
+          list-style:none;
+          display: block;
+          float: left;
+          margin-right:5px;
+          line-height:31px;
+          &:after {
+            content:', ';
+            display: inline;
+            margin-left:-3px;
+          }
+          &:last-child {
+            margin-right:0;
+            &:after {
+              content:'';
+            }
+          }
+          a {
+            color: $grey;
+            @include transition(.2s);
+            &:hover {
+              color: $orange;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+
+#articles {
+  background:white;
+  article {
+    padding-bottom:40px;
+    &:hover {
+      .image-wrapper {
+        .overlay {
+          opacity: 1;
+          background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.79) 86%, rgba(0,0,0,0.8) 87%); /* FF3.6+ */
+          background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(86%,rgba(0,0,0,0.79)), color-stop(87%,rgba(0,0,0,0.8))); /* Chrome,Safari4+ */
+          background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.79) 86%,rgba(0,0,0,0.8) 87%); /* Chrome10+,Safari5.1+ */
+          background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.79) 86%,rgba(0,0,0,0.8) 87%); /* Opera 11.10+ */
+          background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.79) 86%,rgba(0,0,0,0.8) 87%); /* IE10+ */
+          background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.79) 86%,rgba(0,0,0,0.8) 87%); /* W3C */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc000000',GradientType=0 ); /* IE6-9 */
+        }
+        a {
+          display: block;
+          height: auto;
+          width:100%;
+        }
+      }
+    }
+    .image-wrapper {
+      position:relative;
+      height: 740px;
+      overflow: hidden;
+      .overlay {
+        @include transition(.2s);
+        opacity: 0;
+        position:absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        right: 0;
+        width:100%;
+        height:740px;
+        z-index:10;
+        a {
+          display: block;
+          height: auto;
+          min-height: 740px;
+          width: 100%;
+          position: relative;
+
+        }
+      }
+
+      img {
+        width:100%;
+        height: auto;
+        min-height: 740px;
+        @include vertical-align-absolute;
+      }
+      .taxonomy {
+        position:absolute;
+        bottom:0;
+        left:0;
+        width:100%;
+        z-index: 15;
+        ul {
+          margin:0;
+          padding:0;
+          li {
+            margin-left:auto;
+            margin-right:auto;
+            margin-bottom:0!important;
+            padding:0!important;
+            list-style: none;
+            @include uppercase;
+            max-width: 280px;
+            a {
+              height: auto;
+              min-height: auto;
+              margin:0 auto;
+              width:auto;
+              text-align: center;
+              background:white;
+              display: block;
+              padding:5px 40px;
+              font-family: $ubuntu;
+              font-size:24px;
+              @include transition(.2s);
+              color: $grey;
+              &:hover {
+                color: $orange;
+              }
+            }
+
+          }
+        }
+
+      }
+
+    }
+    .date {
+      margin-top: 105px;
+      text-align: center;
+      .day {
+        /* 24: */
+        font-family: $ubuntu;
+        font-size: 120px;
+        color: $grey;
+        line-height: 120px;
+        display: block;
+      }
+      .month {
+        display: block;
+        /* SETTEMBRE: */
+        font-family: $ubuntu;
+        font-size: 22px;
+        color: $orange;
+        line-height: 26px;
+        @include uppercase;
+      }
+    }
+    .post {
+      margin-top:40px;
+      &:hover {
+        .post-ctas {
+          a.icon-circle-plus {
+            &:hover {
+              transform: rotate(45deg);
+              &:before {
+                color: $grey;
+              }
+            }
+          }
+        }
+      }
+      h2 {
+        /* Un bel titolo lungo : */
+        font-family: $ubuntu;
+        font-size: 36px;
+        color: $orange;
+        line-height: 42px;
+        &:after {
+          display: block;
+          content:'';
+          border-bottom:5px solid $orange;
+          width:100px;
+          height: 5px;
+          margin:20px 0;
+        }
+      }
+      .post-content {
+        -webkit-column-count: 2;
+        -webkit-column-gap: 20px;
+
+        -moz-column-count: 2;
+        -moz-column-gap: 20px;
+
+        column-count: 2;
+        column-gap: 20px;
+
+
+      }
+      .post-ctas {
+        div {
+          font-size: 24px;
+          &:last-child {
+            text-align: right;
+            a.icon-circle-plus {
+              display: block;
+              position:relative;
+              float: right;
+              width:24px;
+              height: 24px;
+              @include transition(.2s);
+              &:before {
+                position:absolute;
+                top:0;
+                left:0;
+              }
+
+            }
+          }
+          a.icon-comments {
+            font-family: $ubuntu;
+            font-size: 20px;
+            line-height: 20px;
+            &:before {
+              font-size: 24px;
+              line-height: 24px;
+              font-family: "me";
+              margin-right: 5px;
+            }
+          }
+        }
+
+      }
+    }
+    &.video {
+      .image-wrapper {
+        .play-button {
+          cursor: pointer;
+          display: block;
+          position:absolute;
+          top:50%;
+          left:50%;
+          width:80px;
+          height: 80px;
+          margin-left:-40px;
+          margin-top:-40px;
+          z-index: 20;
+          font-size: 80px;
+          color: white;
+          text-shadow: 0px 2px 5px rgba(38, 38, 38, 0.70);
+          @include transition(.2s);
+          &:hover {
+            color: #ccc;
+          }
+        }
+      }
+    }
+  }
+}
+
+#fixed-article-header {
+  z-index: 100;
+  margin-top:0px;
+  position:fixed;
+  background:$orange;
+  color: white;
+  width:100%;
+  height: 0px;
+  opacity: 0;
+  br {
+    &:before {
+      content: ' ';
+      display: block;
+    }
+    display: none;
+  }
+  @include transition(.2s);
+  &.fixed {
+    height: 40px;
+    opacity: 1;
+  }
+  h2 {
+    font-family: $ubuntu;
+    font-size: 20px;
+    a {
+      color: white;
+    }
+  }
+  .date {
+    font-family: $ubuntu;
+    line-height:36px;
+    .day {
+      font-size: 20px;
+    }
+    .month {
+      font-size: 12px;
+    }
+  }
+}
+
+#article {
+  margin-top:128px;
+  background: white;
+  .image-wrapper {
+    position:relative;
+    width:100%;
+    height:740px;
+    overflow: hidden;
+    .taxonomy {
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      z-index: 15;
+
+      ul {
+        margin:0;
+        padding:0;
+        li {
+          margin-left:auto;
+          margin-right:auto;
+          list-style: none;
+          @include uppercase;
+          max-width: 250px;
+          a {
+            height: auto;
+            margin:0 auto;
+            width:auto;
+            text-align: center;
+            background:white;
+            display: block;
+            padding:5px 40px;
+            font-family: $ubuntu;
+            font-size:24px;
+            @include transition(.2s);
+            color: $grey;
+            &:hover {
+              color: $orange;
+            }
+          }
+
+        }
+      }
+    }
+
+
+
+    img {
+      position: absolute;
+      width:100%;
+      height: auto;
+      min-height: 740px;
+    }
+    .overlay {
+      /* Rectangle 7: */
+      position:absolute;
+      z-index: 10;
+      width:100%;
+      height: auto;
+      min-height: 740px;
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+86&amp;0+0,0.8+87 */
+      background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.79) 86%, rgba(0,0,0,0.8) 87%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(86%,rgba(0,0,0,0.79)), color-stop(87%,rgba(0,0,0,0.8))); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.79) 86%,rgba(0,0,0,0.8) 87%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.79) 86%,rgba(0,0,0,0.8) 87%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.79) 86%,rgba(0,0,0,0.8) 87%); /* IE10+ */
+      background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.79) 86%,rgba(0,0,0,0.8) 87%); /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc000000',GradientType=0 ); /* IE6-9 */
+      a {
+        min-height: 740px;
+        height: auto;
+        display: block;
+
+      }
+    }
+
+    .title-date {
+      position:absolute;
+      bottom:20px;
+      left:0;
+      width: 100%;
+      z-index: 30;
+      .date {
+        text-align: center;
+        .day {
+          /* 24: */
+          font-family: $ubuntu;
+          font-size: 120px;
+          color: white;
+          line-height: 120px;
+          display: block;
+        }
+        .month {
+          display: block;
+          /* SETTEMBRE: */
+          font-family: $ubuntu;
+          font-size: 22px;
+          color: white;
+          line-height: 26px;
+          @include uppercase;
+        }
+      }
+
+      h2 {
+        /* Un bel titolo lungo : */
+        font-family: $ubuntu;
+        font-size: 48px;
+        color: white;
+        line-height: 56px;
+        a {
+          color: white;
+        }
+
+      }
+
+    }
+  }
+  .post-excerpt {
+    font-family: $ubuntu;
+    color: $orange;
+    font-weight: 300;
+    margin-top:50px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 40px;
+
+    -moz-column-count: 2;
+    -moz-column-gap: 40px;
+
+    column-count: 2;
+    column-gap: 40px;
+    p {
+      font-weight: 300;
+      font-style:italic;
+    }
+
+  }
+  .post-ctas {
+    div {
+      margin-top:50px;
+      font-size: 24px;
+      &:last-child {
+        text-align: center;
+        a.icon-circle-plus {
+          display: block;
+          position:relative;
+          float: right;
+          width:24px;
+          height: 24px;
+          @include transition(.2s);
+          &:before {
+            position:absolute;
+            top:0;
+            left:0;
+          }
+
+        }
+      }
+      a.icon-comments {
+        font-family: $ubuntu;
+        font-size: 20px;
+        line-height: 20px;
+        &:before {
+          font-size: 24px;
+          line-height: 24px;
+          font-family: "me";
+          margin-right: 5px;
+        }
+      }
+    }
+
+  }
+  .internal-image {
+    margin:20px auto;
+    .image-desc {
+      min-height: 380px;
+      position:relative;
+      h4 {
+        font-family: $ubuntu;
+        font-weight: 500;
+        font-size: 22px;
+        color: $grey;
+        margin-left:20px;
+        &:after {
+          margin-top:20px;
+          content:' ';
+          display: block;
+          width:50px;
+          border-bottom:5px solid $orange;
+        }
+      }
+
+      .fig-number {
+        font-family: "Georgia";
+        color: $orange;
+        font-style: italic;
+        position:absolute;
+        bottom:0;
+        left:20px;
+      }
+    }
+  }
+
+  .article-content {
+    margin:40px auto 80px auto;
+    p:first-child:first-letter {
+      font-family: $ubuntu;
+      font-size: 120px;
+      font-weight: 500;
+      color: $orange;
+      line-height: 130px;
+      float:left;
+      margin-top:10px;
+      margin-right:20px;
+    }
+    p {
+      font-size: 18px;
+      line-height:30px;
+      color: $grey;
+      font-style: normal;
+      font-family: "Georgia";
+      -webkit-column-count: 1 !important;
+      -webkit-column-gap: 0 !important;
+
+      -moz-column-count: 1 !important;
+      -moz-column-gap: 0 !important;
+
+      column-count: 1 !important;
+      column-gap: 0 !important;
+
+    }
+
+    &:first-letter {
+      font-family: $ubuntu;
+      font-size: 120px;
+      font-weight: 500;
+      color: $orange;
+      line-height: 130px;
+      float:left;
+      margin-top:10px;
+      margin-right:20px;
+    }
+    font-size: 18px;
+    line-height:30px;
+    color: $grey;
+    font-style: normal;
+    font-family: "Georgia";
+    -webkit-column-count: 1 !important;
+    -webkit-column-gap: 0 !important;
+
+    -moz-column-count: 1 !important;
+    -moz-column-gap: 0 !important;
+
+    column-count: 1 !important;
+    column-gap: 0 !important;
+
+    blockquote {
+      p:first-child:first-letter {
+        font-family: $ubuntu;
+        font-size: 60px;
+        color: $orange;
+        line-height: 70px;
+        float:none;
+        margin:0;
+      }
+      border:none;
+      margin:80px 0;
+      padding:0;
+      position:relative;
+      p {
+        /* Rectangle 8: */
+        /* Un bel titolo lungo : */
+        font-family: $ubuntu;
+        font-size: 60px;
+        color: $orange;
+        line-height: 70px;
+        /* “: */
+        &:after {
+          position:absolute;
+          top:-120px;
+          left:-150px;
+          content:"“";
+          font-family: Georgia;
+          font-style: italic;
+          font-weight: bold;
+          font-size: 240px;
+          color: #DEDEDE;
+          line-height: 341px;
+        }
+      }
+      span {
+        display: block;
+        float:left;
+        color: $grey;
+        font-style: italic;
+        &:after {
+          float:left;
+          content:' ';
+          width:100px;
+          height: 5px;
+          margin-top:10px;
+          margin-right:20px;
+          background:$orange;
+        }
+      }
+    }
+  }
+}
+
+.category {
+  #topics {
+    margin-top:128px;
+  }
+}
+
+.tags {
+  margin:10px 0;
+  font-family: $ubuntu;
+  text-transform: uppercase;
+  color: $orange;
+  &:before {
+    font-family: "me";
+  }
+}
+
+.single {
+  .tags {
+    color: white !important;
+    a {
+      color: white;
+    }
+  }
+}
+
+#job_experience {
+  background: white;
+  .intermediate {
+    background: $orange;
+    text-align: center;
+    @include uppercase;
+    color: white;
+    font-family: $ubuntu;
+    font-size: 24px;
+    padding:20px;
+  }
+
+  .job_item {
+    padding:40px auto;
+    .years {
+      padding:40px 20px;
+      position: relative;
+      h4 {
+        font-family: $ubuntu;
+        font-size: 24px;
+        line-height: 24px;
+        text-align: right;
+      }
+
+      &:after {
+        content: ' ';
+        width:20px;
+        height: 20px;
+        border-radius: 50%;
+        position: absolute;
+        top:40%;
+        right:-11px;
+        background: white;
+        border:2px solid #999;
+        z-index:10;
+      }
+    }
+    .job_position {
+      border-left:2px solid #999;
+      padding:40px 20px;
+      h2 {
+        font-family: "Georgia";
+        font-style: italic;
+        font-size: 36px !important;
+        line-height: 36px;
+        margin:0;
+        color: $grey;
+      }
+      .position_desc {
+        margin-top:20px;
+        width:70%;
+        font-size:18px;
+        line-height: 30px;
+      }
+      h3 {
+        font-family: $ubuntu;
+        font-size: 24px;
+        line-height: 24px;
+        @include uppercase;
+      }
+    }
+  }
+
+}
+
+.archive {
+  #topics {
+    border:0;
+    margin-top:150px;
+    position: relative;
+
+    h1 {
+      text-align: center;
+      font-family: $ubuntu;
+      font-size:100px;
+      ul {
+        li {
+          font-size:100px;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background:white;
+  padding:20px 0;
+  border-top:1px solid $light-grey;
+  .info {
+    background:white;
+    color: #999;
+    text-align: center;
+    font-family: $ubuntu;
+  }
+}
+
+button.alm-load-more-btn {
+    font-size: 16px;
+    height: 42px;
+    line-height: 38px;
+    background: none repeat scroll 0% 0% !important;
+    color: $grey!important;
+    border: 2px solid $grey!important;
+    border-radius: 5px!important;
+    text-transform: uppercase!important;
+    font-family: $ubuntu!important;
+    font-weight: 500!important;
+    &:hover {
+      background: none!important;
+      border-color:$orange!important;
+      color: $orange!important;
+    }
+}
+
+@import "media.scss";
