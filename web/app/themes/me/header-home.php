@@ -47,7 +47,7 @@
             <a href="mailto:me@carlofrinolli.it" class="icon-mail left">contattami</a>
           </div>
           <div class="large-6 medium-6 small-12 column">
-            <a id="further" href="#articles"></a>
+            <a id="further" href="#topics"></a>
           </div>
         </div>
       </div>

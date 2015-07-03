@@ -1209,13 +1209,15 @@ button.alm-load-more-btn {
       .off-canvas.open .inner {
         opacity: 1;
         left: 0px;
-        transform: scale(1); }
+        transform: scale(1);
+        -webkit-transform: scale(1); }
     .off-canvas .inner {
       position: absolute;
       opacity: 0;
       width: 100%;
       left: 260px;
       transform: scale(0.7);
+      -webkit-transform: scale(0.7);
       -webkit-transition: all 0.6s ease-in-out;
       -moz-transition: all 0.6s ease-in-out;
       -ms-transition: all 0.6s ease-in-out;
@@ -1359,7 +1361,8 @@ button.alm-load-more-btn {
     .hamburger.open {
       left: 260px; }
       .hamburger.open:hover {
-        transform: scale(0.8); }
+        transform: scale(0.8);
+        -webkit-transform: scale(0.8); }
       .hamburger.open li {
         position: absolute;
         display: none; }
@@ -1368,13 +1371,15 @@ button.alm-load-more-btn {
           top: 8px;
           left: -3px;
           display: block;
-          transform: rotate(45deg); }
+          transform: rotate(45deg);
+          -webkit-transform: rotate(45deg); }
         .hamburger.open li:last-child {
           display: block;
           width: 33px;
           top: 8px;
           left: -3px;
-          transform: rotate(-45deg); }
+          transform: rotate(-45deg);
+          -webkit-transform: rotate(-45deg); }
 
   .sliding {
     left: 0;
@@ -1458,6 +1463,9 @@ button.alm-load-more-btn {
         #hero .bottom-contact-down #further:hover {
           bottom: -110px; }
 
+  #topics h2 {
+    float: none;
+    text-align: center; }
   #topics ul li {
     font-size: 14px; }
 
