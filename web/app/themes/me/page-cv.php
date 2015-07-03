@@ -71,7 +71,7 @@ wp_reset_postdata();
               ?>
               <div class="gallery_item">
                 <?php $image = get_sub_field('immagine'); ?>
-                <?php if($image): ?><img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php the_sub_field('company'); ?>"><?php endif; ?>
+                <?php if($image != ''): ?><img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php the_sub_field('company'); ?>"><?php endif; ?>
                 <figcaption>
                   <?php the_sub_field('descrizione'); ?>
                 </figcaption>
