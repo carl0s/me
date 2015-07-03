@@ -564,6 +564,27 @@ acf_add_local_field_group(array (
 			'readonly' => 0,
 			'disabled' => 0,
 		),
+
+		// COPY
+		array (
+			'key' => 'field_8970595020e89',
+			'label' => 'Copywriting Home',
+			'name' => 'home_copywriting',
+			'type' => 'wysiwyg',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array (
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'tabs' => 'all',
+			'toolbar' => 'full',
+			'media_upload' => 1,
+		),
+
 	),
 	'location' => array (
 		array (

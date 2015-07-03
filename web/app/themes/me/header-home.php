@@ -34,12 +34,8 @@
             benvenuti nel mio blog.
           </h3>
           <div class="desc">
-            <p>
-              I am an Experience Designer, Creative Director and CEO at nois3, working, teaching and living in Rome. I like to have an hands-on mindset
-              and hacker’s passionate tension, loving to innovate and experiment
-              in my job and everyday life.
-            </p>
-            <p>
+              <?php the_field('home_copywriting','option'); ?>
+
               AND, BY THE WAY, THE ANSWER IS 42.
             </p>
           </div>
