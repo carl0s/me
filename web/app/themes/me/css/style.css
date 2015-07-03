@@ -1510,6 +1510,7 @@ button.alm-load-more-btn {
           display: block;
           font-family: "me"; }
     #articles article .image-wrapper {
+      width: 100%;
       height: 180px; }
       #articles article .image-wrapper .taxonomy ul li {
         width: 180px; }
