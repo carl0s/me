@@ -13,6 +13,43 @@ body {
 .internal-menu {
   margin-top:25px;
   .social {
+    @include transition(.2s);
+    &.fixed {
+      position:fixed;
+      z-index: 100;
+      top:0;
+    }
+    ul {
+      margin:0;
+      padding:0;
+      float: right;
+      li {
+        &.text {
+          font-family: $ubuntu;
+          font-size: 16px;
+          text-transform: uppercase;
+          color: $orange;
+          margin-top:5px;
+        }
+        list-style:none;
+        display: block;
+        float: left;
+        margin-right:10px;
+        a {
+          color: $grey;
+          font-size: 20px;
+          @include transition(.2s);
+          &:hover {
+            color: $orange;
+          }
+        }
+      }
+    }
+  } 
+}
+
+.social {
+  margin-top:25px;
   @include transition(.2s);
   &.fixed {
     position:fixed;
@@ -46,8 +83,6 @@ body {
     }
   }
 } 
-}
-
 
 #small-hero {
   opacity: 0.9;

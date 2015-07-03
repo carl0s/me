@@ -218,6 +218,43 @@ body {
           .internal-menu .social ul li a:hover {
             color: #DF4B17; }
 
+.social {
+  margin-top: 25px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  .social.fixed {
+    position: fixed;
+    z-index: 100;
+    top: 0; }
+  .social ul {
+    margin: 0;
+    padding: 0;
+    float: right; }
+    .social ul li {
+      list-style: none;
+      display: block;
+      float: left;
+      margin-right: 10px; }
+      .social ul li.text {
+        font-family: "Ubuntu";
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #DF4B17;
+        margin-top: 5px; }
+      .social ul li a {
+        color: #333;
+        font-size: 20px;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out; }
+        .social ul li a:hover {
+          color: #DF4B17; }
+
 #small-hero {
   opacity: 0.9;
   position: fixed;
