@@ -8,9 +8,21 @@ get_header('home');
 <section id="topics" class="sliding">
   <div class="row">
     <div class="large-12 column">
-      <ul>
-      <?php wp_list_categories('exclude=99,97,100,98,101&title_li=<h2>' . __('Nel blog parlo di:') . '</h2>' ); ?>
-      </ul>
+    <?php
+      $args = array(
+        'orderby' => 'name',
+        'order' => 'ASC',
+        'hide_empty' => 0,
+        'include' => '99,97,100,98,101,126'
+      );
+      $categories = get_categories($args);
+      foreach($categories as $category):
+      ?>
+          <a href="<?php echo get_category_link( $category->term_id ) ?>"><span class="name"><?php echo $category->name ?></span></a>,
+    <?php 
+      endforeach; 
+    ?>
+    <?php wp_reset_postdata(); ?>
     </div>
   </div>
 </section>

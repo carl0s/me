@@ -62,7 +62,7 @@ wp_reset_postdata();
           <div class="position_desc"><?php echo get_sub_field('job_position'); ?></div>
           <div class="image">
             <?php $image = get_sub_field('logo'); ?>
-            <?php if($image != ''): ?><img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php the_sub_field('company'); ?>"><?php endif; ?>
+            <?php if($image != ''): ?><a href="<?php the_sub_field('company_link'); ?>"><img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php the_sub_field('company'); ?>"></a><?php endif; ?>
           </div>
           <div class="fotorama">
             <?php
@@ -71,7 +71,7 @@ wp_reset_postdata();
               ?>
               <div class="gallery_item">
                 <?php $image = get_sub_field('immagine'); ?>
-                <?php if($image != ''): ?><a href="<?php the_sub_field('company_link'); ?>"><img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php the_sub_field('company'); ?>"></a><?php endif; ?>
+                <?php if($image != ''): ?><img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php the_sub_field('company'); ?>"><?php endif; ?>
                 <figcaption>
                   <?php the_sub_field('descrizione'); ?>
                 </figcaption>
