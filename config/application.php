@@ -45,6 +45,7 @@ define('DB_PASSWORD', getenv('DB_PASSWORD'));
 define('DB_HOST', getenv('DB_HOST') ?: 'localhost');
 define('DB_CHARSET', 'utf8');
 define('DB_COLLATE', '');
+define('WPLANG', 'it_IT');
 $table_prefix = getenv('DB_PREFIX') ?: 'wp_';
 
 /**

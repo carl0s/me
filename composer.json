@@ -60,6 +60,19 @@
     {
       "type": "package",
       "package": {
+        "name": "roots/bedrock-capistrano",
+        "version": "1.0",
+        "type": "composer",
+        "source": {
+          "url": "https://github.com/roots/bedrock-capistrano.git",
+          "type": "git",
+          "reference": "master"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
         "name": "nois3/ajax-load-more-repeaters-v2",
         "version": "2.0",
         "type": "wordpress-plugin",
@@ -77,6 +90,7 @@
     "vlucas/phpdotenv": "~1.0.9",
     "johnpbloch/wordpress": "4.2.2",
     "roots/soil": "*",
+    "roots/bedrock-capistrano":"*",
     "nois3/advanced-custom-fields-pro":"5.2.4",
     "nois3/ajax-load-more":"2.6.3.2",
     "nois3/ajax-load-more-repeaters-v2":"2.0",

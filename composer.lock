@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b6846ec111afbf715b15a3c4a9ca4c57",
+    "hash": "f84b5b654cd50e5e64295c34a8d5db95",
     "packages": [
         {
             "name": "composer/installers",
@@ -215,6 +215,16 @@
                 "reference": "repeaters"
             },
             "type": "wordpress-plugin"
+        },
+        {
+            "name": "roots/bedrock-capistrano",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/roots/bedrock-capistrano.git",
+                "reference": "master"
+            },
+            "type": "composer"
         },
         {
             "name": "roots/soil",
