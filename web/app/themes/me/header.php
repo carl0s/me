@@ -14,6 +14,8 @@
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
+    <?php get_template_part('partials/simple', 'loader'); ?>
+
     <header id="small-hero" class="hide-for-small fixed">
       <div class="social fixed row">
         <div class="large-3 large-offset-9 column">

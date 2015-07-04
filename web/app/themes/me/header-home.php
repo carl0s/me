@@ -14,7 +14,7 @@
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
-
+    <?php get_template_part('partials/simple', 'loader'); ?>
     <?php get_template_part('partials/off', 'canvas'); ?>
     <header id="hero">
       <?php get_template_part('partials/hamburger', 'menu'); ?>

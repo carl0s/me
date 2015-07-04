@@ -9,7 +9,32 @@ $ubuntu: "Ubuntu";
 body {
   background:white;
   font-family: "Georgia", serif;
+
+
+  .pace {
+    display: block;
+    background: rgba(255,255,255,0.9);
+    z-index: 900;
+    position:fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    &.pace-inactive {
+      display: none;
+      background: none;
+    }
+  }
+
+  &.pace-done {
+
+  }
+  &.pace-running {
+
+  }
+
 }
+
 .internal-menu {
   margin-top:25px;
   .social {
