@@ -502,6 +502,27 @@ acf_add_local_field_group(array (
 	'title' => 'General options',
 	'fields' => array (
 		array (
+			'key' => 'field_9797f3dc49463',
+			'label' => 'Topic',
+			'name' => 'topic',
+			'type' => 'taxonomy',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array (
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'taxonomy' => 'category',
+			'field_type' => 'checkbox',
+			'allow_null' => 0,
+			'add_term' => 1,
+			'load_save_terms' => 1,
+			'return_format' => 'object',
+			'multiple' => 0,
+		),
+		array (
 			'key' => 'field_55902c0daff0a',
 			'label' => 'Facebook',
 			'name' => 'facebook',

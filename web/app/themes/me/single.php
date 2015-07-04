@@ -89,7 +89,7 @@ get_header();
     ?>
     </div>
   </div>
-  <div class="row">
+  <div class="row collapse">
     <div class="article-content large-9 large-offset-2 end column">
 
       <?php

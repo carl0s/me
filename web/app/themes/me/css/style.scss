@@ -474,52 +474,27 @@ body {
   background: white;
   padding:30px 0;
   h2 {
-    font-family: $ubuntu;
+    font-family: 'Georgia';
     font-size: 20px;
     line-height: 20px;
-    text-transform: uppercase;
+    font-style: italic;
     color: $orange;
     margin-right: 5px;
     float:left;
   }
 
-  ul {
-    margin:0;
-    padding:0;
-    li {
-      list-style:none;
-
-      ul {
-        float:left;
-        li {
-          list-style:none;
-          display: block;
-          float: left;
-          margin-right:5px;
-          line-height:31px;
-          &:after {
-            content:', ';
-            display: inline;
-            margin-left:-3px;
-          }
-          &:last-child {
-            margin-right:0;
-            &:after {
-              content:'';
-            }
-          }
-          a {
-            color: $grey;
-            @include transition(.2s);
-            &:hover {
-              color: $orange;
-            }
-          }
-        }
-      }
-
+  a {
+  color: $grey;
+  font-family:$ubuntu;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 30px;
+  @include transition(.2s);
+    &:hover {
+      color: $orange;
     }
   }
+
 }
 
 #articles {
@@ -601,7 +576,7 @@ body {
               text-align: center;
               background:white;
               display: block;
-              padding:5px 40px;
+              padding:5px 0;
               font-family: $ubuntu;
               font-size:24px;
               @include transition(.2s);

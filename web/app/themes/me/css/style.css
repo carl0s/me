@@ -590,43 +590,26 @@ body {
   background: white;
   padding: 30px 0; }
   #topics h2 {
-    font-family: "Ubuntu";
+    font-family: 'Georgia';
     font-size: 20px;
     line-height: 20px;
-    text-transform: uppercase;
+    font-style: italic;
     color: #DF4B17;
     margin-right: 5px;
     float: left; }
-  #topics ul {
-    margin: 0;
-    padding: 0; }
-    #topics ul li {
-      list-style: none; }
-      #topics ul li ul {
-        float: left; }
-        #topics ul li ul li {
-          list-style: none;
-          display: block;
-          float: left;
-          margin-right: 5px;
-          line-height: 31px; }
-          #topics ul li ul li:after {
-            content: ', ';
-            display: inline;
-            margin-left: -3px; }
-          #topics ul li ul li:last-child {
-            margin-right: 0; }
-            #topics ul li ul li:last-child:after {
-              content: ''; }
-          #topics ul li ul li a {
-            color: #333;
-            -webkit-transition: all 0.2s ease-in-out;
-            -moz-transition: all 0.2s ease-in-out;
-            -ms-transition: all 0.2s ease-in-out;
-            -o-transition: all 0.2s ease-in-out;
-            transition: all 0.2s ease-in-out; }
-            #topics ul li ul li a:hover {
-              color: #DF4B17; }
+  #topics a {
+    color: #333;
+    font-family: "Ubuntu";
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 30px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+    #topics a:hover {
+      color: #DF4B17; }
 
 #articles {
   background: white; }
@@ -712,7 +695,7 @@ body {
               text-align: center;
               background: white;
               display: block;
-              padding: 5px 40px;
+              padding: 5px 0;
               font-family: "Ubuntu";
               font-size: 24px;
               -webkit-transition: all 0.2s ease-in-out;

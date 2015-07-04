@@ -6,25 +6,35 @@
 get_header('home');
 ?>
 <section id="topics" class="sliding">
+  <?php 
+  $topics = get_field('topic', 'option');
+  $topic_list = '';
+  foreach ($topics as $topic):
+    $topic_list .= $topic->term_id.',';
+  endforeach;
+  ?>
   <div class="row">
     <div class="large-12 column">
-    <h2>Nel blog parlo di:</h2>
-    <?php
-      $args = array(
-        'orderby' => 'name',
-        'order' => 'ASC',
-        'hide_empty' => 0,
-        'include' => '104,102,117,3,121,115'
-      );
-      $categories = get_categories($args);
-      foreach($categories as $category):
+      <h2>Nel blog parlo di:</h2>
+      <?php
+        $args = array(
+          'orderby' => 'name',
+          'order' => 'ASC',
+          'hide_empty' => 0,
+          'include' => $topic_list,
+        );
+        $categories = get_categories($args);
+        $count = 0;
+        $cat_number = count($categories);
+        foreach($categories as $category):
+          $count++;
+        ?>
+            <a href="<?php echo get_category_link( $category->term_id ) ?>"><span class="name"><?php echo $category->name ?></span></a><?php echo ( $count < $cat_number)?', ':''; ?>
+      <?php 
+        endforeach; 
       ?>
-          <a href="<?php echo get_category_link( $category->term_id ) ?>"><span class="name"><?php echo $category->name ?></span></a>,
-    <?php 
-      endforeach; 
-    ?>
-     e altro...
-    <?php wp_reset_postdata(); ?>
+       e altro...
+      <?php wp_reset_postdata(); ?>
     </div>
   </div>
 </section>
