@@ -1812,6 +1812,7 @@ button.alm-load-more-btn {
 
   .page-template-page-cv #hero {
     padding-top: 40px;
+    width: 100%;
     height: auto !important;
     padding-bottom: 80px;
     background: white; }
