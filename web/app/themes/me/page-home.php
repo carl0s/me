@@ -46,7 +46,7 @@ if ( $blog->have_posts() ):
     <?php get_template_part('partials/simple', 'excerpt'); ?>
   <?php endwhile; ?>
 <?php endif; ?>
-<?php echo do_shortcode( '[ajax_load_more post_type="post" offset="5" category__not_in="99,97,100,98,101,126" pause="true" scroll="false" button_label="Carica più post"]' ); ?>
+<?php echo do_shortcode( '[ajax_load_more post_type="post" seo="true" offset="5" category__not_in="99,97,100,98,101,126" pause="true" scroll="false" button_label="Carica più post"]' ); ?>
 </section>
 <?php
 get_footer();
