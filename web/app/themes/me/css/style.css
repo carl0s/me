@@ -175,6 +175,83 @@
   50% {
     left: 100%; } }
 
+::selection {
+  color: white;
+  background-color: #DF4B17;
+  text-shadow: none; }
+
+::-moz-selection {
+  color: white;
+  background-color: #DF4B17;
+  text-shadow: none; }
+
+::-webkit-input-placeholder {
+  color: #DF4B17; }
+
+::-moz-placeholder {
+  color: #DF4B17; }
+
+:-ms-input-placeholder {
+  color: #DF4B17; }
+
+input:-moz-placeholder {
+  color: #DF4B17; }
+
+.loader {
+  z-index: 999999;
+  height: 600px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  left: 50%;
+  margin-left: -70px;
+  position: fixed; }
+
+.load-wrapp {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  width: 140px;
+  height: 60px;
+  margin: 0px 10px 10px 0px;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  background-color: #DF4B17; }
+
+.line {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background-color: white; }
+
+.load-2 .line:nth-last-child(1) {
+  animation: loadingB 1.5s 1s infinite; }
+
+.load-2 .line:nth-last-child(2) {
+  animation: loadingB 1.5s 0.5s infinite; }
+
+.load-2 .line:nth-last-child(3) {
+  animation: loadingB 1.5s 0s infinite; }
+
+@keyframes loadingB {
+  0 {
+    width: 15px; }
+
+  50% {
+    width: 35px; }
+
+  100% {
+    width: 15px; } }
+
 body {
   background: white;
   font-family: "Georgia", serif; }
@@ -190,6 +267,10 @@ body {
     body .pace.pace-inactive {
       display: none;
       background: none; }
+  body.pace-done .loader {
+    display: none; }
+  body.pace-running .loader {
+    display: block; }
 
 .internal-menu {
   margin-top: 25px; }

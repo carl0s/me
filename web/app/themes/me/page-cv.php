@@ -6,6 +6,7 @@ get_header('pages');
 wp_reset_postdata();
 ?>
 <?php get_template_part('partials/off', 'canvas'); ?>
+<?php if ( function_exists( 'pdfprnt_show_buttons_for_custom_post_type' ) ) echo pdfprnt_show_buttons_for_custom_post_type(); ?>
 <header id="hero">
   <?php get_template_part('partials/hamburger', 'menu'); ?>
 

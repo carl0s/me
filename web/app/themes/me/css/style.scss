@@ -6,6 +6,62 @@ $ubuntu: "Ubuntu";
 @import "font-icon.scss";
 @import "mixin.scss";
 
+::selection {
+  color:white;
+  background-color: $orange;
+  text-shadow: none;
+}
+
+::-moz-selection {
+  color:white;
+  background-color: $orange;
+  text-shadow: none;
+}
+
+::-webkit-input-placeholder { color:$orange; }
+::-moz-placeholder { color:$orange; }
+:-ms-input-placeholder { color:$orange; }
+input:-moz-placeholder { color:$orange; }
+
+.loader {
+  z-index:999999;
+  height: 600px;
+  @include vertical-align-absolute;
+  left:50%;
+  margin-left:-70px;
+  position:fixed;
+}
+
+.load-wrapp {
+  @include vertical-align-absolute;
+  width: 140px;
+  height: 60px;
+  margin: 0px 10px 10px 0px;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  background-color: $orange;
+}
+
+.line {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.load-2 .line:nth-last-child(1) {animation: loadingB 1.5s 1s infinite;}
+.load-2 .line:nth-last-child(2) {animation: loadingB 1.5s .5s infinite;}
+.load-2 .line:nth-last-child(3) {animation: loadingB 1.5s 0s infinite;}
+
+@keyframes loadingB {
+    0 {width: 15px;}
+    50% {width: 35px;}
+    100% {width: 15px;}
+}
+
 body {
   background:white;
   font-family: "Georgia", serif;
@@ -27,10 +83,14 @@ body {
   }
 
   &.pace-done {
-
+    .loader {
+      display: none;
+    }
   }
   &.pace-running {
-
+    .loader {
+      display: block;
+    }
   }
 
 }
