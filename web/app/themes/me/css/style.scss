@@ -1240,4 +1240,24 @@ button.alm-load-more-btn {
     }
 }
 
+.mobile-dates {
+    span {
+      font-family:$ubuntu;
+      font-size:18px;
+      text-transform: uppercase;
+    }
+}
+
+.post-ctas {
+  div {
+    a.icon-comments {
+      font-size:18px;
+      &:before {
+        font-size:20px;
+      }
+    }
+  }
+}
+
+
 @import "media.scss";

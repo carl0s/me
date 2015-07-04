@@ -1232,6 +1232,16 @@ button.alm-load-more-btn {
     border-color: #DF4B17 !important;
     color: #DF4B17 !important; }
 
+.mobile-dates span {
+  font-family: "Ubuntu";
+  font-size: 18px;
+  text-transform: uppercase; }
+
+.post-ctas div a.icon-comments {
+  font-size: 18px; }
+  .post-ctas div a.icon-comments:before {
+    font-size: 20px; }
+
 @media only screen and (max-width: 1279px) {
   body {
     overflow-x: hidden; }
@@ -1279,6 +1289,12 @@ button.alm-load-more-btn {
     #article .image-wrapper .overlay {
       min-height: 384px;
       height: auto; }
+    #article .image-wrapper .title-date h2 {
+      margin-left: 10px; }
+    #article .image-wrapper .title-date .tags {
+      margin-left: 10px; }
+  #article .post-ctas div {
+    margin-top: 10px; }
 
   #articles article .image-wrapper {
     min-height: 384px;
@@ -1732,7 +1748,7 @@ button.alm-load-more-btn {
       column-gap: 0; }
     #article .post-ctas .mobile-dates span {
       font-family: "Ubuntu";
-      font-size: 16px;
+      font-size: 18px;
       text-transform: uppercase; }
     #article .post-ctas div {
       margin-top: 0px; }
