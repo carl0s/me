@@ -80,7 +80,11 @@ wp_reset_postdata();
           <div class="position_desc"><?php echo $xp_item['job_position']; ?></div>
           <div class="image">
             <?php $image = $xp_item['logo']; ?>
-            <?php if($image != ''): ?><a href="<?php the_sub_field('company_link'); ?>"><img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php the_sub_field('company'); ?>"></a><?php endif; ?>
+            <?php if($image != ''): ?>
+              <a href="<?php the_sub_field('company_link'); ?>">
+                <img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php the_sub_field('company'); ?>">
+              </a>
+            <?php endif; ?>
           </div>
           <div class="fotorama">
             <?php

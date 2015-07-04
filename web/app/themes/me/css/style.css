@@ -1681,6 +1681,8 @@ button.alm-load-more-btn {
         line-height: 24px; }
       #job_experience .job_item .job_position .position_desc {
         width: 100%; }
+      #job_experience .job_item .job_position .image {
+        text-align: center; }
 
   footer {
     font-size: 14px;
