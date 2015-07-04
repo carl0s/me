@@ -836,8 +836,40 @@ body {
       font-size: 12px; }
 
 #article {
+  position: relative;
   margin-top: 128px;
   background: white; }
+  #article .sliding-share {
+    z-index: 9999999999;
+    width: 120px;
+    height: 55px;
+    position: fixed;
+    bottom: 50px;
+    right: -120px;
+    background: rgba(255, 255, 255, 0.8);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    padding: 5px 10px; }
+    #article .sliding-share h4 {
+      font-family: "Ubuntu";
+      font-size: 14px;
+      color: #333;
+      margin: 0;
+      margin-bottom: 5px;
+      text-transform: uppercase; }
+    #article .sliding-share ul {
+      margin: 0;
+      list-style: none; }
+      #article .sliding-share ul li {
+        float: left;
+        margin-right: 20px; }
+        #article .sliding-share ul li:last-child {
+          margin-right: 0; }
+    #article .sliding-share.appeared {
+      right: 0; }
   #article .image-wrapper {
     position: relative;
     width: 100%;
@@ -1686,7 +1718,8 @@ button.alm-load-more-btn {
             line-height: 14px; }
         #article .image-wrapper .title-date h2 {
           font-size: 22px;
-          line-height: 28px; }
+          line-height: 28px;
+          margin-left: 10px; }
     #article .excerpt .post-excerpt {
       margin-top: 10px;
       -webkit-column-count: 1;
@@ -1695,6 +1728,10 @@ button.alm-load-more-btn {
       -moz-column-gap: 0;
       column-count: 1;
       column-gap: 0; }
+    #article .post-ctas .mobile-dates span {
+      font-family: "Ubuntu";
+      font-size: 16px;
+      text-transform: uppercase; }
     #article .post-ctas div {
       margin-top: 0px; }
       #article .post-ctas div a.icon-comments {

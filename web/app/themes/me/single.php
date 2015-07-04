@@ -18,6 +18,13 @@ get_header();
 </section>
 <section id="article" class="sliding">
   <?php get_template_part('partials/hamburger', 'menu'); ?>
+  <div class="sliding-share">
+    <h4>Condividi su:</h4>
+    <ul>
+      <li><a href="http://www.facebook.com/share.php?u=<?php echo get_permalink(); ?>" target="_blank" class="icon-facebook"></a></li>
+      <li><a href="https://twitter.com/share?url=<?php echo get_permalink(); ?>&amp;text=<?php echo get_the_title(); ?>" target="_blank" class="icon-twitter"></a> </li>
+    </ul>
+  </div>
   <div class="image-wrapper">
     <div class="taxonomy">
       <?php the_category(); ?>
@@ -41,12 +48,12 @@ get_header();
     ?>
     <div class="title-date">
       <div class="row">
-        <div class="large-2 small-3 column date">
+        <div class="large-2 hide-for-small column date">
           <span class="day"><?php the_time('d'); ?></span>
           <span class="month"><?php the_time('F'); ?></span>
           <span class="year"><?php the_time('Y'); ?></span>
         </div>
-        <div class="large-9 small-8 column post end">
+        <div class="large-9 small-12 column post end">
           <h2><a href="<?php echo get_the_permalink(); ?>" title="<?php echo get_the_title(); ?>"><?php echo get_the_title(); ?></a></h2>
           <div class="icon-tag tags hide-for-small"><?php the_tags( '<span>TAGS: </span>', $sep = ', ', '' ); ?></div>
         </div>
@@ -56,7 +63,12 @@ get_header();
   <div class="row excerpt">
     <div class="large-2 small-12 column">
       <div class="post-ctas row">
-        <div class="large-12 column">
+        <div class="hide-for-large mobile-dates small-6 column">
+          <span class="day"><?php the_time('d'); ?></span>
+          <span class="month"><?php the_time('F'); ?></span>
+          <span class="year"><?php the_time('Y'); ?></span>
+        </div>
+        <div class="large-12 small-6 column">
           <a href="#" class="icon-comments"><?php comments_number( '0', '1', '%' ); ?></a>
         </div>
       </div>

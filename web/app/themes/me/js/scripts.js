@@ -45,8 +45,11 @@
 
         if ($(document).scrollTop() >= (article_height_scroll)) {
           $('#fixed-article-header').addClass("fixed");
+          $('.sliding-share').addClass('appeared');
         } else {
           $('#fixed-article-header').removeClass("fixed");
+          $('.sliding-share').removeClass('appeared');
+
         }
 
       });
