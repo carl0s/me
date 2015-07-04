@@ -590,7 +590,6 @@ body {
     }
   }
   .excerpt {
-    margin-left:10px;
     .post-excerpt {
       margin-top:10px;
       -webkit-column-count: 1;
@@ -609,7 +608,7 @@ body {
     }
   }
   .article-content {
-    margin-left:10px;
+    padding:0 10px;
     margin-top:0;
     p {
       font-size: 16px;
