@@ -643,14 +643,14 @@ body {
               #articles article .image-wrapper .taxonomy ul li a:hover {
                 color: #DF4B17; }
     #articles article .date {
-      margin-top: 105px;
+      margin-top: 38px;
       text-align: center; }
       #articles article .date .day {
         /* 24: */
         font-family: "Ubuntu";
-        font-size: 120px;
+        font-size: 100px;
         color: #333;
-        line-height: 120px;
+        line-height: 100px;
         display: block; }
       #articles article .date .month {
         display: block;
