@@ -3,7 +3,6 @@
         var widthScreen = $(window).width();
         $("#hero").css({ "height": heightScreen });
         $("#hero").css({ "width": widthScreen });
-        $(".sliding").css({ "width": widthScreen });
         $(".off-canvas").css({ "height": heightScreen });
 
       }
