@@ -197,6 +197,20 @@
 input:-moz-placeholder {
   color: #DF4B17; }
 
+#cookie-notice {
+  background: rgba(255, 255, 255, 0.8) !important; }
+  #cookie-notice .cookie-notice-container {
+    color: #333;
+    font-family: Georgia;
+    font-size: 14px; }
+  #cookie-notice .cn-set-cookie {
+    background: #DF4B17 !important;
+    border: 0 !important;
+    text-shadow: none;
+    color: white;
+    font-family: "Ubuntu";
+    text-transform: uppercase; }
+
 .loader {
   z-index: 999999;
   height: 600px;
