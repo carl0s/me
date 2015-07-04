@@ -334,7 +334,8 @@ body {
 }
 
 #hero {
-  background: url(../img/small-me.png) white bottom right no-repeat;
+  background: url(../img/me.png) white bottom right no-repeat;
+  background-size:contain;
   @include transition(.6s);
   @include offcanvas;
   position: relative;
