@@ -1256,6 +1256,71 @@ button.alm-load-more-btn {
   .post-ctas div a.icon-comments:before {
     font-size: 20px; }
 
+.MBLSharetip {
+  display: none;
+  top: 0;
+  background: #333;
+  color: #f16786;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  margin-left: -20px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  z-index: 99;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out; }
+
+.MBLSharetip span {
+  position: absolute;
+  content: " ";
+  border: solid rgba(0, 0, 0, 0);
+  height: 0;
+  width: 0;
+  top: 100%;
+  border-top-color: #333;
+  left: 50%;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
+  border-width: 7px;
+  margin: 0 0 0 -7px; }
+
+.MBLSharetip a {
+  color: #f16786; }
+
+.MBLSharetip:hover {
+  background: #3D566E; }
+
+.MBLSharetip:hover span {
+  border-top-color: #3D566E; }
+
+.tooltipContainer {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0; }
+
+.tooltipContainer a {
+  width: 100%;
+  background: transparent url(http://4.bp.blogspot.com/-HCutv6Nw8iM/VK_Q-v7WT1I/AAAAAAAAFTY/rbxVAhvs_dM/s1600/sprites.png) 0 0 no-repeat;
+  left: 0;
+  top: 0;
+  height: 100%;
+  text-decoration: none;
+  display: block;
+  padding: 0; }
+
+.sharingLink {
+  display: block;
+  position: absolute;
+  text-indent: -9999px; }
+
 @media only screen and (max-width: 1279px) {
   body {
     overflow-x: hidden; }
