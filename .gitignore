@@ -2,8 +2,6 @@
 web/app/plugins/*
 !web/app/plugins/.gitkeep
 !web/app/plugins/disqus-comment-system
-!web/app/plugins/ajax-load-more
-!web/app/plugins/ajax-load-more-repeaters-v2
 web/app/mu-plugins/*
 !web/app/mu-plugins/.gitkeep
 web/app/upgrade
