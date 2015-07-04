@@ -27,7 +27,7 @@
         return false;
       });
 
-      $('#hero').find('.row').click(function() {
+      $('#hero.open').find('.row').click(function() {
         console.log('a');
         $(this).parents('#hero').toggleClass('open');
         $(this).parents('#hero').find('.hamburger').toggleClass('open');
