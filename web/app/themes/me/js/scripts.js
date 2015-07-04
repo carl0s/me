@@ -27,6 +27,14 @@
         return false;
       });
 
+      $('#hero').find('.row').click(function() {
+        console.log('a');
+        $(this).parents('#hero').toggleClass('open');
+        $(this).parents('#hero').find('.hamburger').toggleClass('open');
+        $('.off-canvas').toggleClass('open').toggleClass('hidden');
+        return false;
+      });
+
       $(document).scroll(function() {
         var height_scroll = $("#hero").outerHeight();
         var article_height_scroll = $('.image-wrapper').outerHeight();
