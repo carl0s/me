@@ -1,7 +1,7 @@
       function calcSize() {
         var heightScreen = $(window).outerHeight();
         var widthScreen = $(window).outerWidth();
-        $("#hero").css({ "height": heightScreen });
+        $("#hero").css({ "min-height": heightScreen });
         $(".off-canvas").css({ "height": heightScreen });
 
       }

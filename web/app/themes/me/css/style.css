@@ -1310,7 +1310,11 @@ button.alm-load-more-btn {
     background-size: 15%; }
 
   #hero {
-    background-size: 50%; }
+    position: relative;
+    background-size: 35%;
+    padding-bottom: 80px; }
+    #hero .bottom-contact-down {
+      bottom: 40px; }
  }
 
 @media only screen and (max-width: 640px) {

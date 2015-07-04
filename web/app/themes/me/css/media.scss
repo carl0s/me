@@ -116,7 +116,12 @@ body {
 }
 
 #hero {
-  background-size:50%;
+  position:relative;
+  background-size:35%;
+  padding-bottom:80px;
+  .bottom-contact-down {
+    bottom:40px;
+  }
 }
 
 }

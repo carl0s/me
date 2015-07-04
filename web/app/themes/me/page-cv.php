@@ -6,15 +6,14 @@ get_header('pages');
 wp_reset_postdata();
 ?>
 <?php get_template_part('partials/off', 'canvas'); ?>
-<?php if ( function_exists( 'pdfprnt_show_buttons_for_custom_post_type' ) ) echo pdfprnt_show_buttons_for_custom_post_type(); ?>
 <header id="hero">
   <?php get_template_part('partials/hamburger', 'menu'); ?>
 
   <div class="internal-menu hide-for-small row">
-    <div class="large-9 medium-9 column">
+    <div class="large-9 medium-8 column">
       <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'menu clearfix' ) ); ?>
     </div>
-    <div class="social large-3 large-3 column">
+    <div class="social large-3 medium-4 column">
       <?php get_template_part('partials/social', 'links'); ?>
     </div>
   </div>
@@ -51,7 +50,7 @@ wp_reset_postdata();
         <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'menu clearfix' ) ); ?>
       </div>
     </div>
-    <div class="large-3 social hide-for-small column">
+    <div class="large-3 social hide-for-medium hide-for-small column">
       <?php get_template_part('partials/social', 'links'); ?>
     </div>
   </div>
