@@ -81,8 +81,8 @@ wp_reset_postdata();
           <div class="image">
             <?php $image = $xp_item['logo']; ?>
             <?php if($image != ''): ?>
-              <a href="<?php the_sub_field('company_link'); ?>">
-                <img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php the_sub_field('company'); ?>">
+              <a href="<?php $xp_item['company_link']; ?>">
+                <img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php $xp_item['company']; ?>">
               </a>
             <?php endif; ?>
           </div>
@@ -93,9 +93,9 @@ wp_reset_postdata();
               ?>
               <div class="gallery_item">
                 <?php $image = $xp_item['immagine']; ?>
-                <?php if($image != ''): ?><img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php the_sub_field('company'); ?>"><?php endif; ?>
+                <?php if($image != ''): ?><img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php $xp_item['company']; ?>"><?php endif; ?>
                 <figcaption>
-                  <?php the_sub_field('descrizione'); ?>
+                  <?php $xp_item['descrizione']; ?>
                 </figcaption>
               </div>
               <?php
