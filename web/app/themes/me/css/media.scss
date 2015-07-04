@@ -719,13 +719,16 @@ footer {
   #topics {
     margin-top:0;
     h1 {
-      ul {
-        li {
+    }
+    ul {
+      li {
+        a {
           font-size: 40px;
           text-align: center;
         }
       }
     }
+
   }
 }
 

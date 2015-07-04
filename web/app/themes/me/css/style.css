@@ -1806,7 +1806,7 @@ button.alm-load-more-btn {
 
   .archive #topics {
     margin-top: 0; }
-    .archive #topics h1 ul li {
+    .archive #topics ul li a {
       font-size: 40px;
       text-align: center; }
 
