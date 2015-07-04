@@ -4,6 +4,7 @@ web/app/plugins/*
 !web/app/plugins/disqus-comment-system
 !web/app/plugins/ajax-load-more
 !web/app/plugins/ajax-load-more-repeaters-v2
+!web/app/plugins/ajax-load-more-seo
 web/app/mu-plugins/*
 !web/app/mu-plugins/.gitkeep
 web/app/upgrade
