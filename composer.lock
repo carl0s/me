@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "cd7026d38d4eb6a4a8c507a7a688fc99",
+    "hash": "02c60d8aa6a78f55155d5c32a88696ee",
     "packages": [
         {
             "name": "composer/installers",
@@ -433,6 +433,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/contact-form-7-to-database-extension/"
+        },
+        {
+            "name": "wpackagist-plugin/cookie-notice",
+            "version": "1.2.30",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/cookie-notice/",
+                "reference": "tags/1.2.30"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/cookie-notice.1.2.30.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/cookie-notice/"
         },
         {
             "name": "wpackagist-plugin/custom-post-type-ui",

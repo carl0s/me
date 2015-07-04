@@ -94,6 +94,7 @@
     "roots/bedrock-capistrano":"*",
     "nois3/advanced-custom-fields-pro":"5.2.4",
     "wpackagist-plugin/better-wp-security":"*",
+    "wpackagist-plugin/cookie-notice":"*",
     "wpackagist-plugin/contact-form-7":"*",
     "wpackagist-plugin/contact-form-7-to-database-extension":"*",
     "wpackagist-plugin/custom-post-type-ui":"*",
