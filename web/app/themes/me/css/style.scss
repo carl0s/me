@@ -762,7 +762,7 @@ body {
     width:120px;
     height:55px;
     position: fixed;
-    bottom:50px;
+    bottom:66px;
     right:-120px;
     background:rgba(255,255,255,0.8);
     @include transition(.2s);
@@ -1190,16 +1190,20 @@ body {
 .archive {
   #topics {
     border:0;
-    margin-top:150px;
+    margin-top:100px;
     position: relative;
 
     h1 {
       text-align: center;
       font-family: $ubuntu;
-      font-size:100px;
-      ul {
-        li {
-          font-size:100px;
+      font-size:60px;
+      
+    }
+    ul {
+      li {
+        list-style-type: none;
+        a {
+          font-size:60px;
         }
       }
     }
