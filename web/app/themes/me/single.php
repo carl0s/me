@@ -22,7 +22,7 @@ get_header();
     <h4>Condividi su:</h4>
     <ul>
       <li><a href="http://www.facebook.com/share.php?u=<?php echo get_permalink(); ?>" target="_blank" class="icon-facebook"></a></li>
-      <li><a href="https://twitter.com/share?url=<?php echo get_permalink(); ?>&amp;text=<?php echo get_the_title(); ?>" target="_blank" class="icon-twitter"></a> </li>
+      <li><a href="https://twitter.com/share?url=<?php echo get_permalink(); ?>&amp;via=carl0s_&amp;text=<?php echo get_the_title(); ?>" target="_blank" class="icon-twitter"></a> </li>
     </ul>
   </div>
   <div class="image-wrapper">
