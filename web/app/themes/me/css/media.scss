@@ -717,8 +717,11 @@ footer {
     padding-top:40px;
     height: auto !important;
     padding-bottom:80px;
+    background:white;
     #further {
       top:30px;
+      background:none;
+      color: $orange;
     }
     .cv_desc {
       margin-top:40px;
