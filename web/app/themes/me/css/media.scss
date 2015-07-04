@@ -629,6 +629,10 @@ body {
       p {
         font-size:28px;
         line-height: 32px;
+        &:after {
+          content:'';
+          display: none;
+        }
         &:first-child {
           &:first-letter {
             font-size:28px;

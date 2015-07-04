@@ -1717,6 +1717,9 @@ button.alm-load-more-btn {
         #article .article-content blockquote p {
           font-size: 28px;
           line-height: 32px; }
+          #article .article-content blockquote p:after {
+            content: '';
+            display: none; }
           #article .article-content blockquote p:first-child:first-letter {
             font-size: 28px;
             line-height: 32px; }
