@@ -1349,7 +1349,7 @@ button.alm-load-more-btn {
     -ms-transition: all 0.6s ease-in-out;
     -o-transition: all 0.6s ease-in-out;
     transition: all 0.6s ease-in-out;
-    background: rgba(255, 255, 255, 0.5); }
+    background: white; }
     .hamburger ul {
       cursor: pointer;
       margin: 0;
