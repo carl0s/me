@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f84b5b654cd50e5e64295c34a8d5db95",
+    "hash": "be2aa04e20ef76ef664b17d0a883de23",
     "packages": [
         {
             "name": "composer/installers",
@@ -193,26 +193,6 @@
                 "type": "git",
                 "url": "git@gitlab.nois3.net:nois3/advanced-custom-field-pro.git",
                 "reference": "release/5.2.4"
-            },
-            "type": "wordpress-plugin"
-        },
-        {
-            "name": "nois3/ajax-load-more",
-            "version": "2.6.3.2",
-            "source": {
-                "type": "git",
-                "url": "git@gitlab.nois3.net:nois3/ajax-load-more.git",
-                "reference": "master"
-            },
-            "type": "wordpress-plugin"
-        },
-        {
-            "name": "nois3/ajax-load-more-repeaters-v2",
-            "version": "2.0",
-            "source": {
-                "type": "git",
-                "url": "git@gitlab.nois3.net:nois3/ajax-load-more.git",
-                "reference": "repeaters"
             },
             "type": "wordpress-plugin"
         },

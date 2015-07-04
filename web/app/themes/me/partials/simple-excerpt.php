@@ -15,7 +15,7 @@
             <span class="day"><?php the_time('d'); ?></span>
             <span class="month"><?php the_time('F'); ?></span>
             <span class="year month"><?php the_time('Y'); ?></span>
-            <a href="<?php echo get_the_permalink(); ?>" class="only-for-small icon-comments"><?php comments_number( '0', '1', '%' ); ?></a>
+            <a href="<?php echo get_the_permalink(); ?>" class="show-for-small-only icon-comments"><?php comments_number( '0', '1', '%' ); ?></a>
           </div>
           <div class="large-10 small-8 column post">
             <h2><a href="<?php echo get_the_permalink(); ?>" title="<?php echo get_the_title(); ?>"><?php echo get_the_title(); ?></a></h2>
