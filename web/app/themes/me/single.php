@@ -54,14 +54,14 @@ get_header();
     </div>
   </div>
   <div class="row excerpt">
-    <div class="large-2 column">
+    <div class="large-2 small-12 column">
       <div class="post-ctas row">
         <div class="large-12 column">
           <a href="#" class="icon-comments"><?php comments_number( '0', '1', '%' ); ?></a>
         </div>
       </div>
     </div>
-    <div class="large-10 column post-excerpt">
+    <div class="large-10 small-12 column post-excerpt">
       <?php the_excerpt(); ?>
     </div>
   </div>
