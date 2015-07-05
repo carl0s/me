@@ -1287,66 +1287,39 @@ button.alm-load-more-btn {
   font-size: 28px;
   text-transform: uppercase;
   color: $grey;
+  margin-bottom:20px;
 }
 
 .single-related-news {
   .image-wrapper {
     position:relative;
-    height: 740px;
+    width:100%;
+    height:740px;
     overflow: hidden;
-    .overlay {
-      @include transition(.2s);
-      opacity: 0;
-      position:absolute;
-      top:0;
-      bottom:0;
-      left:0;
-      right: 0;
-      width:100%;
-      height:740px;
-      z-index:10;
-      a {
-        display: block;
-        height: auto;
-        min-height: 740px;
-        width: 100%;
-        position: relative;
-
-      }
-    }
-
-    img {
-      width:100%;
-      height: auto;
-      min-height: 740px;
-      @include vertical-align-absolute;
-    }
     .taxonomy {
       position:absolute;
-      bottom:0;
+      top:0;
       left:0;
       width:100%;
       z-index: 15;
+
       ul {
         margin:0;
         padding:0;
         li {
           margin-left:auto;
           margin-right:auto;
-          margin-bottom:0!important;
-          padding:0!important;
           list-style: none;
           @include uppercase;
-          max-width: 280px;
+          max-width: 250px;
           a {
             height: auto;
-            min-height: auto;
             margin:0 auto;
             width:auto;
             text-align: center;
             background:white;
             display: block;
-            padding:5px 0;
+            padding:5px 0px;
             font-family: $ubuntu;
             font-size:24px;
             @include transition(.2s);
@@ -1358,129 +1331,134 @@ button.alm-load-more-btn {
 
         }
       }
-
     }
 
-  }
-  .date {
-    margin-top: 38px;
-    text-align: center;
-    .day {
-      /* 24: */
-      font-family: $ubuntu;
-      font-size: 100px;
-      color: $grey;
-      line-height: 100px;
-      display: block;
+
+
+    img {
+      position: absolute;
+      width:100%;
+      height: auto;
+      min-height: 740px;
     }
-    .month {
-      display: block;
-      /* SETTEMBRE: */
-      font-family: $ubuntu;
-      font-size: 22px;
-      color: $orange;
-      line-height: 26px;
-      @include uppercase;
-    }
-  }
-  .post {
-    margin-top:40px;
-    &:hover {
-      .post-ctas {
-        a.icon-circle-plus {
-          &:hover {
-            transform: rotate(45deg);
-            &:before {
-              color: $grey;
-            }
-          }
-        }
-      }
-    }
-    h2 {
-      /* Un bel titolo lungo : */
-      font-family: $ubuntu;
-      font-size: 36px;
-      color: $orange;
-      line-height: 42px;
-      &:after {
+    .overlay {
+      /* Rectangle 7: */
+      position:absolute;
+      z-index: 10;
+      width:100%;
+      height: auto;
+      min-height: 740px;
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+86&amp;0+0,0.8+87 */
+      background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.79) 86%, rgba(0,0,0,0.8) 87%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(86%,rgba(0,0,0,0.79)), color-stop(87%,rgba(0,0,0,0.8))); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.79) 86%,rgba(0,0,0,0.8) 87%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.79) 86%,rgba(0,0,0,0.8) 87%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.79) 86%,rgba(0,0,0,0.8) 87%); /* IE10+ */
+      background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.79) 86%,rgba(0,0,0,0.8) 87%); /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc000000',GradientType=0 ); /* IE6-9 */
+      a {
+        min-height: 740px;
+        height: auto;
         display: block;
-        content:'';
-        border-bottom:5px solid $orange;
-        width:100px;
-        height: 5px;
-        margin:20px 0;
+
       }
     }
-    .post-content {
-      -webkit-column-count: 2;
-      -webkit-column-gap: 20px;
 
-      -moz-column-count: 2;
-      -moz-column-gap: 20px;
-
-      column-count: 2;
-      column-gap: 20px;
-
-
-    }
-    .post-ctas {
-      div {
-        font-size: 24px;
-        &:last-child {
-          text-align: right;
-          a.icon-circle-plus {
-            display: block;
-            position:relative;
-            float: right;
-            width:24px;
-            height: 24px;
-            @include transition(.2s);
-            &:before {
-              position:absolute;
-              top:0;
-              left:0;
-            }
-
-          }
-        }
-        a.icon-comments {
+    .title-date {
+      position:absolute;
+      bottom:20px;
+      left:0;
+      width: 100%;
+      z-index: 30;
+      .date {
+        text-align: center;
+        .day {
+          /* 24: */
           font-family: $ubuntu;
-          font-size: 20px;
-          line-height: 20px;
-          &:before {
-            font-size: 24px;
-            line-height: 24px;
-            font-family: "me";
-            margin-right: 5px;
-          }
+          font-size: 120px;
+          color: white;
+          line-height: 120px;
+          display: block;
         }
+        .year,
+        .month {
+          display: block;
+          /* SETTEMBRE: */
+          font-family: $ubuntu;
+          font-size: 22px;
+          color: white;
+          line-height: 26px;
+          @include uppercase;
+        }
+      }
+
+      h2 {
+        /* Un bel titolo lungo : */
+        font-family: $ubuntu;
+        font-size: 48px;
+        color: white;
+        line-height: 56px;
+        a {
+          color: white;
+        }
+
       }
 
     }
   }
-  &.video {
-    .image-wrapper {
-      .play-button {
-        cursor: pointer;
-        display: block;
-        position:absolute;
-        top:50%;
-        left:50%;
-        width:80px;
-        height: 80px;
-        margin-left:-40px;
-        margin-top:-40px;
-        z-index: 20;
-        font-size: 80px;
-        color: white;
-        text-shadow: 0px 2px 5px rgba(38, 38, 38, 0.70);
-        @include transition(.2s);
-        &:hover {
-          color: #ccc;
+  .post-excerpt {
+    font-family: $ubuntu;
+    color: $orange;
+    font-weight: 300;
+    margin-top:50px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 40px;
+
+    -moz-column-count: 2;
+    -moz-column-gap: 40px;
+
+    column-count: 2;
+    column-gap: 40px;
+    p {
+      font-weight: 300;
+      font-style:italic;
+    }
+
+  }
+  .post-ctas {
+    div {
+      margin-top:50px;
+      font-size: 24px;
+      &:last-child {
+        text-align: center;
+        a.icon-circle-plus {
+          display: block;
+          position:relative;
+          float: right;
+          width:24px;
+          height: 24px;
+          @include transition(.2s);
+          &:before {
+            position:absolute;
+            top:0;
+            left:0;
+          }
+
+        }
+      }
+      a.icon-comments {
+        font-family: $ubuntu;
+        font-size: 20px;
+        line-height: 20px;
+        &:before {
+          font-size: 24px;
+          line-height: 24px;
+          font-family: "me";
+          margin-right: 5px;
         }
       }
     }
+
   }
 }
 

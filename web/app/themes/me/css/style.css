@@ -1263,46 +1263,17 @@ button.alm-load-more-btn {
   font-family: "Ubuntu";
   font-size: 28px;
   text-transform: uppercase;
-  color: #333; }
+  color: #333;
+  margin-bottom: 20px; }
 
 .single-related-news .image-wrapper {
   position: relative;
+  width: 100%;
   height: 740px;
   overflow: hidden; }
-  .single-related-news .image-wrapper .overlay {
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 740px;
-    z-index: 10; }
-    .single-related-news .image-wrapper .overlay a {
-      display: block;
-      height: auto;
-      min-height: 740px;
-      width: 100%;
-      position: relative; }
-  .single-related-news .image-wrapper img {
-    width: 100%;
-    height: auto;
-    min-height: 740px;
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translate(0, -50%);
-    -moz-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%); }
   .single-related-news .image-wrapper .taxonomy {
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
     width: 100%;
     z-index: 15; }
@@ -1312,20 +1283,17 @@ button.alm-load-more-btn {
       .single-related-news .image-wrapper .taxonomy ul li {
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 0 !important;
-        padding: 0 !important;
         list-style: none;
         text-transform: uppercase;
-        max-width: 280px; }
+        max-width: 250px; }
         .single-related-news .image-wrapper .taxonomy ul li a {
           height: auto;
-          min-height: auto;
           margin: 0 auto;
           width: auto;
           text-align: center;
           background: white;
           display: block;
-          padding: 5px 0;
+          padding: 5px 0px;
           font-family: "Ubuntu";
           font-size: 24px;
           -webkit-transition: all 0.2s ease-in-out;
@@ -1336,99 +1304,111 @@ button.alm-load-more-btn {
           color: #333; }
           .single-related-news .image-wrapper .taxonomy ul li a:hover {
             color: #DF4B17; }
-.single-related-news .date {
-  margin-top: 38px;
-  text-align: center; }
-  .single-related-news .date .day {
-    /* 24: */
-    font-family: "Ubuntu";
-    font-size: 100px;
-    color: #333;
-    line-height: 100px;
-    display: block; }
-  .single-related-news .date .month {
-    display: block;
-    /* SETTEMBRE: */
-    font-family: "Ubuntu";
-    font-size: 22px;
-    color: #DF4B17;
-    line-height: 26px;
-    text-transform: uppercase; }
-.single-related-news .post {
-  margin-top: 40px; }
-  .single-related-news .post:hover .post-ctas a.icon-circle-plus:hover {
-    transform: rotate(45deg); }
-    .single-related-news .post:hover .post-ctas a.icon-circle-plus:hover:before {
-      color: #333; }
-  .single-related-news .post h2 {
-    /* Un bel titolo lungo : */
-    font-family: "Ubuntu";
-    font-size: 36px;
-    color: #DF4B17;
-    line-height: 42px; }
-    .single-related-news .post h2:after {
-      display: block;
-      content: '';
-      border-bottom: 5px solid #DF4B17;
-      width: 100px;
-      height: 5px;
-      margin: 20px 0; }
-  .single-related-news .post .post-content {
-    -webkit-column-count: 2;
-    -webkit-column-gap: 20px;
-    -moz-column-count: 2;
-    -moz-column-gap: 20px;
-    column-count: 2;
-    column-gap: 20px; }
-  .single-related-news .post .post-ctas div {
-    font-size: 24px; }
-    .single-related-news .post .post-ctas div:last-child {
-      text-align: right; }
-      .single-related-news .post .post-ctas div:last-child a.icon-circle-plus {
+  .single-related-news .image-wrapper img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    min-height: 740px; }
+  .single-related-news .image-wrapper .overlay {
+    /* Rectangle 7: */
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: auto;
+    min-height: 740px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+86&amp;0+0,0.8+87 */
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(86%, rgba(0, 0, 0, 0.79)), color-stop(87%, rgba(0, 0, 0, 0.8)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc000000',GradientType=0 );
+    /* IE6-9 */ }
+    .single-related-news .image-wrapper .overlay a {
+      min-height: 740px;
+      height: auto;
+      display: block; }
+  .single-related-news .image-wrapper .title-date {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    z-index: 30; }
+    .single-related-news .image-wrapper .title-date .date {
+      text-align: center; }
+      .single-related-news .image-wrapper .title-date .date .day {
+        /* 24: */
+        font-family: "Ubuntu";
+        font-size: 120px;
+        color: white;
+        line-height: 120px;
+        display: block; }
+      .single-related-news .image-wrapper .title-date .date .year, .single-related-news .image-wrapper .title-date .date .month {
         display: block;
-        position: relative;
-        float: right;
-        width: 24px;
-        height: 24px;
-        -webkit-transition: all 0.2s ease-in-out;
-        -moz-transition: all 0.2s ease-in-out;
-        -ms-transition: all 0.2s ease-in-out;
-        -o-transition: all 0.2s ease-in-out;
-        transition: all 0.2s ease-in-out; }
-        .single-related-news .post .post-ctas div:last-child a.icon-circle-plus:before {
-          position: absolute;
-          top: 0;
-          left: 0; }
-    .single-related-news .post .post-ctas div a.icon-comments {
+        /* SETTEMBRE: */
+        font-family: "Ubuntu";
+        font-size: 22px;
+        color: white;
+        line-height: 26px;
+        text-transform: uppercase; }
+    .single-related-news .image-wrapper .title-date h2 {
+      /* Un bel titolo lungo : */
       font-family: "Ubuntu";
-      font-size: 20px;
-      line-height: 20px; }
-      .single-related-news .post .post-ctas div a.icon-comments:before {
-        font-size: 24px;
-        line-height: 24px;
-        font-family: "me";
-        margin-right: 5px; }
-.single-related-news.video .image-wrapper .play-button {
-  cursor: pointer;
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 80px;
-  height: 80px;
-  margin-left: -40px;
-  margin-top: -40px;
-  z-index: 20;
-  font-size: 80px;
-  color: white;
-  text-shadow: 0px 2px 5px rgba(38, 38, 38, 0.7);
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out; }
-  .single-related-news.video .image-wrapper .play-button:hover {
-    color: #ccc; }
+      font-size: 48px;
+      color: white;
+      line-height: 56px; }
+      .single-related-news .image-wrapper .title-date h2 a {
+        color: white; }
+.single-related-news .post-excerpt {
+  font-family: "Ubuntu";
+  color: #DF4B17;
+  font-weight: 300;
+  margin-top: 50px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 40px;
+  -moz-column-count: 2;
+  -moz-column-gap: 40px;
+  column-count: 2;
+  column-gap: 40px; }
+  .single-related-news .post-excerpt p {
+    font-weight: 300;
+    font-style: italic; }
+.single-related-news .post-ctas div {
+  margin-top: 50px;
+  font-size: 24px; }
+  .single-related-news .post-ctas div:last-child {
+    text-align: center; }
+    .single-related-news .post-ctas div:last-child a.icon-circle-plus {
+      display: block;
+      position: relative;
+      float: right;
+      width: 24px;
+      height: 24px;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -ms-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out; }
+      .single-related-news .post-ctas div:last-child a.icon-circle-plus:before {
+        position: absolute;
+        top: 0;
+        left: 0; }
+  .single-related-news .post-ctas div a.icon-comments {
+    font-family: "Ubuntu";
+    font-size: 20px;
+    line-height: 20px; }
+    .single-related-news .post-ctas div a.icon-comments:before {
+      font-size: 24px;
+      line-height: 24px;
+      font-family: "me";
+      margin-right: 5px; }
 
 .MBLSharetip {
   display: none;

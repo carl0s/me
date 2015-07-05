@@ -25,41 +25,8 @@ get_header();
       <li><a href="https://twitter.com/share?url=<?php echo get_permalink(); ?>&amp;via=carl0s_&amp;text=<?php echo get_the_title(); ?>" target="_blank" class="icon-twitter"></a> </li>
     </ul>
   </div>
-  <div class="image-wrapper">
-    <div class="taxonomy">
-      <?php the_category(); ?>
-    </div>
+  <?php get_template_part('partials/internal', 'excerpt'); ?>
 
-    <?php if(get_field('video')): ?>
-      <div class="fotorama" data-width="1440" data-height="740">
-        <a href="<?php the_field('video'); ?>">
-          <?php the_post_thumbnail(); ?>
-        </a>
-      </div>
-      <?php
-      else:
-      ?>
-      <div class="overlay">
-        &nbsp;
-      </div>
-      <?php
-        the_post_thumbnail();
-      endif;
-    ?>
-    <div class="title-date">
-      <div class="row">
-        <div class="large-2 hide-for-medium hide-for-small column date">
-          <span class="day"><?php the_time('d'); ?></span>
-          <span class="month"><?php the_time('F'); ?></span>
-          <span class="year"><?php the_time('Y'); ?></span>
-        </div>
-        <div class="large-9 medium-12 small-12 column post end">
-          <h2><a href="<?php echo get_the_permalink(); ?>" title="<?php echo str_replace('<br />',' ',get_the_title()); ?>"><?php echo get_the_title(); ?></a></h2>
-          <div class="icon-tag tags hide-for-small"><?php the_tags( '<span>TAGS: </span>', $sep = ', ', '' ); ?></div>
-        </div>
-      </div>
-    </div>
-  </div>
   <div class="row excerpt">
     <div class="large-2 small-12 column">
       <div class="post-ctas row">
@@ -143,42 +110,7 @@ get_header();
                 if($actual_post_id != get_the_ID()):
       ?>
               <div class="single-related-news">
-                <article class="post image">
-                  <div class="image-wrapper">
-                    <div class="taxonomy">
-                      <?php the_category(); ?>
-                    </div>
-                    <div class="overlay">
-                      &nbsp;
-                      <a href="<?php echo get_the_permalink(); ?>" title="<?php echo str_replace('<br />',' ',get_the_title()); ?>"></a>
-                    </div>
-                    <?php the_post_thumbnail(); ?>
-
-                  </div>
-                  <div class="content row">
-                    <div class="large-2 small-4 column date">
-                      <span class="day"><?php the_time('d'); ?></span>
-                      <span class="month"><?php the_time('F'); ?></span>
-                      <span class="year month"><?php the_time('Y'); ?></span>
-                      <a href="<?php echo get_the_permalink(); ?>" class="show-for-small-only icon-comments"><?php comments_number( '0', '1', '%' ); ?></a>
-                    </div>
-                    <div class="large-10 small-8 column post">
-                      <h2><a href="<?php echo get_the_permalink(); ?>" title="<?php echo str_replace('<br />',' ',get_the_title()); ?>"><?php echo get_the_title(); ?></a></h2>
-                      <div class="icon-tag tags hide-for-small"><?php the_tags( '<span>TAGS: </span>', $sep = ', ', '' ); ?></div>
-                      <div class="post-content hide-for-small">
-                        <?php the_excerpt(); ?>
-                      </div>
-                      <div class="post-ctas row">
-                        <div class="large-6 hide-for-small column">
-                          <a href="<?php echo get_the_permalink(); ?>" class="icon-comments"><?php comments_number( '0', '1', '%' ); ?></a>
-                        </div>
-                        <div class="large-6 hide-for-small column">
-                          <a href="<?php echo get_the_permalink(); ?>" title="<?php echo get_the_title(); ?>" class="icon-circle-plus"></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </article>
+                <?php get_template_part('partials/internal', 'excerpt'); ?>
               </div>
       <?php 
            endif;
