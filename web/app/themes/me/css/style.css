@@ -911,7 +911,7 @@ body {
             text-align: center;
             background: white;
             display: block;
-            padding: 5px 40px;
+            padding: 5px 0px;
             font-family: "Ubuntu";
             font-size: 24px;
             -webkit-transition: all 0.2s ease-in-out;
@@ -968,7 +968,7 @@ body {
           color: white;
           line-height: 120px;
           display: block; }
-        #article .image-wrapper .title-date .date .month {
+        #article .image-wrapper .title-date .date .year, #article .image-wrapper .title-date .date .month {
           display: block;
           /* SETTEMBRE: */
           font-family: "Ubuntu";

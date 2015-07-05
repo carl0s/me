@@ -837,7 +837,7 @@ body {
             text-align: center;
             background:white;
             display: block;
-            padding:5px 40px;
+            padding:5px 0px;
             font-family: $ubuntu;
             font-size:24px;
             @include transition(.2s);
@@ -898,6 +898,7 @@ body {
           line-height: 120px;
           display: block;
         }
+        .year,
         .month {
           display: block;
           /* SETTEMBRE: */
