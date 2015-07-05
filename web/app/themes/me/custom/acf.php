@@ -502,6 +502,21 @@ acf_add_local_field_group(array (
 	'title' => 'General options',
 	'fields' => array (
 		array (
+			'key' => 'field_6599232b6d086',
+			'label' => 'Topics',
+			'name' => '',
+			'type' => 'tab',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array (
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'placement' => 'top',
+		),
+		array (
 			'key' => 'field_9797f3dc49463',
 			'label' => 'Topic',
 			'name' => 'topic',
@@ -521,6 +536,21 @@ acf_add_local_field_group(array (
 			'load_save_terms' => 1,
 			'return_format' => 'object',
 			'multiple' => 0,
+		),
+		array (
+			'key' => 'field_7599232b6d086',
+			'label' => 'Social accounts',
+			'name' => '',
+			'type' => 'tab',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array (
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'placement' => 'top',
 		),
 		array (
 			'key' => 'field_55902c0daff0a',
@@ -585,7 +615,21 @@ acf_add_local_field_group(array (
 			'readonly' => 0,
 			'disabled' => 0,
 		),
-
+		array (
+			'key' => 'field_5999232b6d086',
+			'label' => 'Copywriting fields',
+			'name' => '',
+			'type' => 'tab',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array (
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'placement' => 'top',
+		),
 		// COPY
 		array (
 			'key' => 'field_8970595020e89',
