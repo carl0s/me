@@ -12,7 +12,7 @@ get_header();
       <span class="day"><?php the_time('d.m.Y'); ?></span>
     </div>
     <div class="large-10 small-8 column post end">
-      <h2><a href="<?php echo get_the_permalink(); ?>" title="<?php echo get_the_title(); ?>"><?php echo get_the_title(); ?></a></h2>
+      <h2><a href="<?php echo get_the_permalink(); ?>" title="<?php echo str_replace('<br />',' ',get_the_title()); ?>"><?php echo get_the_title(); ?></a></h2>
     </div>
   </div>
 </section>
@@ -54,7 +54,7 @@ get_header();
           <span class="year"><?php the_time('Y'); ?></span>
         </div>
         <div class="large-9 medium-12 small-12 column post end">
-          <h2><a href="<?php echo get_the_permalink(); ?>" title="<?php echo get_the_title(); ?>"><?php echo get_the_title(); ?></a></h2>
+          <h2><a href="<?php echo get_the_permalink(); ?>" title="<?php echo str_replace('<br />',' ',get_the_title()); ?>"><?php echo get_the_title(); ?></a></h2>
           <div class="icon-tag tags hide-for-small"><?php the_tags( '<span>TAGS: </span>', $sep = ', ', '' ); ?></div>
         </div>
       </div>

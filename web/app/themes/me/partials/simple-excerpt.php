@@ -5,7 +5,7 @@
           </div>
           <div class="overlay">
             &nbsp;
-            <a href="<?php echo get_the_permalink(); ?>" title="<?php echo get_the_title(); ?>"></a>
+            <a href="<?php echo get_the_permalink(); ?>" title="<?php echo str_replace('<br />',' ',get_the_title()); ?>"></a>
           </div>
           <?php the_post_thumbnail(); ?>
 
@@ -18,7 +18,7 @@
             <a href="<?php echo get_the_permalink(); ?>" class="show-for-small-only icon-comments"><?php comments_number( '0', '1', '%' ); ?></a>
           </div>
           <div class="large-10 small-8 column post">
-            <h2><a href="<?php echo get_the_permalink(); ?>" title="<?php echo get_the_title(); ?>"><?php echo get_the_title(); ?></a></h2>
+            <h2><a href="<?php echo get_the_permalink(); ?>" title="<?php echo str_replace('<br />',' ',get_the_title()); ?>"><?php echo get_the_title(); ?></a></h2>
             <div class="icon-tag tags hide-for-small"><?php the_tags( '<span>TAGS: </span>', $sep = ', ', '' ); ?></div>
             <div class="post-content hide-for-small">
               <?php the_excerpt(); ?>
