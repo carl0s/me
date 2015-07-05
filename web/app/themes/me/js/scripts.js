@@ -53,12 +53,13 @@
 
       });
 
-        $(document).ready(function() {
+      $(document).ready(function() {
           textToShare = '';
           $(document).mousemove(function(m) {
               generateTooltipPosition();
           });
       });
+      
       $(document).mouseup(function() {
           $(document).mousemove(function(m) {
               generateTooltipPosition()
@@ -67,6 +68,7 @@
           var MBLSharetip = document.getElementById("MBLSharetip");
           if (textToShare != '') showMeTooltip();
       });
+
       $(document).click(function() {
           var textToShare = getTextToShare();
           var tooltipTitle = null;

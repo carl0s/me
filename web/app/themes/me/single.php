@@ -111,9 +111,88 @@ get_header();
       ?>
       <?php comments_template(); ?>
     </div>
+    <?php $category = get_the_category(); ?>
+    <?php if($category[0]->count > 0): ?>
+    <h3 class="related-title">A proposito di <?php echo $category[0]->cat_name; ?> ho scritto altri <?php echo $category[0]->count; ?> articoli</h3>
+  <?php endif; ?>
   </div>
 </section>
+<?php 
+  $relatedcategory = $category[0]->slug;
+  if(isset($category) && $category[0]->count > 0):
+?>
+<div class="related-container hide-for-small">
+    <?php
+      $actual_post_id = $post->ID;
+      $args = array(
+        'post_type' => 'post',
+        'posts_per_page' => -1,
+        'category_name' => $relatedcategory,
+      );
+      $related = new WP_Query( $args );
+      // The Loop
+      if ( $related->have_posts() ):
+        if ($post->ID != $related->ID):
 
+    ?>
+    <div class="fotorama" data-width="100%" data-ratio="16/8">
+      <?php
+            $related->get_posts();
+            while ( $related->have_posts() ):
+              $related->the_post();
+                if($actual_post_id != get_the_ID()):
+      ?>
+              <div class="single-related-news">
+                <article class="post image">
+                  <div class="image-wrapper">
+                    <div class="taxonomy">
+                      <?php the_category(); ?>
+                    </div>
+                    <div class="overlay">
+                      &nbsp;
+                      <a href="<?php echo get_the_permalink(); ?>" title="<?php echo str_replace('<br />',' ',get_the_title()); ?>"></a>
+                    </div>
+                    <?php the_post_thumbnail(); ?>
+
+                  </div>
+                  <div class="content row">
+                    <div class="large-2 small-4 column date">
+                      <span class="day"><?php the_time('d'); ?></span>
+                      <span class="month"><?php the_time('F'); ?></span>
+                      <span class="year month"><?php the_time('Y'); ?></span>
+                      <a href="<?php echo get_the_permalink(); ?>" class="show-for-small-only icon-comments"><?php comments_number( '0', '1', '%' ); ?></a>
+                    </div>
+                    <div class="large-10 small-8 column post">
+                      <h2><a href="<?php echo get_the_permalink(); ?>" title="<?php echo str_replace('<br />',' ',get_the_title()); ?>"><?php echo get_the_title(); ?></a></h2>
+                      <div class="icon-tag tags hide-for-small"><?php the_tags( '<span>TAGS: </span>', $sep = ', ', '' ); ?></div>
+                      <div class="post-content hide-for-small">
+                        <?php the_excerpt(); ?>
+                      </div>
+                      <div class="post-ctas row">
+                        <div class="large-6 hide-for-small column">
+                          <a href="<?php echo get_the_permalink(); ?>" class="icon-comments"><?php comments_number( '0', '1', '%' ); ?></a>
+                        </div>
+                        <div class="large-6 hide-for-small column">
+                          <a href="<?php echo get_the_permalink(); ?>" title="<?php echo get_the_title(); ?>" class="icon-circle-plus"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+      <?php 
+           endif;
+        endwhile; 
+      ?>
+  </div>
+<?php endif; ?>
+  <?php
+      endif;
+    endif;
+    wp_reset_query();
+    wp_reset_postdata();
+  ?>
+</div>
 <?php
 get_footer();
 ?>
