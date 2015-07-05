@@ -83,8 +83,9 @@ get_header();
 <div class="row">
   <div class"large-12 columns">
     <?php $category = get_the_category(); ?>
+    <?php $other_posts_number = $category[0]->count - 1; ?>
     <?php if($category[0]->count > 0): ?>
-      <h3 class="related-title">A proposito di <a href="/topics/<?php echo $category[0]->slug; ?>" title="<?php echo $category[0]->cat_name; ?>"><?php echo $category[0]->cat_name; ?></a> ho scritto altri <?php echo $category[0]->count; ?> articoli</h3>
+      <h3 class="related-title hide-for-small">A proposito di <a href="/topics/<?php echo $category[0]->slug; ?>" title="<?php echo $category[0]->cat_name; ?>"><?php echo $category[0]->cat_name; ?></a> ho scritto altri <?php echo $other_posts_number; ?> articoli</h3>
     <?php endif; ?>
   </div>
 </div>
