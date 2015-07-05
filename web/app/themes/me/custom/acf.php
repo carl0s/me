@@ -606,6 +606,25 @@ acf_add_local_field_group(array (
 			'media_upload' => 1,
 		),
 
+		array (
+			'key' => 'field_7890595020e89',
+			'label' => 'Footer text',
+			'name' => 'footer_text',
+			'type' => 'wysiwyg',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array (
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'tabs' => 'all',
+			'toolbar' => 'full',
+			'media_upload' => 1,
+		),
+
 	),
 	'location' => array (
 		array (
