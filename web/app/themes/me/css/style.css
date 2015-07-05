@@ -1143,6 +1143,15 @@ body {
           margin-top: 10px;
           margin-right: 20px;
           background: #DF4B17; }
+    #article .article-content h2 {
+      font-family: "Ubuntu";
+      font-size: 28px;
+      color: #333; }
+    #article .article-content h3 {
+      font-family: "Georgia";
+      font-size: 24px;
+      font-style: italic;
+      color: #DF4B17; }
 
 .category #topics {
   margin-top: 128px; }

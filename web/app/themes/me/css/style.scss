@@ -1118,6 +1118,19 @@ body {
         }
       }
     }
+
+    h2 {
+      font-family: $ubuntu;
+      font-size: 28px;
+      color: $grey;
+    }
+
+    h3 {
+      font-family: "Georgia";
+      font-size:24px;
+      font-style: italic;
+      color: $orange;
+    }
   }
 }
 
