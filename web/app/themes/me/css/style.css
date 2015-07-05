@@ -408,10 +408,12 @@ body {
           display: block; }
         #small-hero .ctas ul li:before {
           display: none; }
-        #small-hero .ctas ul li:hover a {
+        #small-hero .ctas ul li:hover {
           color: #DF4B17; }
-        #small-hero .ctas ul li:hover:before {
-          color: #DF4B17; }
+          #small-hero .ctas ul li:hover a {
+            color: #DF4B17; }
+          #small-hero .ctas ul li:hover:before {
+            color: #DF4B17; }
         #small-hero .ctas ul li a {
           color: #DF4B17;
           -webkit-transition: all 0.2s ease-in-out;
@@ -1272,38 +1274,7 @@ button.alm-load-more-btn {
   height: 740px;
   overflow: hidden; }
   .single-related-news .image-wrapper .taxonomy {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 15; }
-    .single-related-news .image-wrapper .taxonomy ul {
-      margin: 0;
-      padding: 0; }
-      .single-related-news .image-wrapper .taxonomy ul li {
-        margin-left: auto;
-        margin-right: auto;
-        list-style: none;
-        text-transform: uppercase;
-        max-width: 250px; }
-        .single-related-news .image-wrapper .taxonomy ul li a {
-          height: auto;
-          margin: 0 auto;
-          width: auto;
-          text-align: center;
-          background: white;
-          display: block;
-          padding: 5px 0px;
-          font-family: "Ubuntu";
-          font-size: 24px;
-          -webkit-transition: all 0.2s ease-in-out;
-          -moz-transition: all 0.2s ease-in-out;
-          -ms-transition: all 0.2s ease-in-out;
-          -o-transition: all 0.2s ease-in-out;
-          transition: all 0.2s ease-in-out;
-          color: #333; }
-          .single-related-news .image-wrapper .taxonomy ul li a:hover {
-            color: #DF4B17; }
+    display: none; }
   .single-related-news .image-wrapper img {
     position: absolute;
     width: 100%;

@@ -230,6 +230,7 @@ body {
           display: none;
         }
         &:hover {
+          color: $orange;
           a {
             color: $orange;
           }
@@ -1297,40 +1298,7 @@ button.alm-load-more-btn {
     height:740px;
     overflow: hidden;
     .taxonomy {
-      position:absolute;
-      top:0;
-      left:0;
-      width:100%;
-      z-index: 15;
-
-      ul {
-        margin:0;
-        padding:0;
-        li {
-          margin-left:auto;
-          margin-right:auto;
-          list-style: none;
-          @include uppercase;
-          max-width: 250px;
-          a {
-            height: auto;
-            margin:0 auto;
-            width:auto;
-            text-align: center;
-            background:white;
-            display: block;
-            padding:5px 0px;
-            font-family: $ubuntu;
-            font-size:24px;
-            @include transition(.2s);
-            color: $grey;
-            &:hover {
-              color: $orange;
-            }
-          }
-
-        }
-      }
+      display: none;
     }
 
 

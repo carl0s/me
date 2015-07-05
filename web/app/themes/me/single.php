@@ -102,7 +102,7 @@ get_header();
         if ($post->ID != $related->ID):
 
     ?>
-    <div class="fotorama" data-width="100%" data-ratio="16/8">
+    <div class="fotorama" data-width="1440" data-height="740">
       <?php
             $related->get_posts();
             while ( $related->have_posts() ):
