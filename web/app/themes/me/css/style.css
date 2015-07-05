@@ -1266,7 +1266,8 @@ button.alm-load-more-btn {
   font-size: 28px;
   text-transform: uppercase;
   color: #333;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  text-align: center; }
 
 .single-related-news .image-wrapper {
   position: relative;

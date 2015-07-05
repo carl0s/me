@@ -78,12 +78,16 @@ get_header();
       ?>
       <?php comments_template(); ?>
     </div>
-    <?php $category = get_the_category(); ?>
-    <?php if($category[0]->count > 0): ?>
-    <h3 class="related-title">A proposito di <?php echo $category[0]->cat_name; ?> ho scritto altri <?php echo $category[0]->count; ?> articoli</h3>
-  <?php endif; ?>
   </div>
 </section>
+<div class="row">
+  <div class"large-12 columns">
+    <?php $category = get_the_category(); ?>
+    <?php if($category[0]->count > 0): ?>
+      <h3 class="related-title">A proposito di <a href="/topics/<?php echo $category[0]->slug; ?>" title="<?php echo $category[0]->cat_name; ?>"><?php echo $category[0]->cat_name; ?></a> ho scritto altri <?php echo $category[0]->count; ?> articoli</h3>
+    <?php endif; ?>
+  </div>
+</div>
 <?php 
   $relatedcategory = $category[0]->slug;
   if(isset($category) && $category[0]->count > 0):
