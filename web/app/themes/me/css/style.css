@@ -597,7 +597,7 @@ body {
         -moz-osx-font-smoothing: grayscale;
         content: "\e601"; }
       #hero .bottom-contact-down #further:hover {
-        bottom: -10px; }
+        top: 10px; }
 
 #topics {
   border-top: 2px solid #DF4B17;
@@ -1330,6 +1330,16 @@ button.alm-load-more-btn {
     #hero .desc p {
       font-size: 16px;
       line-height: 28px; }
+
+  #articles article .image-wrapper {
+    min-height: 512px;
+    height: auto; }
+    #articles article .image-wrapper img {
+      min-height: 512px;
+      height: auto; }
+    #articles article .image-wrapper .overlay {
+      min-height: 512px;
+      height: auto; }
  }
 
 @media only screen and (max-width: 1279px) {
