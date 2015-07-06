@@ -59,7 +59,7 @@
               generateTooltipPosition();
           });
       });
-      
+
       $(document).mouseup(function() {
           $(document).mousemove(function(m) {
               generateTooltipPosition()
@@ -118,6 +118,17 @@
               });
           }
       }
+
+
+
+      $('.close-search-form').on('click', function() {
+        $('.search-form').removeClass('active');
+      });
+
+      $('.icon-search').click(function() {
+        $('.search-form').addClass('active');
+      });
+
 
       // PRELOAD
 
