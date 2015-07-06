@@ -89,7 +89,7 @@ get_header();
     <?php endif; ?>
   </div>
 </div>
-<?php 
+<?php
   $relatedcategory = $category[0]->slug;
   if(isset($category) && $other_posts_number > 0):
 ?>
@@ -107,7 +107,7 @@ get_header();
         if ($post->ID != $related->ID):
 
     ?>
-    <div class="fotorama" data-width="1440" data-height="740">
+    <div class="fotorama" data-width="100%" data-ratio="19/10">
       <?php
             $related->get_posts();
             while ( $related->have_posts() ):
@@ -117,9 +117,9 @@ get_header();
               <div class="single-related-news">
                 <?php get_template_part('partials/internal', 'excerpt'); ?>
               </div>
-      <?php 
+      <?php
            endif;
-        endwhile; 
+        endwhile;
       ?>
   </div>
 <?php endif; ?>
