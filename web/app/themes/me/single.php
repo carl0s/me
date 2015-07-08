@@ -11,26 +11,26 @@ get_header();
     <div class="large-2 small-4 column date">
       <span class="day"><?php the_time('d.m.Y'); ?></span>
     </div>
-    <div class="large-10 small-8 column post end">
+    <div class="large-8 small-8 column post">
       <h2><a href="<?php echo get_the_permalink(); ?>" title="<?php echo str_replace('<br />',' ',get_the_title()); ?>"><?php echo get_the_title(); ?></a></h2>
+    </div>
+    <div id="mobile-share" class="social-share large-2 small-12 column">
+      <h4>Condividi su:</h4>
+      <ul>
+        <li><a href="http://www.facebook.com/share.php?u=<?php echo get_permalink(); ?>" target="_blank" class="icon-facebook"></a></li>
+        <li><a href="https://twitter.com/share?url=<?php echo get_permalink(); ?>&amp;via=carl0s_&amp;text=<?php echo get_the_title(); ?>" target="_blank" class="icon-twitter"></a> </li>
+      </ul>
     </div>
   </div>
 </section>
 <section id="article" class="sliding">
   <?php get_template_part('partials/hamburger', 'menu'); ?>
-  <div class="sliding-share">
-    <h4>Condividi su:</h4>
-    <ul>
-      <li><a href="http://www.facebook.com/share.php?u=<?php echo get_permalink(); ?>" target="_blank" class="icon-facebook"></a></li>
-      <li><a href="https://twitter.com/share?url=<?php echo get_permalink(); ?>&amp;via=carl0s_&amp;text=<?php echo get_the_title(); ?>" target="_blank" class="icon-twitter"></a> </li>
-    </ul>
-  </div>
   <?php get_template_part('partials/internal', 'excerpt'); ?>
 
   <div class="row excerpt">
     <div class="large-2 small-12 column">
       <div class="post-ctas row">
-        <div class="hide-for-large mobile-dates small-6 column">
+        <div class="hide-for-medium-up mobile-dates small-6 column">
           <span class="day"><?php the_time('d'); ?></span>
           <span class="month"><?php the_time('F'); ?></span>
           <span class="year"><?php the_time('Y'); ?></span>

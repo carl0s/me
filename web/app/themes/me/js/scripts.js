@@ -59,6 +59,10 @@
               generateTooltipPosition();
           });
       });
+      $('.icon-search').click(function() {
+        $('.search-form').addClass('active');
+      });
+
 
       $(document).mouseup(function() {
           $(document).mousemove(function(m) {
@@ -121,13 +125,6 @@
 
 
 
-      $('.close-search-form').on('click', function() {
-        $('.search-form').removeClass('active');
-      });
-
-      $('.icon-search').click(function() {
-        $('.search-form').addClass('active');
-      });
 
 
       // PRELOAD

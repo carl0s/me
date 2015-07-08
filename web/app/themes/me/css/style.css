@@ -645,7 +645,8 @@ body {
 #articles {
   background: white; }
   #articles article {
-    padding-bottom: 40px; }
+    padding-bottom: 160px;
+    border-bottom: 4px solid #aaa; }
     #articles article:hover .image-wrapper .overlay {
       opacity: 1;
       background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
@@ -845,6 +846,33 @@ body {
   -ms-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
+  #fixed-article-header .social-share h4 {
+    margin-top: 0;
+    font-family: "Ubuntu";
+    text-transform: uppercase;
+    font-size: 16px;
+    color: white;
+    float: left;
+    line-height: 40px; }
+  #fixed-article-header .social-share ul {
+    float: left;
+    line-height: 40px;
+    margin: 0;
+    margin-left: 20px; }
+    #fixed-article-header .social-share ul li {
+      list-style: none;
+      float: left;
+      line-height: 40px;
+      height: 40px;
+      margin-right: 10px; }
+      #fixed-article-header .social-share ul li:last-child {
+        margin-right: 0; }
+      #fixed-article-header .social-share ul li a {
+        display: block;
+        line-height: 40px;
+        height: 40px;
+        font-size: 18px;
+        color: white; }
   #fixed-article-header br {
     display: none; }
     #fixed-article-header br:before {
