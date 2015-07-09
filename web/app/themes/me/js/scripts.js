@@ -16,7 +16,8 @@
         return false;
       });
 
-      $('.hamburger').click(function() {
+      $('.hamburger').click(function(e) {
+        e.preventDefault();
         $(this).toggleClass('open');
         $('.off-canvas').toggleClass('open').toggleClass('hidden');
         $('#hero').toggleClass('open');
@@ -26,7 +27,6 @@
       });
 
       $('#hero.open').find('.row').click(function() {
-        console.log('a');
         $(this).parents('#hero').toggleClass('open');
         $(this).parents('#hero').find('.hamburger').toggleClass('open');
         $('.off-canvas').toggleClass('open').toggleClass('hidden');

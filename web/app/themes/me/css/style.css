@@ -2295,6 +2295,22 @@ button.alm-load-more-btn {
       color: #DF4B17; }
     .page-template-page-cv #hero .cv_desc {
       margin-top: 40px; }
+
+  .search-form {
+    z-index: 99999999999; }
+    .search-form #searchform label {
+      font-size: 16px; }
+    .search-form #searchform input[type="text"] {
+      font-size: 24px; }
+    .search-form .close-search-form {
+      display: none; }
+
+  #search-result {
+    padding: 10px;
+    padding-top: 40px; }
+    #search-result h1.title {
+      font-size: 24px;
+      line-height: 30px; }
  }
 
 @media only screen and (max-width: 320px) and (max-height: 480px) {

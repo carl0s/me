@@ -36,7 +36,7 @@ get_header();
           <span class="year"><?php the_time('Y'); ?></span>
         </div>
         <div class="large-12 small-6 column">
-          <a href="#" class="icon-comments"><?php comments_number( '0', '1', '%' ); ?></a>
+          <a href="#" class="icon-comments"><?php comments_number( '0 commenti', '1 commento', '% commenti' ); ?></a>
         </div>
       </div>
     </div>

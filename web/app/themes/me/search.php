@@ -19,7 +19,7 @@
 <section id="search-result" class="search-result">
 
   <div class="row collapse">
-    <div class="large-8 columns large-centered medium-10 medium-centered clearfix">
+    <div class="large-8 columns large-centered medium-10 medium-centered small-12 clearfix">
       <div class="title-container">
         <h1 class="title">Risultati della ricerca per: <strong><?php the_search_query(); ?></strong></h1>
         <span class="double-line big"></span>
@@ -28,7 +28,7 @@
   </div>
 
   <div class="row collapse back-white">
-    <div class="medium-8 medium-centered small-8 small-centered columns">
+    <div class="medium-8 medium-centered small-12 small-centered columns">
       <!-- risultati qui -->
       <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
         <div class="post">
