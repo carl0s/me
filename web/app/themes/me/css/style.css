@@ -1768,6 +1768,7 @@ button.alm-load-more-btn {
   #hero {
     background: url(../img/me.png) white bottom right no-repeat;
     background-size: 75%;
+    width: 100%;
     -webkit-transition: all 0.6s ease-in-out;
     -moz-transition: all 0.6s ease-in-out;
     -ms-transition: all 0.6s ease-in-out;
@@ -2081,6 +2082,14 @@ button.alm-load-more-btn {
       color: #DF4B17; }
     .page-template-page-cv #hero .cv_desc {
       margin-top: 40px; }
+ }
+
+@media only screen and (max-width: 320px) and (max-height: 480px) {
+  #hero {
+    background: url(../img/small-me.png) white bottom right no-repeat;
+    background-size: 60%; }
+    #hero .bottom-contact-down {
+      bottom: 20px; }
  }
 
 /*# sourceMappingURL=style.css.map */
