@@ -116,6 +116,8 @@ body {
 
 }
 
+
+
 .internal-menu {
   margin-top:25px;
   .social {
@@ -131,6 +133,7 @@ body {
       padding:0;
       float: right;
       li {
+        line-height: 30px;
         &.text {
           font-family: $ubuntu;
           font-size: 16px;
@@ -167,7 +170,17 @@ body {
     margin:0;
     padding:0;
     float: right;
+    line-height: 30px;
+
     li {
+      line-height: 30px;
+
+      &.search {
+        border-left:1px solid $orange;
+        padding-left:10px;
+        line-height: 30px;
+        height: 30px;
+      }
       &.text {
         font-family: $ubuntu;
         font-size: 16px;
@@ -179,6 +192,9 @@ body {
       float: left;
       margin-right:10px;
       a {
+        display: block;
+        line-height: 30px;
+        height: 30px;
         color: $grey;
         font-size: 20px;
         @include transition(.2s);
@@ -522,7 +538,8 @@ body {
 #articles {
   background:white;
   article {
-    padding-bottom:40px;
+    padding-bottom:160px;
+    border-bottom:4px solid #aaa;
     &:hover {
       .image-wrapper {
         .overlay {
@@ -641,7 +658,7 @@ body {
         .post-ctas {
           a.icon-circle-plus {
             &:hover {
-              transform: rotate(45deg);
+              transform: scale(1.2);
               &:before {
                 color: $grey;
               }
@@ -746,6 +763,45 @@ body {
   width:100%;
   height: 0px;
   opacity: 0;
+
+  .social-share {
+
+    h4 {
+      margin-top:0;
+      font-family: $ubuntu;
+      text-transform: uppercase;
+      font-size: 16px;
+      color:white;
+      float: left;
+      line-height: 40px;
+    }
+
+    ul {
+      float: left;
+      line-height: 40px;
+      margin:0;
+      margin-left:20px;
+      li {
+        list-style: none;
+        float: left;
+        line-height: 40px;
+        height: 40px;
+        margin-right:10px;
+        &:last-child {
+          margin-right: 0;
+        }
+        a {
+          display: block;
+          line-height: 40px;
+          height: 40px;
+          font-size: 18px;
+          color: white;
+
+        }
+      }
+    }
+  }
+
   br {
     &:before {
       content: ' ';
@@ -1234,7 +1290,7 @@ body {
       text-align: center;
       font-family: $ubuntu;
       font-size:60px;
-      
+
     }
     ul {
       li {
@@ -1443,6 +1499,195 @@ button.alm-load-more-btn {
 
   }
 }
+
+
+.search-form {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: auto;
+  background-color: rgba(0,0,0,0.8);
+  z-index: 99999;
+  visibility: hidden;
+  opacity: 0;
+  font-family: $ubuntu;
+  @include transition(.3s);
+
+  &.sticky {
+    top: 60px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 360px;
+  }
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .close-search-form {
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: 0px;
+    top: 0px;
+    z-index: 100;
+    cursor: pointer;
+    @include transition(.1s);
+
+    &:hover {
+      background-color: white;
+    }
+
+    &:active {
+      background-color: white;
+      @include scale(.8);
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      height: 5px;
+      width: 50px;
+      background-color: $orange;
+      position: absolute;
+      top: 50px;
+      left: 25px;
+      @include rotate(45deg);
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      height: 5px;
+      width: 50px;
+      background-color: $orange;
+      position: absolute;
+      top: 50px;
+      left: 25px;
+      @include rotate(-45deg);
+    }
+  }
+
+  form {
+    margin: 0;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    bottom: 50px;
+    right: 50px;
+
+    label {
+      font-size: 18px;
+      color: #eee;
+      cursor: default;
+      display: block;
+      font-weight: normal;
+      margin-bottom: 0px;
+    }
+
+    input[type="text"] {
+      background: transparent;
+      border: none;
+      height: 150px;
+      padding: 0;
+      margin: 20px 0;
+      font-size: 100px;
+      color: #eee;
+      line-height: 150px;
+      font-weight: 600;
+      letter-spacing: 5px;
+
+      &:focus {
+        outline: none;
+        border: none;
+        box-shadow: none;
+      }
+    }
+
+    input[type="submit"] {
+      border: 2px solid white;
+      font-family: $ubuntu;
+      background: transparent;
+      padding: 10px 50px;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 20px;
+      @include border-radius(10px);
+      @include transition(.2s);
+
+      &:hover {
+        border-color: $orange;
+        color: $orange;
+      }
+    }
+  }
+}
+
+#search-result {
+  padding-top:240px;
+  background: none;
+  counter-reset: post;
+
+  .no-results {
+    h2 {
+      font-family: "Georgia";
+      font-style: italic;
+      color:$grey;
+      opacity: 0.4;
+    }
+  }
+
+
+  h1.title {
+    font-family: $ubuntu;
+    color: $grey;
+    strong {
+      color: $orange;
+      display: block;
+    }
+  }
+  .back-white {
+    background-color: white;
+    padding: 100px 0;
+  }
+
+  .post {
+    margin-bottom: 20px;
+    position: relative;
+
+    &:before {
+      counter-increment: post;
+      content: counter(post);
+      position: absolute;
+      top: 8px;
+      left: -50px;
+      font-size: 40px;
+      line-height: 30px;
+    }
+    h2 {
+      font-family: $ubuntu;
+      a {
+        color: $orange;
+        @include transition (0.2s);
+        &:hover {
+          color: $grey;
+        }
+      }
+    }
+    .post-excerpt {
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
+
 
 
 @import "twitter.scss";
