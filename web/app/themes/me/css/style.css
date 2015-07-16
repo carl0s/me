@@ -1,10 +1,10 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'me';
-  src: url('../fonts/me.eot?grhic0');
-  src: url('../fonts/me.eot?#iefixgrhic0') format('embedded-opentype'), url('../fonts/me.ttf?grhic0') format('truetype'), url('../fonts/me.woff?grhic0') format('woff'), url('../fonts/me.svg?grhic0#me') format('svg');
+  src: url("../fonts/me.eot?grhic0");
+  src: url("../fonts/me.eot?#iefixgrhic0") format("embedded-opentype"), url("../fonts/me.ttf?grhic0") format("truetype"), url("../fonts/me.woff?grhic0") format("woff"), url("../fonts/me.svg?grhic0#me") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'me';
   speak: none;
@@ -157,24 +157,18 @@
 @-webkit-keyframes loader-line {
   0% {
     left: -100%; }
-
   50% {
     left: 100%; } }
-
 @-moz-keyframes loader-line {
   0% {
     left: -100%; }
-
   50% {
     left: 100%; } }
-
 @keyframes loader-line {
   0% {
     left: -100%; }
-
   50% {
     left: 100%; } }
-
 ::selection {
   color: white;
   background-color: #DF4B17;
@@ -254,21 +248,18 @@ input:-moz-placeholder {
   animation: loadingB 1.5s 1s infinite; }
 
 .load-2 .line:nth-last-child(2) {
-  animation: loadingB 1.5s 0.5s infinite; }
+  animation: loadingB 1.5s .5s infinite; }
 
 .load-2 .line:nth-last-child(3) {
   animation: loadingB 1.5s 0s infinite; }
 
 @keyframes loadingB {
-  0 {
+  0% {
     width: 15px; }
-
   50% {
     width: 35px; }
-
   100% {
     width: 15px; } }
-
 body {
   background: white;
   font-family: "Georgia", serif; }
@@ -648,17 +639,17 @@ body {
     border-bottom: 4px solid #aaa; }
     #articles article:hover .image-wrapper .overlay {
       opacity: 1;
-      background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
+      background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
       /* FF3.6+ */
-      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(86%, rgba(0, 0, 0, 0.79)), color-stop(87%, rgba(0, 0, 0, 0.8)));
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparent), color-stop(86%, rgba(0, 0, 0, 0.79)), color-stop(87%, rgba(0, 0, 0, 0.8)));
       /* Chrome,Safari4+ */
-      background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
+      background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
       /* Chrome10+,Safari5.1+ */
-      background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
+      background: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
       /* Opera 11.10+ */
-      background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
+      background: -ms-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
       /* IE10+ */
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
+      background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
       /* W3C */
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc000000',GradientType=0 );
       /* IE6-9 */ }
@@ -979,17 +970,17 @@ body {
       height: auto;
       min-height: 740px;
       /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+86&amp;0+0,0.8+87 */
-      background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
+      background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
       /* FF3.6+ */
-      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(86%, rgba(0, 0, 0, 0.79)), color-stop(87%, rgba(0, 0, 0, 0.8)));
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparent), color-stop(86%, rgba(0, 0, 0, 0.79)), color-stop(87%, rgba(0, 0, 0, 0.8)));
       /* Chrome,Safari4+ */
-      background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
+      background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
       /* Chrome10+,Safari5.1+ */
-      background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
+      background: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
       /* Opera 11.10+ */
-      background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
+      background: -ms-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
       /* IE10+ */
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
+      background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
       /* W3C */
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc000000',GradientType=0 );
       /* IE6-9 */ }
@@ -1012,7 +1003,8 @@ body {
           color: white;
           line-height: 120px;
           display: block; }
-        #article .image-wrapper .title-date .date .year, #article .image-wrapper .title-date .date .month {
+        #article .image-wrapper .title-date .date .year,
+        #article .image-wrapper .title-date .date .month {
           display: block;
           /* SETTEMBRE: */
           font-family: "Ubuntu";
@@ -1337,17 +1329,17 @@ button.alm-load-more-btn {
     height: auto;
     min-height: 740px;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+86&amp;0+0,0.8+87 */
-    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
+    background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
     /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(86%, rgba(0, 0, 0, 0.79)), color-stop(87%, rgba(0, 0, 0, 0.8)));
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparent), color-stop(86%, rgba(0, 0, 0, 0.79)), color-stop(87%, rgba(0, 0, 0, 0.8)));
     /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
+    background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
     /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
+    background: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
     /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
+    background: -ms-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
     /* IE10+ */
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.79) 86%, rgba(0, 0, 0, 0.8) 87%);
     /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc000000',GradientType=0 );
     /* IE6-9 */ }
@@ -1370,7 +1362,8 @@ button.alm-load-more-btn {
         color: white;
         line-height: 120px;
         display: block; }
-      .single-related-news .image-wrapper .title-date .date .year, .single-related-news .image-wrapper .title-date .date .month {
+      .single-related-news .image-wrapper .title-date .date .year,
+      .single-related-news .image-wrapper .title-date .date .month {
         display: block;
         /* SETTEMBRE: */
         font-family: "Ubuntu";
@@ -1614,24 +1607,24 @@ button.alm-load-more-btn {
   opacity: 0;
   filter: alpha(opacity=0);
   z-index: 99;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease-in-out; }
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease;
+  transition: all .3s ease-in-out; }
 
 .MBLSharetip span {
   position: absolute;
   content: " ";
-  border: solid rgba(0, 0, 0, 0);
+  border: solid transparent;
   height: 0;
   width: 0;
   top: 100%;
   border-top-color: #333;
   left: 50%;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease;
+  transition: all .3s ease-in-out;
   border-width: 7px;
   margin: 0 0 0 -7px; }
 
@@ -1685,18 +1678,18 @@ button.alm-load-more-btn {
       height: auto; }
     #articles article .image-wrapper .overlay {
       min-height: 512px;
-      height: auto; }
- }
-
+      height: auto; } }
 @media only screen and (max-width: 1279px) {
   body {
     overflow-x: hidden; }
 
-  #hero, .article-content, .excerpt, #small-hero, .job_item {
+  #hero,
+  .article-content,
+  .excerpt,
+  #small-hero,
+  .job_item {
     padding-left: 10px;
-    padding-right: 10px; }
- }
-
+    padding-right: 10px; } }
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
   #hero {
     background-size: 40%; }
@@ -1722,9 +1715,7 @@ button.alm-load-more-btn {
       height: auto; }
     #article .image-wrapper .overlay {
       min-height: 512px;
-      height: auto; }
- }
-
+      height: auto; } }
 @media only screen and (min-width: 641px) and (max-width: 1023px) {
   #article .image-wrapper {
     min-height: 384px;
@@ -1760,9 +1751,7 @@ button.alm-load-more-btn {
     background-size: 35%;
     padding-bottom: 80px; }
     #hero .bottom-contact-down {
-      bottom: 40px; }
- }
-
+      bottom: 40px; } }
 @media only screen and (max-width: 640px) {
   body {
     overflow-x: hidden; }
@@ -2185,7 +2174,8 @@ button.alm-load-more-btn {
           #article .image-wrapper .title-date .date .day {
             font-size: 36px;
             line-height: 36px; }
-          #article .image-wrapper .title-date .date .month, #article .image-wrapper .title-date .date span {
+          #article .image-wrapper .title-date .date .month,
+          #article .image-wrapper .title-date .date span {
             font-family: "Ubuntu";
             color: white;
             text-transform: uppercase;
@@ -2310,15 +2300,24 @@ button.alm-load-more-btn {
     padding-top: 40px; }
     #search-result h1.title {
       font-size: 24px;
-      line-height: 30px; }
- }
-
+      line-height: 30px; } }
 @media only screen and (max-width: 320px) and (max-height: 480px) {
   #hero {
     background: url(../img/small-me.png) white bottom right no-repeat;
     background-size: 60%; }
     #hero .bottom-contact-down {
-      bottom: 20px; }
- }
-
-/*# sourceMappingURL=style.css.map */
+      bottom: 20px; } }
+@media only screen and (max-width: 1024px) {
+  #mobile-share {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background: #DF4B17 none repeat scroll 0% 0%;
+    height: 40px; }
+    #mobile-share .inner {
+      width: 180px;
+      display: block;
+      margin: auto; } }
+@media only screen and (max-width: 1025px) and (max-width: 1077px) {
+  #mobile-share .inner h4 {
+    display: none; } }

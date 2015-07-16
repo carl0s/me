@@ -78,7 +78,7 @@ input:-moz-placeholder { color:$orange; }
 .load-2 .line:nth-last-child(3) {animation: loadingB 1.5s 0s infinite;}
 
 @keyframes loadingB {
-    0 {width: 15px;}
+    0% {width: 15px;}
     50% {width: 35px;}
     100% {width: 15px;}
 }

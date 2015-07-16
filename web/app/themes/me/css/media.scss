@@ -1,6 +1,31 @@
 
-@import "short-laptop.scss";
-@import "laptop.scss";
-@import "tablet.scss";
-@import "mobile-large.scss";
-@import "mobile.scss";
+@import "_media/short-laptop.scss";
+@import "_media/laptop.scss";
+@import "_media/tablet.scss";
+@import "_media/mobile-large.scss";
+@import "_media/mobile.scss";
+
+@media only screen and (max-width: 1024px) {
+#mobile-share {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background: #DF4B17 none repeat scroll 0% 0%;
+    height: 40px;
+    .inner {
+      width:180px;
+      display: block;
+      margin:auto;
+    }
+}
+}
+
+@media only screen and (max-width: 1025px) and (max-width: 1077px) {
+#mobile-share {
+  .inner {
+    h4 {
+      display: none;
+    }
+  }
+}
+}
