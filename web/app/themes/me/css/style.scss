@@ -754,6 +754,33 @@ body {
   }
 }
 
+#slides {
+
+  article {
+    figure {
+      min-height: 540px;
+    }
+
+    .content {
+      h4 {
+        font-family: $ubuntu;
+        text-transform: uppercase;
+        color: $grey;
+        font-style: 22px;
+        line-height: 26px;
+      }
+    }
+  }
+
+  article:nth-child(even) {
+
+  }
+
+  article:nth-child(even) {
+    
+  }
+}
+
 #fixed-article-header {
   z-index: 100;
   margin-top:0px;
