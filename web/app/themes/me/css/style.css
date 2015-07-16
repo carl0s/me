@@ -2312,14 +2312,14 @@ button.alm-load-more-btn {
     position: fixed;
     bottom: 0px;
     width: 100%;
-    background: #DF4B17 none repeat scroll 0% 0%;
+    background: #DF4B17;
     height: 40px; }
     #mobile-share .inner {
       width: 180px;
       display: block;
       margin: auto; }
       #mobile-share .inner h4 {
-        display: block; } }
-@media only screen and (max-width: 1025px) and (max-width: 1077px) {
+        display: block !important; } }
+@media only screen and (min-width: 1025px) and (max-width: 1077px) {
   #mobile-share .inner h4 {
-    display: none; } }
+    display: none !important; } }
