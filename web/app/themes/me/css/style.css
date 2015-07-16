@@ -2317,7 +2317,9 @@ button.alm-load-more-btn {
     #mobile-share .inner {
       width: 180px;
       display: block;
-      margin: auto; } }
+      margin: auto; }
+      #mobile-share .inner h4 {
+        display: block; } }
 @media only screen and (max-width: 1025px) and (max-width: 1077px) {
   #mobile-share .inner h4 {
     display: none; } }
