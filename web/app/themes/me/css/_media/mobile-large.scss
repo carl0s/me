@@ -674,4 +674,26 @@ footer {
   }
 }
 
+#slides {
+  article {
+    figure {
+      &:after {
+        transform: rotate(45deg);
+        width: 40px;
+        height: 40px;
+        background: white;
+        display: block;
+        color: white;
+        content:'.';
+        top: auto;
+        right: auto;
+        bottom:-20px;
+        left:50% !important;
+        margin-left:-20px;
+      }
+    }
+
+  }
+}
+
 }
