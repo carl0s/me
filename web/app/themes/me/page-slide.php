@@ -18,6 +18,9 @@ get_header('slides');
  $args = array(
   'post_type' => 'slide',
   'posts_per_page' => 5,
+  'meta_key' => 'date',
+  'orderby' => 'meta_value_num',
+  'order' => 'DESC'
  );
  $slides = new WP_Query( $args );
 

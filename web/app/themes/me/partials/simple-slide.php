@@ -5,7 +5,7 @@
   <div class="content large-6 medium-6 small-12 column">
     <h4><?php $terms = get_terms('occasion'); echo $terms[0]->name; ?></h4>
     <?php the_title('<h2>','</h2>'); ?>
-    <?php the_excerpt(); ?>
+    <?php the_content(); ?>
     <?php
     $date_format = "d/m/Y";
     $date = strtotime(get_field('date'));
