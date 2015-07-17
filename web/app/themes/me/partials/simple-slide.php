@@ -4,7 +4,7 @@
   </figure>
   <div class="content large-6 medium-6 small-12 column">
     <h4><?php $terms = get_the_terms(get_the_ID(),'occasion'); echo $terms[0]->name; ?></h4>
-    <?php the_title('<h2>','</h2>'); ?>
+    <h2><a href="<?php the_field('link_slideshare'); ?>" title="<?php echo get_the_title(); ?> su Slideshare"><?php echo get_the_title(); ?></a></h2>
     <?php the_content(); ?>
     <?php
     $date_format = "d/m/Y";
