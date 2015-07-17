@@ -755,29 +755,99 @@ body {
 }
 
 #slides {
-
+  background: $light-grey;
+  border-top:4px solid $orange;
+  padding-bottom: 40px;
+  .title-section {
+    margin-top: 40px;
+    background: white;
+    text-align: center;
+    h1 {
+      font-family: $ubuntu;
+      font-size: 40px;
+      line-height: 80px;
+      height: 80px;
+    }
+  }
   article {
     figure {
-      min-height: 540px;
+      position: relative;
+      padding:0;
+      margin: 0;
+      &:after {
+        @include vertical-align-absolute;
+        transform: rotate(45deg);
+        width: 40px;
+        height: 40px;
+        background: white;
+        display: block;
+        color: white;
+        content:'.';
+        right:-20px;
+      }
     }
 
     .content {
+      background: white;
+      padding:20px;
+      position: relative;
+      min-height: 450px;
       h4 {
         font-family: $ubuntu;
         text-transform: uppercase;
         color: $grey;
-        font-style: 22px;
-        line-height: 26px;
+        font-weight: 100;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom:20px;
+      }
+
+      h2 {
+        font-family: $ubuntu;
+        color: $orange;
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 40px;
+      }
+
+      .bottom-details {
+        height: 30px;
+        width:100%;
+        position: absolute;
+        bottom:20px;
+        font-family: $ubuntu;
+        text-transform: uppercase;
+        color: ligthen($grey, 20%);
+        font-weight: 100;
+        font-size: 16px;
+        line-height: 20px;
+        .tags {
+          height: 30px;
+          width: 70%;
+          float: left;
+          margin:0;
+        }
+        .date {
+          height: 30px;
+          width: 20%;
+          float: right;
+        }
       }
     }
   }
 
-  article:nth-child(even) {
 
-  }
+  article:nth-child(odd) {
+    figure {
+      float: right;
+      &:after {
+        left:-20px;
+      }
+    }
 
-  article:nth-child(even) {
-    
+    .content {
+      float: left;
+    }
   }
 }
 

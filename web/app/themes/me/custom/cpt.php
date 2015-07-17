@@ -1,4 +1,5 @@
 <?php
+
 add_action( 'init', 'cptui_register_my_cpts' );
 function cptui_register_my_cpts() {
 	$labels = array(
@@ -38,7 +39,53 @@ function cptui_register_my_cpts() {
 	);
 	register_post_type( "progetti", $args );
 
+	$labels = array(
+		"name" => "Slides",
+		"singular_name" => "Slide",
+		);
+
+	$args = array(
+		"labels" => $labels,
+		"description" => "",
+		"public" => true,
+		"show_ui" => true,
+		"has_archive" => false,
+		"show_in_menu" => true,
+		"exclude_from_search" => false,
+		"capability_type" => "post",
+		"map_meta_cap" => true,
+		"hierarchical" => false,
+		"rewrite" => array( "slug" => "slide", "with_front" => true ),
+		"query_var" => true,
+
+		"supports" => array( "title", "editor", "excerpt", "thumbnail", "post-formats" ),
+		"taxonomies" => array( "category", "post_tag", "occasion" )
+	);
+	register_post_type( "slide", $args );
+
 // End of cptui_register_my_cpts()
 }
+add_action( 'init', 'cptui_register_my_taxes' );
+function cptui_register_my_taxes() {
+
+	$labels = array(
+		"name" => "occasion",
+		"label" => "Occasions",
+		);
+
+	$args = array(
+		"labels" => $labels,
+		"hierarchical" => false,
+		"label" => "Occasions",
+		"show_ui" => true,
+		"query_var" => true,
+		"rewrite" => array( 'slug' => 'occasion', 'with_front' => true ),
+		"show_admin_column" => false,
+	);
+	register_taxonomy( "occasion", array( "slide" ), $args );
+
+// End cptui_register_my_taxes
+}
+
 
 ?>

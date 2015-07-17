@@ -1,5 +1,67 @@
 <?php
 if( function_exists('acf_add_local_field_group') ):
+
+	acf_add_local_field_group(array (
+	'key' => 'group_55a8a3c7cbf5f',
+	'title' => 'Slide',
+	'fields' => array (
+		array (
+			'key' => 'field_55a8a3cb2e4b7',
+			'label' => 'Data',
+			'name' => 'date',
+			'type' => 'date_picker',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array (
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'display_format' => 'd/m/Y',
+			'return_format' => 'Y-m-d',
+			'first_day' => 1,
+		),
+		array (
+			'key' => 'field_55a8a4132e4b9',
+			'label' => 'Link slideshare',
+			'name' => 'link_slideshare',
+			'type' => 'text',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array (
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'placeholder' => 'http://slideshare.com',
+			'prepend' => '',
+			'append' => '',
+			'maxlength' => '',
+			'readonly' => 0,
+			'disabled' => 0,
+		),
+	),
+	'location' => array (
+		array (
+			array (
+				'param' => 'post_type',
+				'operator' => '==',
+				'value' => 'slide',
+			),
+		),
+	),
+	'menu_order' => 0,
+	'position' => 'acf_after_title',
+	'style' => 'default',
+	'label_placement' => 'top',
+	'instruction_placement' => 'label',
+	'hide_on_screen' => '',
+));
+
+
 	acf_add_local_field_group(array (
 		'key' => 'group_55917cda2d6f3',
 		'title' => 'Progetti',
@@ -635,6 +697,25 @@ acf_add_local_field_group(array (
 			'key' => 'field_8970595020e89',
 			'label' => 'Copywriting Home',
 			'name' => 'home_copywriting',
+			'type' => 'wysiwyg',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array (
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'tabs' => 'all',
+			'toolbar' => 'full',
+			'media_upload' => 1,
+		),
+
+		array (
+			'key' => 'field_9870595020e89',
+			'label' => 'Copywriting Slides',
+			'name' => 'slides_copywriting',
 			'type' => 'wysiwyg',
 			'instructions' => '',
 			'required' => 0,
