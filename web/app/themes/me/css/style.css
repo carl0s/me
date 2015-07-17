@@ -839,6 +839,14 @@ body {
     position: relative;
     padding: 0;
     margin: 0; }
+    #slides article figure .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.1);
+      z-index: 100; }
     #slides article figure:after {
       position: absolute;
       top: 50%;
@@ -853,7 +861,8 @@ body {
       display: block;
       color: white;
       content: '.';
-      right: -20px; }
+      right: -20px;
+      z-index: 200; }
   #slides article .content {
     background: white;
     padding: 20px;

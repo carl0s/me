@@ -1,6 +1,7 @@
 <article class="row collapse" id="<?php echo apply_filters('the_slug', basename( get_permalink() )); ?>">
   <figure class="large-6 medium-6 small-12 column">
     <a href="<?php the_field('link_slideshare'); ?>" title="<?php echo get_the_title(); ?>"><?php the_post_thumbnail(); ?></a>
+    <div class="overlay"></div>
   </figure>
   <div class="content large-6 medium-6 small-12 column">
     <h4><?php $terms = get_the_terms(get_the_ID(),'occasion'); echo $terms[0]->name; ?></h4>

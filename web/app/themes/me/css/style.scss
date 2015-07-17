@@ -771,6 +771,15 @@ body {
   }
   article {
     figure {
+      .overlay {
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        background: rgba(0,0,0,0.1);
+        z-index:100;
+      }
       position: relative;
       padding:0;
       margin: 0;
@@ -784,6 +793,7 @@ body {
         color: white;
         content:'.';
         right:-20px;
+        z-index:200;
       }
     }
 
