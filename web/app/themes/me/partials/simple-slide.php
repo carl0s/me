@@ -3,7 +3,7 @@
     <a href="<?php the_field('link_slideshare'); ?>" title="<?php echo get_the_title(); ?>"><?php the_post_thumbnail(); ?></a>
   </figure>
   <div class="content large-6 medium-6 small-12 column">
-    <h4><?php $terms = get_terms('occasion'); echo $terms[0]->name; ?></h4>
+    <h4><?php $terms = get_the_terms(get_the_ID(),'occasion'); echo $terms[0]->name; ?></h4>
     <?php the_title('<h2>','</h2>'); ?>
     <?php the_content(); ?>
     <?php
