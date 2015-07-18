@@ -1855,7 +1855,7 @@ button.alm-load-more-btn {
       bottom: 40px; }
  }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 750px) {
   body {
     overflow-x: hidden; }
 
