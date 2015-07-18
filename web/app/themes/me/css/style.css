@@ -906,7 +906,9 @@ body {
       color: ligthen(#333, 20%);
       font-weight: 100;
       font-size: 16px;
-      line-height: 20px; }
+      line-height: 20px;
+      left: 0;
+      padding: 0 20px; }
       #slides article .content .bottom-details .tags {
         margin: 0; }
       #slides article .content .bottom-details .date {
