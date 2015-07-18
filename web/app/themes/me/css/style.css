@@ -2417,7 +2417,7 @@ button.alm-load-more-btn {
     bottom: -20px;
     left: 50% !important;
     margin-left: -20px; }
-  #slides article .bottom-details {
+  #slides article .content .bottom-details {
     width: 85%; }
  }
 
