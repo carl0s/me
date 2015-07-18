@@ -907,6 +907,11 @@ body {
       font-weight: 100;
       font-size: 16px;
       line-height: 20px; }
+      #slides article .content .bottom-details .tags {
+        margin: 0; }
+      #slides article .content .bottom-details .date {
+        margin: 0;
+        text-align: right; }
   #slides article:nth-child(odd) figure {
     float: right; }
     #slides article:nth-child(odd) figure:after {
