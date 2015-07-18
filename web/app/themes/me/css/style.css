@@ -2423,7 +2423,7 @@ button.alm-load-more-btn {
     background: url(../img/small-me.png) white bottom right no-repeat;
     background-size: 60%; }
     #hero .bottom-contact-down {
-      bottom: 20px; }
+      bottom: 0px; }
  }
 
 @media only screen and (max-width: 1024px) {
