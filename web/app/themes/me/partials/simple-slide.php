@@ -11,11 +11,11 @@
     $date_format = "d/m/Y";
     $date = strtotime(get_field('date'));
     ?>
-    <div class="bottom-details">
-      <div class="tags">
+    <div class="bottom-details row collapse">
+      <div class="tags large-6 medium-6 small-12 column">
         <?php the_tags(); ?>
       </div>
-      <div class="date">
+      <div class="date large-6 medium-6 small-12 column">
         <?php echo date_i18n($date_format, $date); ?>
       </div>
     </div>
