@@ -1335,8 +1335,8 @@ body {
       #job_experience .job_item .job_position h2 {
         font-family: "Georgia";
         font-style: italic;
-        font-size: 36px !important;
-        line-height: 36px;
+        font-size: 28px !important;
+        line-height: 40px;
         margin: 0;
         color: #333; }
       #job_experience .job_item .job_position .position_desc {
@@ -1346,8 +1346,8 @@ body {
         line-height: 30px; }
       #job_experience .job_item .job_position h3 {
         font-family: "Ubuntu";
-        font-size: 24px;
-        line-height: 24px;
+        font-size: 20px;
+        line-height: 30px;
         text-transform: uppercase; }
 
 .archive #topics {

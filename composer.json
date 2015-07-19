@@ -101,6 +101,7 @@
     "wpackagist-plugin/google-analyticator":"*",
     "wpackagist-plugin/simple-301-redirects":"*",
     "wpackagist-plugin/tumblr-importer":"*",
+    "wpackagist-plugin/tumblr-crosspostr":"*",
     "wpackagist-plugin/wordpress-seo":"*",
     "wpackagist-plugin/wordpress-importer":"*",
     "wpackagist-plugin/wp-mail-smtp":"*"
