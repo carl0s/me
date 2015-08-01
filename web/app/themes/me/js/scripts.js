@@ -11,6 +11,11 @@
         calcSize();
       });
 
+      $(".contact-button").click(function(){
+        $(".contact-button").addClass("active");
+        $(".overlay-form").addClass("active");
+      });
+
       $('#further').on('click', function() {
         $('html, body').animate({scrollTop: $($(this).attr('href')).offset().top }, 1000);
         return false;

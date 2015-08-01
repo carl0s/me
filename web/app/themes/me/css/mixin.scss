@@ -24,12 +24,28 @@
           transition: all $time ease-in-out;
 }
 
+@mixin transition-cubic($time) {
+  -webkit-transition: all $time cubic-bezier(0.7,0,0.3,1);
+     -moz-transition: all $time cubic-bezier(0.7,0,0.3,1);
+      -ms-transition: all $time cubic-bezier(0.7,0,0.3,1);
+       -o-transition: all $time cubic-bezier(0.7,0,0.3,1);
+          transition: all $time cubic-bezier(0.7,0,0.3,1);
+}
+
 @mixin transition-opacity($time) {
   -webkit-transition: opacity $time ease-in-out;
      -moz-transition: opacity $time ease-in-out;
       -ms-transition: opacity $time ease-in-out;
        -o-transition: opacity $time ease-in-out;
           transition: opacity $time ease-in-out;
+}
+
+@mixin transition-delay($time) {
+  -webkit-transition-delay: $time;
+     -moz-transition-delay: $time;
+      -ms-transition-delay: $time;
+       -o-transition-delay: $time;
+          transition-delay: $time;
 }
 
 @mixin delay($time) {

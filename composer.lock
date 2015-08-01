@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6c583a4376708c0c96baedad2b95729d",
+    "hash": "ddc910a1f15dc621a5bf60b4a90f77f4",
     "packages": [
         {
             "name": "composer/installers",
@@ -103,16 +103,16 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "4.2.2",
+            "version": "4.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "998358f3b7a2c75caae11ff3c79e514951aac7f6"
+                "reference": "56525f7941a9835ae64deafcaff15cd52336e467"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/998358f3b7a2c75caae11ff3c79e514951aac7f6",
-                "reference": "998358f3b7a2c75caae11ff3c79e514951aac7f6",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/56525f7941a9835ae64deafcaff15cd52336e467",
+                "reference": "56525f7941a9835ae64deafcaff15cd52336e467",
                 "shasum": ""
             },
             "require": {
@@ -136,7 +136,7 @@
                 "blog",
                 "cms"
             ],
-            "time": "2015-05-07 01:46:09"
+            "time": "2015-07-23 11:16:08"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -188,11 +188,11 @@
         },
         {
             "name": "nois3/advanced-custom-fields-pro",
-            "version": "5.2.4",
+            "version": "5.2.7",
             "source": {
                 "type": "git",
                 "url": "git@gitlab.nois3.net:nois3/advanced-custom-field-pro.git",
-                "reference": "release/5.2.4"
+                "reference": "release/5.2.7"
             },
             "type": "wordpress-plugin"
         },
@@ -321,15 +321,15 @@
         },
         {
             "name": "wpackagist-plugin/contact-form-7",
-            "version": "4.2.1",
+            "version": "4.2.2",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/contact-form-7/",
-                "reference": "tags/4.2.1"
+                "reference": "tags/4.2.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/contact-form-7.4.2.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/contact-form-7.4.2.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -341,15 +341,15 @@
         },
         {
             "name": "wpackagist-plugin/contact-form-7-to-database-extension",
-            "version": "2.9.4",
+            "version": "2.9.6",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/contact-form-7-to-database-extension/",
-                "reference": "tags/2.9.4"
+                "reference": "tags/2.9.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/contact-form-7-to-database-extension.2.9.4.zip",
+                "url": "https://downloads.wordpress.org/plugin/contact-form-7-to-database-extension.2.9.6.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -361,15 +361,15 @@
         },
         {
             "name": "wpackagist-plugin/cookie-notice",
-            "version": "1.2.30",
+            "version": "1.2.32",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/cookie-notice/",
-                "reference": "tags/1.2.30"
+                "reference": "tags/1.2.32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/cookie-notice.1.2.30.zip",
+                "url": "https://downloads.wordpress.org/plugin/cookie-notice.1.2.32.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -401,15 +401,15 @@
         },
         {
             "name": "wpackagist-plugin/ewww-image-optimizer",
-            "version": "2.4.7",
+            "version": "2.5.0",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/ewww-image-optimizer/",
-                "reference": "tags/2.4.7"
+                "reference": "tags/2.5.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.2.4.7.zip",
+                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.2.5.0.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -418,6 +418,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/ewww-image-optimizer/"
+        },
+        {
+            "name": "wpackagist-plugin/fotorama",
+            "version": "4.6.3",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/fotorama/",
+                "reference": "tags/4.6.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/fotorama.4.6.3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/fotorama/"
         },
         {
             "name": "wpackagist-plugin/google-analyticator",
@@ -521,15 +541,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "2.2.1",
+            "version": "2.3.2",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/2.2.1"
+                "reference": "tags/2.3.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.2.2.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.2.3.2.zip",
                 "reference": null,
                 "shasum": null
             },

@@ -41,10 +41,30 @@ get_header('home');
 <section id="articles" class="sliding">
 <?php wp_reset_query(); ?>
 <?php wp_reset_postdata(); ?>
+<?php 
+  $sticky = get_option( 'sticky_posts' );
+  $args = array(
+    'posts_per_page' => 1,
+    'post__in'  => $sticky,
+  );
+  $sticky_post = new WP_Query( $args );
+    if ( $sticky && $sticky[0] ):
+    // The Loop
+      if ( $sticky_post->have_posts() ):
+        while ( $sticky_post->have_posts() ):
+          $sticky_post->the_post();
+?>
+<?php get_template_part('partials/simple', 'excerpt'); ?>
+<?php 
+        endwhile;
+      endif;
+    endif;
+?>
 <?php
  $args = array(
   'post_type' => 'post',
   'posts_per_page' => 5,
+  'post__not_in' => get_option( 'sticky_posts' )
  );
  $blog = new WP_Query( $args );
 

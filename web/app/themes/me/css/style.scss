@@ -1,6 +1,9 @@
 $orange: #DF4B17;
+$red: $orange;
+$green: rgb(16, 128, 110);
 $light-grey: #efefef;
 $grey: #333;
+$black: #333;
 $ubuntu: "Ubuntu";
 
 @import "font-icon.scss";
@@ -1794,7 +1797,5 @@ button.alm-load-more-btn {
   }
 }
 
-
-
-@import "twitter.scss";
+@import "contact.scss";
 @import "media.scss";
