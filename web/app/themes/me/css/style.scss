@@ -785,7 +785,7 @@ body {
       margin: 0;
       &:after {
         @include vertical-align-absolute;
-        transform: rotate(45deg);
+        @include rotate(45deg);
         width: 40px;
         height: 40px;
         background: white;
@@ -832,16 +832,14 @@ body {
         font-weight: 100;
         font-size: 16px;
         line-height: 20px;
+        left:0;
+        padding:0 30px;
         .tags {
-          height: 30px;
-          width: 70%;
-          float: left;
           margin:0;
         }
         .date {
-          height: 30px;
-          width: 20%;
-          float: right;
+          margin:0;
+          text-align: right;
         }
       }
     }
@@ -1366,8 +1364,8 @@ body {
       h2 {
         font-family: "Georgia";
         font-style: italic;
-        font-size: 36px !important;
-        line-height: 36px;
+        font-size: 28px !important;
+        line-height: 40px;
         margin:0;
         color: $grey;
       }
@@ -1379,8 +1377,8 @@ body {
       }
       h3 {
         font-family: $ubuntu;
-        font-size: 24px;
-        line-height: 24px;
+        font-size: 20px;
+        line-height: 30px;
         @include uppercase;
       }
     }

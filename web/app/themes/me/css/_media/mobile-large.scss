@@ -1,4 +1,4 @@
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 750px) {
 
 body {
   overflow-x: hidden;
@@ -690,6 +690,11 @@ footer {
         bottom:-20px;
         left:50% !important;
         margin-left:-20px;
+      }
+    }
+    .content {
+      .bottom-details {
+        bottom:0px;
       }
     }
 

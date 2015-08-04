@@ -76,7 +76,7 @@ wp_reset_postdata();
         </div>
         <div class="large-9 medium-8 small-12 column job_position">
           <h2><?php echo $xp_item['job_title']; ?></h2>
-          <h3><?php echo $xp_item['company']; ?></h3>
+          <a href="<?php echo $xp_item['company_link']; ?>" title="il sito di <?php echo $xp_item['company']; ?>"><h3><?php echo $xp_item['company']; ?></h3></a>
           <div class="position_desc"><?php echo $xp_item['job_position']; ?></div>
           <div class="image">
             <?php $image = $xp_item['logo']; ?>

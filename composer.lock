@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "cea38124718b54b3167125ec0f22c247",
+    "hash": "6c583a4376708c0c96baedad2b95729d",
     "packages": [
         {
             "name": "composer/installers",
@@ -458,6 +458,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/simple-301-redirects/"
+        },
+        {
+            "name": "wpackagist-plugin/tumblr-crosspostr",
+            "version": "0.8.3",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/tumblr-crosspostr/",
+                "reference": "tags/0.8.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/tumblr-crosspostr.0.8.3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/tumblr-crosspostr/"
         },
         {
             "name": "wpackagist-plugin/tumblr-importer",

@@ -12,11 +12,13 @@
     $date = strtotime(get_field('date'));
     ?>
     <div class="bottom-details">
-      <div class="tags">
-        <?php the_tags(); ?>
-      </div>
-      <div class="date">
-        <?php echo date_i18n($date_format, $date); ?>
+      <div class="row collapse">
+        <div class="tags large-6 medium-6 small-6 column">
+          <?php the_tags(); ?>
+        </div>
+        <div class="date large-6 medium-6 small-6 column">
+          <?php echo date_i18n($date_format, $date); ?>
+        </div>
       </div>
     </div>
   </div>
