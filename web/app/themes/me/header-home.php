@@ -28,7 +28,7 @@
         <div class="large-7 medium-12 small-12 columns">
           <h1>
             Ciao,<br>
-            io sono Carlo
+            io sono <a href="/">Carlo</a>
           </h1>
           <h3>
             benvenuti nel mio blog
