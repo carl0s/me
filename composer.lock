@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ddc910a1f15dc621a5bf60b4a90f77f4",
+    "hash": "3477df72b598c09540a3f7d8de800d93",
     "packages": [
         {
             "name": "composer/installers",
@@ -301,15 +301,15 @@
         },
         {
             "name": "wpackagist-plugin/better-wp-security",
-            "version": "4.8.0",
+            "version": "4.9.0",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/better-wp-security/",
-                "reference": "tags/4.8.0"
+                "reference": "tags/4.9.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/better-wp-security.4.8.0.zip",
+                "url": "https://downloads.wordpress.org/plugin/better-wp-security.4.9.0.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -341,15 +341,15 @@
         },
         {
             "name": "wpackagist-plugin/contact-form-7-to-database-extension",
-            "version": "2.9.6",
+            "version": "2.9.7",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/contact-form-7-to-database-extension/",
-                "reference": "tags/2.9.6"
+                "reference": "tags/2.9.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/contact-form-7-to-database-extension.2.9.6.zip",
+                "url": "https://downloads.wordpress.org/plugin/contact-form-7-to-database-extension.2.9.7.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -381,15 +381,15 @@
         },
         {
             "name": "wpackagist-plugin/custom-post-type-ui",
-            "version": "1.1.1",
+            "version": "1.1.2",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/custom-post-type-ui/",
-                "reference": "tags/1.1.1"
+                "reference": "tags/1.1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.1.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.1.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -541,15 +541,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "2.3.2",
+            "version": "2.3.4",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/2.3.2"
+                "reference": "tags/2.3.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.2.3.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.2.3.4.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -558,6 +558,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wordpress-seo/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-bitly",
+            "version": "2.3.2",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/wp-bitly/",
+                "reference": "tags/2.3.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-bitly.2.3.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-bitly/"
         },
         {
             "name": "wpackagist-plugin/wp-mail-smtp",

@@ -105,6 +105,7 @@
     "wpackagist-plugin/tumblr-crosspostr":"*",
     "wpackagist-plugin/wordpress-seo":"*",
     "wpackagist-plugin/wordpress-importer":"*",
+    "wpackagist-plugin/wp-bitly":"*",
     "wpackagist-plugin/wp-mail-smtp":"*"
   },
   "extra": {
