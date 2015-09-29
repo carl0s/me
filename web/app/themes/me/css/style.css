@@ -1148,6 +1148,8 @@ body {
         line-height: 56px; }
         #article .image-wrapper .title-date h2 a {
           color: white; }
+  #article .slide {
+    margin-top: 50px; }
   #article .post-excerpt {
     font-family: "Ubuntu";
     color: #DF4B17;
