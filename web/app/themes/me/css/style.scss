@@ -1,9 +1,6 @@
 $orange: #DF4B17;
-$red: $orange;
-$green: rgb(16, 128, 110);
 $light-grey: #efefef;
 $grey: #333;
-$black: #333;
 $ubuntu: "Ubuntu";
 
 @import "font-icon.scss";
@@ -28,6 +25,45 @@ input:-moz-placeholder { color:$orange; }
 
 * {
   outline: none;
+}
+
+.flex-video {
+  &:after {
+    font-family: 'me';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    opacity: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\e600";
+    position: absolute;
+    @include vertical-align-absolute;
+    font-size: 60px;
+    z-index: 9999;
+    left:50%;
+    margin-left:-30px;
+    color: white;
+    text-shadow: #666 0px 0px 10px;
+  }
+  &.playing {
+    &:after {
+      opacity:0;
+    }
+  }
+  &:hover {
+    &:after {
+      color: $orange;
+      @include transition(.2s);
+    }
+  }
+  video {
+    cursor: pointer;
+  }
 }
 
 #cookie-notice {
@@ -1797,5 +1833,7 @@ button.alm-load-more-btn {
   }
 }
 
-@import "contact.scss";
+
+
+@import "twitter.scss";
 @import "media.scss";

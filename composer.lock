@@ -4,7 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3477df72b598c09540a3f7d8de800d93",
+    "hash": "c22be4121475facc6f8529a5c48422b6",
+    "content-hash": "3c7736a6bc8544ea1a02d7950d230b2f",
     "packages": [
         {
             "name": "composer/installers",
@@ -103,16 +104,16 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "4.2.3",
+            "version": "4.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "56525f7941a9835ae64deafcaff15cd52336e467"
+                "reference": "cfcf25eb42baeb7316a61c7a64e9a1ab3e291f2f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/56525f7941a9835ae64deafcaff15cd52336e467",
-                "reference": "56525f7941a9835ae64deafcaff15cd52336e467",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/cfcf25eb42baeb7316a61c7a64e9a1ab3e291f2f",
+                "reference": "cfcf25eb42baeb7316a61c7a64e9a1ab3e291f2f",
                 "shasum": ""
             },
             "require": {
@@ -136,7 +137,7 @@
                 "blog",
                 "cms"
             ],
-            "time": "2015-07-23 11:16:08"
+            "time": "2015-09-15 15:01:23"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -188,11 +189,11 @@
         },
         {
             "name": "nois3/advanced-custom-fields-pro",
-            "version": "5.2.7",
+            "version": "5.3.0",
             "source": {
                 "type": "git",
                 "url": "git@gitlab.nois3.net:nois3/advanced-custom-field-pro.git",
-                "reference": "release/5.2.7"
+                "reference": "release/5.2.4"
             },
             "type": "wordpress-plugin"
         },
@@ -208,16 +209,16 @@
         },
         {
             "name": "roots/soil",
-            "version": "3.4.0",
+            "version": "3.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/roots/soil.git",
-                "reference": "adaf4a0941224dfeab470a123d59dd925fc65004"
+                "reference": "4e9ad4562e1592c49f1f3a26c4dad1e00500c0c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/roots/soil/zipball/adaf4a0941224dfeab470a123d59dd925fc65004",
-                "reference": "adaf4a0941224dfeab470a123d59dd925fc65004",
+                "url": "https://api.github.com/repos/roots/soil/zipball/4e9ad4562e1592c49f1f3a26c4dad1e00500c0c0",
+                "reference": "4e9ad4562e1592c49f1f3a26c4dad1e00500c0c0",
                 "shasum": ""
             },
             "require": {
@@ -241,12 +242,12 @@
                     "homepage": "https://github.com/retlehs"
                 }
             ],
-            "description": "Clean up WordPress markup, relative URLs, nice search",
+            "description": "A WordPress plugin which contains a collection of modules to apply theme-agnostic front-end modifications",
             "homepage": "https://roots.io/plugins/soil/",
             "keywords": [
                 "wordpress"
             ],
-            "time": "2015-04-29 04:46:56"
+            "time": "2015-09-24 17:30:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -301,15 +302,15 @@
         },
         {
             "name": "wpackagist-plugin/better-wp-security",
-            "version": "4.9.0",
+            "version": "5.0.1",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/better-wp-security/",
-                "reference": "tags/4.9.0"
+                "reference": "tags/5.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/better-wp-security.4.9.0.zip",
+                "url": "https://downloads.wordpress.org/plugin/better-wp-security.5.0.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -321,15 +322,15 @@
         },
         {
             "name": "wpackagist-plugin/contact-form-7",
-            "version": "4.2.2",
+            "version": "4.3",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/contact-form-7/",
-                "reference": "tags/4.2.2"
+                "reference": "tags/4.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/contact-form-7.4.2.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/contact-form-7.4.3.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -341,15 +342,15 @@
         },
         {
             "name": "wpackagist-plugin/contact-form-7-to-database-extension",
-            "version": "2.9.7",
+            "version": "2.9.8",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/contact-form-7-to-database-extension/",
-                "reference": "tags/2.9.7"
+                "reference": "tags/2.9.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/contact-form-7-to-database-extension.2.9.7.zip",
+                "url": "https://downloads.wordpress.org/plugin/contact-form-7-to-database-extension.2.9.8.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -401,15 +402,15 @@
         },
         {
             "name": "wpackagist-plugin/ewww-image-optimizer",
-            "version": "2.5.0",
+            "version": "2.5.1",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/ewww-image-optimizer/",
-                "reference": "tags/2.5.0"
+                "reference": "tags/2.5.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.2.5.0.zip",
+                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.2.5.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -420,36 +421,16 @@
             "homepage": "https://wordpress.org/plugins/ewww-image-optimizer/"
         },
         {
-            "name": "wpackagist-plugin/fotorama",
-            "version": "4.6.3",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/fotorama/",
-                "reference": "tags/4.6.3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/fotorama.4.6.3.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/fotorama/"
-        },
-        {
             "name": "wpackagist-plugin/google-analyticator",
-            "version": "6.4.9.4",
+            "version": "6.4.9.6",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/google-analyticator/",
-                "reference": "tags/6.4.9.4"
+                "reference": "tags/6.4.9.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/google-analyticator.6.4.9.4.zip",
+                "url": "https://downloads.wordpress.org/plugin/google-analyticator.6.4.9.6.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -481,15 +462,15 @@
         },
         {
             "name": "wpackagist-plugin/tumblr-crosspostr",
-            "version": "0.8.3",
+            "version": "0.8.4",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/tumblr-crosspostr/",
-                "reference": "tags/0.8.3"
+                "reference": "tags/0.8.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/tumblr-crosspostr.0.8.3.zip",
+                "url": "https://downloads.wordpress.org/plugin/tumblr-crosspostr.0.8.4.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -541,15 +522,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "2.3.4",
+            "version": "2.3.5",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/2.3.4"
+                "reference": "tags/2.3.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.2.3.4.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.2.3.5.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -558,26 +539,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wordpress-seo/"
-        },
-        {
-            "name": "wpackagist-plugin/wp-bitly",
-            "version": "2.3.2",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/wp-bitly/",
-                "reference": "tags/2.3.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-bitly.2.3.2.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/wp-bitly/"
         },
         {
             "name": "wpackagist-plugin/wp-mail-smtp",

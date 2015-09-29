@@ -7,6 +7,17 @@
       }
       $(document).foundation();
       calcSize();
+
+      $('.flex-video').find('video').click(function() {
+        $(this).get(0).paused ? $(this).get(0).play() : $(this).get(0).pause();
+
+        if(!$(this).get(0).paused) {
+          $('.flex-video').addClass('playing');
+        } else {
+          $('.flex-video').removeClass('playing');
+        }
+      });
+
       $(window).resize(function() {
         calcSize();
       });
