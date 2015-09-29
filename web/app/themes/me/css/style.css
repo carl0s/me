@@ -194,7 +194,7 @@ input:-moz-placeholder {
 * {
   outline: none; }
 
-.flex-video:after {
+.flex-video.video:after {
   font-family: 'me';
   speak: none;
   font-style: normal;
@@ -220,16 +220,16 @@ input:-moz-placeholder {
   margin-left: -30px;
   color: white;
   text-shadow: #666 0px 0px 10px; }
-.flex-video.playing:after {
+.flex-video.video.playing:after {
   opacity: 0; }
-.flex-video:hover:after {
+.flex-video.video:hover:after {
   color: #DF4B17;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
-.flex-video video {
+.flex-video.video video {
   cursor: pointer; }
 
 #cookie-notice {
