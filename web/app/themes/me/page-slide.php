@@ -5,6 +5,9 @@
 
 get_header('slides');
 ?>
+<?php wp_reset_query(); ?>
+<?php wp_reset_postdata(); ?>
+
 
 <section id="slides" class="sliding">
   <div class="row collapse">
@@ -13,21 +16,12 @@ get_header('slides');
     </div>
   </div>
 <?php
-$args_all = array(
- 'post_type' => 'slide',
- 'posts_per_page' => -1,
- 'meta_key' => 'date',
- 'orderby' => 'meta_value_num',
- 'order' => 'DESC'
-);
-$slides_all = new WP_Query( $args_all );
+
 ?>
-<?php wp_reset_query(); ?>
-<?php wp_reset_postdata(); ?>
 <?php
  $args = array(
   'post_type' => 'slide',
-  'posts_per_page' => 5,
+  'posts_per_page' => 4,
   'meta_key' => 'date',
   'orderby' => 'meta_value_num',
   'order' => 'DESC'
@@ -42,7 +36,7 @@ if ( $slides->have_posts() ):
     <?php get_template_part('partials/simple', 'slide'); ?>
   <?php endwhile; ?>
 <?php endif; ?>
-<?php echo ($slides_all->post_count > 5)?do_shortcode( '[ajax_load_more repeater="template_1" post_type="slide" offset="5" scroll="false" button_label="Carica più slide"]' ):''; ?>
+<?php echo do_shortcode( '[ajax_load_more repeater="template_1"  post_type="slide" offset="4" posts_per_page="4" pause="true" button_label="Carica più slide"]' ); ?>
 </section>
 <?php
 get_footer();
