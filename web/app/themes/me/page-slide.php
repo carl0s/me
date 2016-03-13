@@ -42,7 +42,7 @@ if ( $slides->have_posts() ):
     <?php get_template_part('partials/simple', 'slide'); ?>
   <?php endwhile; ?>
 <?php endif; ?>
-<?php echo ($slides_all->post_count > 5)?do_shortcode( '[ajax_load_more post_type="progetti" offset="5" category__not_in="99,97,100,98,101" pause="true" scroll="false" button_label="Carica più post"]' ):''; ?>
+<?php echo ($slides_all->post_count > 5)?do_shortcode( '[ajax_load_more post_type="slide" offset="5" pause="true" scroll="false" button_label="Carica più slide"]' ):''; ?>
 </section>
 <?php
 get_footer();
