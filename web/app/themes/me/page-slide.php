@@ -13,14 +13,14 @@ get_header('slides');
     </div>
   </div>
 <?php
-$args = array(
+$args_all = array(
  'post_type' => 'slide',
  'posts_per_page' => -1,
  'meta_key' => 'date',
  'orderby' => 'meta_value_num',
  'order' => 'DESC'
 );
-$slides_all = new WP_Query( $args );
+$slides_all = new WP_Query( $args_all );
 ?>
 <?php wp_reset_query(); ?>
 <?php wp_reset_postdata(); ?>
