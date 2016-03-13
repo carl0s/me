@@ -23,7 +23,5 @@
     <h4><?php $terms = get_the_terms(get_the_ID(),'occasion'); echo (isset($terms) && !empty($terms))?$terms[0]->name:''; ?></h4>
     <h2><a href="<?php the_field('link_slideshare'); ?>" title="<?php echo get_the_title(); ?> su Slideshare"><?php echo get_the_title(); ?></a></h2>
     <?php the_content(); ?>
-
-
   </div>
 </article>
