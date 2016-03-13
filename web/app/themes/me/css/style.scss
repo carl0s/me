@@ -827,12 +827,14 @@ body {
         font-weight: 500;
         letter-spacing: 3px;
         font-size: 14px;
-        line-height: 20px;
+        line-height: 13px;
         margin:0;
         text-align: left;
         background: white;
-        padding: 10px;
+        padding: 5px;
         position:absolute;
+        bottom:20px;
+        left:20px;
         z-index: 200;
       }
       position: relative;
@@ -863,7 +865,7 @@ body {
         text-transform: uppercase;
         color: $grey;
         font-weight: 500;
-        font-size: 14px;
+        font-size: 12px;
         letter-spacing: 3px;
         line-height: 20px;
         margin-bottom:20px;
@@ -886,12 +888,15 @@ body {
         text-transform: uppercase;
         color: ligthen($grey, 20%);
         font-weight: 100;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 20px;
         left:0;
         padding:0 30px;
         .tags {
           margin:0;
+          font-size: 12px;
+          letter-spacing: 3px;
+          font-weight: 500;
         }
       }
     }
