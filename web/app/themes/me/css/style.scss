@@ -820,22 +820,31 @@ body {
         background: rgba(0,0,0,0.1);
         z-index:100;
       }
-      .date {
+      .bottom-details {
+        height: 30px;
+        width:100%;
+        position: absolute;
+        bottom:20px;
+        left:20px;
+        background:white;
         font-family: $ubuntu;
         text-transform: uppercase;
         color: ligthen($grey, 20%);
         font-weight: 500;
+        font-size: 12px;
+        line-height: 13x;
         letter-spacing: 3px;
-        font-size: 14px;
-        line-height: 13px;
-        margin:0;
-        text-align: left;
-        background: white;
-        padding: 5px;
-        position:absolute;
-        bottom:20px;
-        left:20px;
+        padding:5px;
+        padding:0 30px;
         z-index: 200;
+        .tags,
+        .date {
+          margin:0;
+          text-align: left;
+          display: inline-block;
+          width:auto;
+        }
+
       }
       position: relative;
       padding:0;
@@ -879,26 +888,7 @@ body {
         margin-bottom: 40px;
       }
 
-      .bottom-details {
-        height: 30px;
-        width:100%;
-        position: absolute;
-        bottom:20px;
-        font-family: $ubuntu;
-        text-transform: uppercase;
-        color: ligthen($grey, 20%);
-        font-weight: 100;
-        font-size: 14px;
-        line-height: 20px;
-        left:0;
-        padding:0 30px;
-        .tags {
-          margin:0;
-          font-size: 12px;
-          letter-spacing: 3px;
-          font-weight: 500;
-        }
-      }
+
     }
   }
 
