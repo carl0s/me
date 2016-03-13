@@ -902,7 +902,6 @@ body {
         position: absolute;
         bottom: 20px;
         left: 20px;
-        background: white;
         font-family: "Ubuntu";
         text-transform: uppercase;
         color: ligthen(#333, 20%);
@@ -910,10 +909,11 @@ body {
         font-size: 12px;
         line-height: 13x;
         letter-spacing: 3px;
-        padding: 5px;
         padding: 0 30px;
         z-index: 200; }
         #slides article figure .bottom-details .tags, #slides article figure .bottom-details .date {
+          padding: 5px;
+          background: white;
           margin: 0;
           text-align: left;
           display: inline-block;
