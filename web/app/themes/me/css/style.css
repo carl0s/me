@@ -882,76 +882,89 @@ body {
       font-size: 40px;
       line-height: 80px;
       height: 80px; }
-  #slides article figure {
-    position: relative;
-    padding: 0;
-    margin: 0; }
-    #slides article figure .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.1);
-      z-index: 100; }
-    #slides article figure:after {
-      position: absolute;
-      top: 50%;
-      -webkit-transform: translate(0, -50%);
-      -moz-transform: translate(0, -50%);
-      -ms-transform: translate(0, -50%);
-      transform: translate(0, -50%);
-      -webkit-transform: rotate(45deg);
-      -moz-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-      -o-transform: rotate(45deg);
-      transform: rotate(45deg);
-      width: 40px;
-      height: 40px;
-      background: white;
-      display: block;
-      color: white;
-      content: '.';
-      right: -20px;
-      z-index: 200; }
-  #slides article .content {
-    background: white;
-    padding: 20px;
-    padding-left: 30px;
-    position: relative;
-    min-height: 450px; }
-    #slides article .content h4 {
-      font-family: "Ubuntu";
-      text-transform: uppercase;
-      color: #333;
-      font-weight: 100;
-      font-size: 16px;
-      line-height: 20px;
-      margin-bottom: 20px; }
-    #slides article .content h2 {
-      font-family: "Ubuntu";
-      color: #DF4B17;
-      font-size: 32px;
-      line-height: 40px;
-      margin-bottom: 40px; }
-    #slides article .content .bottom-details {
-      height: 30px;
-      width: 100%;
-      position: absolute;
-      bottom: 20px;
-      font-family: "Ubuntu";
-      text-transform: uppercase;
-      color: ligthen(#333, 20%);
-      font-weight: 100;
-      font-size: 16px;
-      line-height: 20px;
-      left: 0;
-      padding: 0 30px; }
-      #slides article .content .bottom-details .tags {
-        margin: 0; }
-      #slides article .content .bottom-details .date {
+  #slides article {
+    background: white; }
+    #slides article figure {
+      position: relative;
+      padding: 0;
+      margin: 0; }
+      #slides article figure .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.1);
+        z-index: 100; }
+      #slides article figure .date {
+        font-family: "Ubuntu";
+        text-transform: uppercase;
+        color: ligthen(#333, 20%);
+        font-weight: 500;
+        letter-spacing: 3px;
+        font-size: 14px;
+        line-height: 20px;
         margin: 0;
-        text-align: right; }
+        text-align: left;
+        background: white;
+        padding: 10px;
+        position: absolute;
+        z-index: 200; }
+      #slides article figure:after {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translate(0, -50%);
+        -moz-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        width: 40px;
+        height: 40px;
+        background: white;
+        display: block;
+        color: white;
+        content: '.';
+        right: -20px;
+        margin-top: -20px;
+        z-index: 200; }
+    #slides article .content {
+      background: white;
+      padding: 20px;
+      padding-left: 30px;
+      position: relative; }
+      #slides article .content h4 {
+        font-family: "Ubuntu";
+        text-transform: uppercase;
+        color: #333;
+        font-weight: 100;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 20px; }
+      #slides article .content h2 {
+        font-family: "Ubuntu";
+        color: #DF4B17;
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 40px; }
+      #slides article .content .bottom-details {
+        height: 30px;
+        width: 100%;
+        position: absolute;
+        bottom: 20px;
+        font-family: "Ubuntu";
+        text-transform: uppercase;
+        color: ligthen(#333, 20%);
+        font-weight: 100;
+        font-size: 16px;
+        line-height: 20px;
+        left: 0;
+        padding: 0 30px; }
+        #slides article .content .bottom-details .tags {
+          margin: 0; }
   #slides article:nth-child(odd) figure {
     float: right; }
     #slides article:nth-child(odd) figure:after {

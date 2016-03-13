@@ -809,6 +809,7 @@ body {
     }
   }
   article {
+    background:white;
     figure {
       .overlay {
         position: absolute;
@@ -818,6 +819,21 @@ body {
         bottom:0;
         background: rgba(0,0,0,0.1);
         z-index:100;
+      }
+      .date {
+        font-family: $ubuntu;
+        text-transform: uppercase;
+        color: ligthen($grey, 20%);
+        font-weight: 500;
+        letter-spacing: 3px;
+        font-size: 14px;
+        line-height: 20px;
+        margin:0;
+        text-align: left;
+        background: white;
+        padding: 10px;
+        position:absolute;
+        z-index: 200;
       }
       position: relative;
       padding:0;
@@ -832,6 +848,7 @@ body {
         color: white;
         content:'.';
         right:-20px;
+        margin-top:-20px;
         z-index:200;
       }
     }
@@ -841,7 +858,6 @@ body {
       padding:20px;
       padding-left:30px;
       position: relative;
-      min-height: 450px;
       h4 {
         font-family: $ubuntu;
         text-transform: uppercase;
@@ -875,10 +891,6 @@ body {
         padding:0 30px;
         .tags {
           margin:0;
-        }
-        .date {
-          margin:0;
-          text-align: right;
         }
       }
     }
