@@ -37,7 +37,7 @@ get_header();
           <span class="month"><?php the_time('F'); ?></span>
           <span class="year"><?php the_time('Y'); ?></span>
         </div>
-        <div class="large-12 small-6 column">
+        <div class="large-12 small-12 column">
           <a href="#" class="icon-comments"><?php comments_number( '0 commenti', '1 commento', '% commenti' ); ?></a>
         </div>
       </div>

@@ -4,22 +4,25 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c22be4121475facc6f8529a5c48422b6",
-    "content-hash": "3c7736a6bc8544ea1a02d7950d230b2f",
+    "hash": "f3a7d84af5ca949a24fba4d5acc3f3ef",
+    "content-hash": "0b0b3ea93b8926374bc68ff79395ff9d",
     "packages": [
         {
             "name": "composer/installers",
-            "version": "v1.0.21",
+            "version": "v1.0.23",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "d64e23fce42a4063d63262b19b8e7c0f3b5e4c45"
+                "reference": "6213d900e92647831f7a406d5c530ea1f3d4360e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/d64e23fce42a4063d63262b19b8e7c0f3b5e4c45",
-                "reference": "d64e23fce42a4063d63262b19b8e7c0f3b5e4c45",
+                "url": "https://api.github.com/repos/composer/installers/zipball/6213d900e92647831f7a406d5c530ea1f3d4360e",
+                "reference": "6213d900e92647831f7a406d5c530ea1f3d4360e",
                 "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0"
             },
             "replace": {
                 "roundcube/plugin-installer": "*",
@@ -29,9 +32,9 @@
                 "composer/composer": "1.0.*@dev",
                 "phpunit/phpunit": "4.1.*"
             },
-            "type": "composer-installer",
+            "type": "composer-plugin",
             "extra": {
-                "class": "Composer\\Installers\\Installer",
+                "class": "Composer\\Installers\\Plugin",
                 "branch-alias": {
                     "dev-master": "1.0-dev"
                 }
@@ -100,20 +103,20 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2015-02-18 17:17:01"
+            "time": "2016-01-27 12:54:22"
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "4.3.1",
+            "version": "4.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "cfcf25eb42baeb7316a61c7a64e9a1ab3e291f2f"
+                "reference": "fe9320de0793602084c600e22c0c5e0bb601a264"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/cfcf25eb42baeb7316a61c7a64e9a1ab3e291f2f",
-                "reference": "cfcf25eb42baeb7316a61c7a64e9a1ab3e291f2f",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/fe9320de0793602084c600e22c0c5e0bb601a264",
+                "reference": "fe9320de0793602084c600e22c0c5e0bb601a264",
                 "shasum": ""
             },
             "require": {
@@ -137,7 +140,7 @@
                 "blog",
                 "cms"
             ],
-            "time": "2015-09-15 15:01:23"
+            "time": "2016-02-02 17:16:14"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -189,11 +192,11 @@
         },
         {
             "name": "nois3/advanced-custom-fields-pro",
-            "version": "5.3.0",
+            "version": "5.3.4",
             "source": {
                 "type": "git",
-                "url": "git@gitlab.nois3.net:nois3/advanced-custom-field-pro.git",
-                "reference": "release/5.2.4"
+                "url": "git@git.nois3.it:nois3/advanced-custom-field-pro.git",
+                "reference": "release/5.3.4"
             },
             "type": "wordpress-plugin"
         },
@@ -209,16 +212,16 @@
         },
         {
             "name": "roots/soil",
-            "version": "3.5.0",
+            "version": "3.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/roots/soil.git",
-                "reference": "4e9ad4562e1592c49f1f3a26c4dad1e00500c0c0"
+                "reference": "085fd3c9b16df5b72dce4fba09de0207937ef721"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/roots/soil/zipball/4e9ad4562e1592c49f1f3a26c4dad1e00500c0c0",
-                "reference": "4e9ad4562e1592c49f1f3a26c4dad1e00500c0c0",
+                "url": "https://api.github.com/repos/roots/soil/zipball/085fd3c9b16df5b72dce4fba09de0207937ef721",
+                "reference": "085fd3c9b16df5b72dce4fba09de0207937ef721",
                 "shasum": ""
             },
             "require": {
@@ -247,37 +250,37 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2015-09-24 17:30:00"
+            "time": "2016-03-07 19:49:21"
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v1.0.9",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "56c252d48dce336da97926591aed71805203815b"
+                "reference": "9caf304153dc2288e4970caec6f1f3b3bc205412"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/56c252d48dce336da97926591aed71805203815b",
-                "reference": "56c252d48dce336da97926591aed71805203815b",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/9caf304153dc2288e4970caec6f1f3b3bc205412",
+                "reference": "9caf304153dc2288e4970caec6f1f3b3bc205412",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.2"
+                "php": ">=5.3.9"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.0"
+                "phpunit/phpunit": "^4.8|^5.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0-dev"
+                    "dev-master": "2.2-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Dotenv": "src/"
+                "psr-4": {
+                    "Dotenv\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -298,19 +301,19 @@
                 "env",
                 "environment"
             ],
-            "time": "2014-10-16 14:50:21"
+            "time": "2015-12-29 15:10:30"
         },
         {
             "name": "wpackagist-plugin/better-wp-security",
-            "version": "5.0.1",
+            "version": "5.3.3",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/better-wp-security/",
-                "reference": "tags/5.0.1"
+                "reference": "tags/5.3.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/better-wp-security.5.0.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/better-wp-security.5.3.3.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -322,15 +325,15 @@
         },
         {
             "name": "wpackagist-plugin/contact-form-7",
-            "version": "4.3",
+            "version": "4.4",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/contact-form-7/",
-                "reference": "tags/4.3"
+                "reference": "tags/4.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/contact-form-7.4.3.zip",
+                "url": "https://downloads.wordpress.org/plugin/contact-form-7.4.4.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -342,15 +345,15 @@
         },
         {
             "name": "wpackagist-plugin/contact-form-7-to-database-extension",
-            "version": "2.9.8",
+            "version": "2.10.1",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/contact-form-7-to-database-extension/",
-                "reference": "tags/2.9.8"
+                "reference": "tags/2.10.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/contact-form-7-to-database-extension.2.9.8.zip",
+                "url": "https://downloads.wordpress.org/plugin/contact-form-7-to-database-extension.2.10.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -362,15 +365,15 @@
         },
         {
             "name": "wpackagist-plugin/cookie-notice",
-            "version": "1.2.32",
+            "version": "1.2.34",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/cookie-notice/",
-                "reference": "tags/1.2.32"
+                "reference": "tags/1.2.34"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/cookie-notice.1.2.32.zip",
+                "url": "https://downloads.wordpress.org/plugin/cookie-notice.1.2.34.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -382,15 +385,15 @@
         },
         {
             "name": "wpackagist-plugin/custom-post-type-ui",
-            "version": "1.1.2",
+            "version": "1.2.4",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/custom-post-type-ui/",
-                "reference": "tags/1.1.2"
+                "reference": "tags/1.2.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.1.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.2.4.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -402,15 +405,15 @@
         },
         {
             "name": "wpackagist-plugin/ewww-image-optimizer",
-            "version": "2.5.1",
+            "version": "2.5.9",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/ewww-image-optimizer/",
-                "reference": "tags/2.5.1"
+                "reference": "tags/2.5.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.2.5.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.2.5.9.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -442,15 +445,15 @@
         },
         {
             "name": "wpackagist-plugin/simple-301-redirects",
-            "version": "1.06",
+            "version": "1.07",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/simple-301-redirects/",
-                "reference": "tags/1.06"
+                "reference": "tags/1.07"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/simple-301-redirects.1.06.zip",
+                "url": "https://downloads.wordpress.org/plugin/simple-301-redirects.1.07.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -462,15 +465,15 @@
         },
         {
             "name": "wpackagist-plugin/tumblr-crosspostr",
-            "version": "0.8.4",
+            "version": "0.8.5",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/tumblr-crosspostr/",
-                "reference": "tags/0.8.4"
+                "reference": "tags/0.8.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/tumblr-crosspostr.0.8.4.zip",
+                "url": "https://downloads.wordpress.org/plugin/tumblr-crosspostr.0.8.5.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -522,15 +525,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "2.3.5",
+            "version": "3.1.1",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/2.3.5"
+                "reference": "tags/3.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.2.3.5.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.3.1.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -542,15 +545,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-mail-smtp",
-            "version": "0.9.5",
+            "version": "0.9.6",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wp-mail-smtp/",
-                "reference": "tags/0.9.5"
+                "reference": "tags/0.9.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-mail-smtp.0.9.5.zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-mail-smtp.0.9.6.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -568,7 +571,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.4"
+        "php": ">=5.5"
     },
     "platform-dev": []
 }

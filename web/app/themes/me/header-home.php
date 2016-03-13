@@ -43,10 +43,10 @@
       </div>
       <div class="bottom-contact-down">
         <div class="row collapse">
-          <div class="large-6 medium-6 hide-for-small column">
+          <div class="large-6 medium-12 hide-for-small column">
             <a href="mailto:me@carlofrinolli.it" class="icon-mail left">contattami</a>
           </div>
-          <div class="large-6 medium-6 small-12 column">
+          <div class="large-6 medium-12 small-12 column button-further">
             <a id="further" href="#topics"></a>
           </div>
         </div>
