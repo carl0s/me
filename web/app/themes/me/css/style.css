@@ -567,11 +567,13 @@ body {
   #hero h3 {
     /* BENVENUTI NEL MIO BL: */
     font-family: Ubuntu;
-    font-size: 24px;
+    font-size: 20px;
     color: #DF4B17;
     font-weight: 300;
-    line-height: 24px;
-    text-transform: uppercase; }
+    line-height: 20px;
+    letter-spacing: 5px;
+    text-transform: uppercase; 
+  }
   #hero .desc {
     margin-top: 70px; }
     #hero .desc p {
