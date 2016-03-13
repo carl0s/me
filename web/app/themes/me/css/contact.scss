@@ -1,0 +1,228 @@
+.overlay-form {
+  background: rgba(0,0,0,0.8);
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  opacity: 0;
+  &.active {
+    opacity: 1;
+  }
+}
+.container-form-button {
+  position: relative;
+
+  margin-top: 0px;
+  @include transition(.3s);
+
+  .contact-button {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 60px;
+    display: block;
+    color: $orange;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 16px;
+    line-height: 56px;
+    padding: 0px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 300;
+    overflow: hidden;
+    @include transition-cubic(.8s);
+
+    &:hover {
+      background-color: white;
+      color: $black;
+    }
+
+    .first-text {
+      .text {
+        display: block;
+        height: 60px;
+        @include transition-delay(.4s);
+      }
+      .icon-nois3 {
+        display: block;
+        opacity: 0;
+        height: 0;
+        font-size: 0px;
+        @include transition-delay(.4s);
+      }
+    }
+
+    .container-form {
+      visibility: hidden;
+      opacity: 0;
+      height: 0;
+      position: relative;
+      @include scale(.6);
+      @include transition-cubic(.8s);
+      @include transition-delay(.6s);
+
+      .title {
+        letter-spacing: 5px;
+        font-size: 30px;
+        font-weight: 100;
+      }
+
+      ::-webkit-input-placeholder { color:$grey; }
+      ::-moz-placeholder { color:$grey; }
+      :-ms-input-placeholder { color:$grey; }
+      input:-moz-placeholder { color:$grey; }
+
+      form {
+        margin: 0;
+        height: 440px;
+      }
+
+      .wpcf7-form {
+
+        .element {
+          line-height: 24px;
+        }
+        &.sent {
+          .element {
+            display: none;
+          }
+        }
+
+        &.invalid {
+          .wpcf7-submit {
+            opacity: 0.6
+          }
+        }
+
+        .wpcf7-not-valid-tip {
+          position: absolute;
+          top: -10px;
+          line-height: 10px;
+          color: #F00;
+          background-color: #eee;
+          font-size: 10px;
+          padding: 3px;
+          z-index: 99;
+        }
+
+        .wpcf7-not-valid {
+          border-color:$red;
+        }
+
+        .wpcf7-response-output {
+          color: $green;
+          line-height: 16px;
+
+          &.wpcf7-validation-errors {
+            color: $red;
+          }
+        }
+      }
+
+
+      input[type=text],
+      input[type="email"],
+      input[type="tel"],
+      input[type="submit"],
+      textarea {
+        font-family: $ubuntu;
+        border: none;
+        font-size: 20px;
+        background-color: $light-grey;
+        padding: 0 10px;
+        margin: 0;
+        height: 50px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid $black;
+        box-shadow: none!important;
+        width: 100%;
+        font:$ubuntu;
+        display: block ;
+        border-radius: 0!important;
+        -webkit-appearance: none!important;
+      }
+
+      textarea {
+        font-family: $ubuntu;
+        height: 150px;
+        line-height: 40px;
+      }
+
+      #wpm_download_1,
+      input[type="submit"] {
+        width: 100%;
+        display: block !important;
+        text-transform: uppercase;
+        font-size: 15px;
+        letter-spacing: 2px;
+        font-weight: 600;
+        font:$ubuntu;
+        text-transform: uppercase;
+        background-color: #222;
+        color: white;
+        cursor: pointer;
+        @include transition(.2s);
+
+        &:hover {
+          background-color: #555;
+        }
+        a {
+          color:white;
+          font-family: $ubuntu;
+          text-transform:uppercase;
+          font-weight: bold;
+          text-decoration:none;
+        }
+      }
+    }
+
+    &.active {
+      position: fixed;
+      left: 50%;
+      width: 500px;
+      height: 600px;
+      margin-left: -250px;
+      margin-top: 150px;
+      background-color: white;
+      color: $black;
+      cursor: default;
+      padding: 0 20px;
+      padding-top: 0;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+
+      .first-text {
+        .text {
+          opacity:0;
+          height: 0;
+        }
+
+        .icon-nois3 {
+          opacity: 1;
+          height: 60px;
+          font-size: 30px;
+          line-height: 60px;
+          left: -6px;
+        }
+      }
+
+      .close-form {
+        opacity: 1;
+      }
+
+      .container-form {
+        visibility: visible;
+        height: auto;
+        opacity: 1;
+        left: 0;
+        @include scale(1);
+      }
+    }
+  }
+}
