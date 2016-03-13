@@ -17,7 +17,7 @@ set :log_level, :info
 # Apache users with .htaccess files:
 # it needs to be added to linked_files so it persists across deploys:
 # set :linked_files, fetch(:linked_files, []).push('.env', 'web/.htaccess')
-set :linked_files, fetch(:linked_files, []).push('.env','web/.htaccess','web/app/advanced-cache.php')
+set :linked_files, fetch(:linked_files, []).push('.env','web/.htaccess','web/app/advanced-cache.php','web/app/plugins/ajax-load-more-repeaters-v2/repeaters/template_1.php')
 set :linked_dirs, fetch(:linked_dirs, []).push('web/app/uploads','web/app/wp-rocket-config')
 
 
