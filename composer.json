@@ -29,18 +29,18 @@
   "repositories": [
     {
       "type": "composer",
-      "url": "http://wpackagist.org"
+      "url": "https://wpackagist.org"
     },
     {
       "type": "package",
       "package": {
         "name": "nois3/advanced-custom-fields-pro",
-        "version": "5.3.4",
+        "version": "5.3.9.1",
         "type": "wordpress-plugin",
         "source": {
           "url": "git@git.nois3.it:nois3/advanced-custom-field-pro.git",
           "type": "git",
-          "reference": "release/5.3.4"
+          "reference": "release/5.3.9.1"
         }
       }
     },
@@ -88,10 +88,10 @@
     "php": ">=5.5",
     "composer/installers": "~1.0.12",
     "vlucas/phpdotenv": "^2.0.1",
-    "johnpbloch/wordpress": "4.4.2",
+    "johnpbloch/wordpress": "4.5.3",
     "roots/soil": "*",
     "roots/bedrock-capistrano":"*",
-    "nois3/advanced-custom-fields-pro":"5.3.4",
+    "nois3/advanced-custom-fields-pro":"5.3.9.1",
     "wpackagist-plugin/better-wp-security":"*",
     "wpackagist-plugin/cookie-notice":"*",
     "wpackagist-plugin/contact-form-7":"*",
@@ -99,6 +99,7 @@
     "wpackagist-plugin/custom-post-type-ui":"*",
     "wpackagist-plugin/ewww-image-optimizer":"*",
     "wpackagist-plugin/google-analyticator":"*",
+    "wpackagist-plugin/medium":"*",
     "wpackagist-plugin/simple-301-redirects":"*",
     "wpackagist-plugin/tumblr-importer":"*",
     "wpackagist-plugin/tumblr-crosspostr":"*",
