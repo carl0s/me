@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "210eeec855d07f69f7d188fe792fd1de",
-    "content-hash": "b975c9ea0ed58ece38aaa1b48bd88f2c",
+    "hash": "8c55e754adc28320722b8db11de8b8cc",
+    "content-hash": "38c29d7d1aa6bfd6608f8b3a92e25cab",
     "packages": [
         {
             "name": "composer/installers",
@@ -194,11 +194,11 @@
         },
         {
             "name": "nois3/advanced-custom-fields-pro",
-            "version": "5.3.9.1",
+            "version": "5.4.2",
             "source": {
                 "type": "git",
                 "url": "git@git.nois3.it:nois3/advanced-custom-field-pro.git",
-                "reference": "release/5.3.9.1"
+                "reference": "release/5.4.2"
             },
             "type": "wordpress-plugin"
         },

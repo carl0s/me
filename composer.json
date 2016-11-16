@@ -35,12 +35,12 @@
       "type": "package",
       "package": {
         "name": "nois3/advanced-custom-fields-pro",
-        "version": "5.3.9.1",
+        "version": "5.4.2",
         "type": "wordpress-plugin",
         "source": {
           "url": "git@git.nois3.it:nois3/advanced-custom-field-pro.git",
           "type": "git",
-          "reference": "release/5.3.9.1"
+          "reference": "release/5.4.2"
         }
       }
     },
@@ -91,7 +91,7 @@
     "johnpbloch/wordpress": "4.6.1",
     "roots/soil": "*",
     "roots/bedrock-capistrano":"*",
-    "nois3/advanced-custom-fields-pro":"5.3.9.1",
+    "nois3/advanced-custom-fields-pro":"5.4.2",
     "wpackagist-plugin/better-wp-security":"*",
     "wpackagist-plugin/cookie-notice":"*",
     "wpackagist-plugin/contact-form-7":"*",
